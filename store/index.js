@@ -7,7 +7,14 @@ import getters from './getters';
 export default function createStore() {
     return new Vuex.Store({
         state: {
-
+            /** @type TokenData */
+            authToken: {},
+            /** @type User */
+            user: {
+                /** @type Address */
+                mainAddress: {},
+            },
+            userTimeStamp: 0,
             isSnackbarActive: false,
             preferredLocale: null,
         },

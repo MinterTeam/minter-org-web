@@ -43,9 +43,6 @@ body {
     font-weight: 400;
     background: @body-bg-color;
 }
-@media (min-width: @breakpoint-small-up) {
-    body {font-size: 20px;}
-}
 
 a, .link {color: inherit; outline: none; text-decoration: none; text-decoration-skip: ink; transition: 0.1s;}
 a, .link {&:hover, &:focus {/*text-decoration: underline; */outline: none;}}
@@ -65,7 +62,7 @@ a, .link {&:hover, &:focus {/*text-decoration: underline; */outline: none;}}
     text-decoration: underline;
     &:hover, &:focus {text-decoration: none;}
 }
-.link--default {.link--main(); .link--hover();}
+.link--default {.link--main(); .link--underline();}
 button {cursor: pointer; outline: none;}
 p, ul, ol {margin: 0;}
 p + p {margin-top: 16px;}
@@ -92,11 +89,11 @@ textarea {resize: none;}
 
 h1, h2, h3, h4, h5, h6, .u-h {margin: 0; font-family: @heading-font-family; font-weight: 700; line-height: 1.2;}
 //.h-title {font-size: 24px; text-transform: uppercase; margin-bottom: 12px;}
-.u-h1 {font-size: 32px; line-height: 1.1;}
-.u-h2 {font-size: 22px; line-height: 1.23;}
+.u-h1 {font-size: 32px; line-height: 1.22;}
+//.u-h2 {font-size: 22px; line-height: 1.23;}
 .u-h5 {font: inherit; font-weight: 700;}
-@media (min-width: @breakpoint-large-up) {
-    .u-h1 {font-size: 40px;}
+@media (min-width: @breakpoint-small-up) {
+    .u-h1 {font-size: 42px; line-height: 1.2;}
     .u-h2 {font-size: 26px;}
 }
 
@@ -115,43 +112,43 @@ hr {border: none; border-top: 2px solid @c-border;}
 
 // button
 .button {
-    display: inline-flex; align-items: center; justify-content: center; padding: 16px 20px; font-size: 16px; line-height: 20px; font-weight: 700; letter-spacing: 0.06em; font-family: @heading-font-family; background: #fff; color: @c-black; text-transform: uppercase; border-radius: 8px; text-align: center; border: 2px solid transparent; text-decoration: none; transition: 0.1s; position: relative; overflow: hidden; vertical-align: top;
+    display: inline-flex; align-items: center; justify-content: center; padding: 12px 22px; font-size: 16px; line-height: 20px; font-weight: 700; letter-spacing: 1px; font-family: @heading-font-family; background: #fff; color: @c-black; text-transform: uppercase; border-radius: 16px; text-align: center; border: 2px solid transparent; text-decoration: none; transition: 0.1s; position: relative; overflow: hidden; vertical-align: top;
     &[disabled], &.is-disabled {
         cursor: default;
         &:not(.is-loading) {background: shade(#fff, 30%); box-shadow: none;}
     }
     &.is-loading .button__content {color: transparent;}
 }
-.button--medium {padding-top: 8px; padding-bottom: 8px; text-transform: none;}
+//.button--medium {padding-top: 8px; padding-bottom: 8px; text-transform: none;}
 .button--main {
     color: #fff; background: @c-main; /*box-shadow: 0 2px 4px rgba(0,0,0,0.5);*/
     &:hover, &:focus {background: tint(@c-main, 10%);}
     &:active {background: shade(@c-main, 10%);}
 }
-.button--green {
-    color: #fff; background: @c-green;
-    &:hover, &:focus {background: tint(@c-green, 15%);}
-    &:active {background: shade(@c-green, 10%);}
-}
-.button--white {
-    color: @c-green; background: #fff;
-    &:hover, &:focus {background: tint(@c-green, 90%);}
-    &:active {background: shade(#fff, 10%);}
-}
-.button--black {
-    color: #fff; background: @c-black;
-    &:hover, &:focus {background: tint(@c-black, 15%);}
-    &:active {background: shade(@c-black, 10%);}
-}
+//.button--green {
+//    color: #fff; background: @c-green;
+//    &:hover, &:focus {background: tint(@c-green, 15%);}
+//    &:active {background: shade(@c-green, 10%);}
+//}
+//.button--white {
+//    color: @c-green; background: #fff;
+//    &:hover, &:focus {background: tint(@c-green, 90%);}
+//    &:active {background: shade(#fff, 10%);}
+//}
+//.button--black {
+//    color: #fff; background: @c-black;
+//    &:hover, &:focus {background: tint(@c-black, 15%);}
+//    &:active {background: shade(@c-black, 10%);}
+//}
 //.button--white {
 //    color: @c-main; background: #fff;
 //    &:active {background: shade(#fff, 10%);}
 //}
-//.button--ghost-main {
-//    color: @c-main; background: transparent; border-color: @c-main;
-//    &:hover, &:focus {color: #fff; background: @c-main;}
-//    &:active {color: #fff; background: shade(@c-main, 10%);}
-//}
+.button--ghost-main {
+    color: @c-main; background: transparent; border-color: @c-main;
+    &:hover, &:focus {color: #fff; background: @c-main;}
+    &:active {color: #fff; background: shade(@c-main, 10%);}
+}
 //.button--ghost-white {
 //    color: #fff; background: transparent; border-color: #fff;
 //    &:hover, &:focus {color: @c-black; background: #fff;}
@@ -188,37 +185,85 @@ hr {border: none; border-top: 2px solid @c-border;}
 
 
 // input
+// input
 @field-input-padding: 4px;
 @field-label-height: 20px;
 @field-label-scale: 0.75;
-@field-label-top-line-height-compensation: 3px;
+@field-label-top-line-height-compensation: 0px;
 @field-padding: (@field-label-height * @field-label-scale - @field-label-top-line-height-compensation);
 @field-label-top: (@field-padding + @field-input-padding);
 @field-label-translate: (-1 * (@field-label-top + @field-label-top-line-height-compensation));
-.form-row {&+& {margin-top: 20px;}}
+.form-row {
+    &+& {margin-top: 30px;}
+    .from-row--with-field + & {margin-top: (30px - 20px);}
+}
+.form-row--large {
+    .form-row + & {margin-top: 36px;}
+    .from-row--with-field + & {margin-top: (36px - 20px);}
+}
+.from-row--with-field {
+    min-height: (47px + 16px + 4px);
+}
 .form-field {
-    display: block; position: relative; cursor: pointer; font-size: 16px; font-weight: 500; pointer-events: none;
+    display: block; position: relative; cursor: pointer; font-weight: 400; padding-top: @field-padding; pointer-events: none;
     &.is-disabled {opacity: 0.6;}
 }
+.form-field--simulate {cursor: text; pointer-events: auto;}
+.form-field--without-label {padding-top: 0;}
+.form-field--dashboard-invite {display: inline-block; max-width: 100%;}
 .form-field__input {
-    font-size: inherit; line-height: 20px; padding: 24px 14px 8px; color: inherit; background: #fff; border: 2px solid @c-black-light; transition: 0.15s; display: block; width: 100%; pointer-events: auto; border-radius: 8px; opacity: 1; /* safari disabled fix */ -webkit-text-fill-color: currentcolor; /* safari disabled fix */
+    padding: @field-input-padding 0 4px; font-size: 16px; line-height: 22px; color: inherit; background: transparent; border: none; border-bottom: 2px solid @c-border; transition: 0.15s; display: block; width: 100%; pointer-events: auto; border-radius: 0; min-width: 0; opacity: 1; /* safari disabled fix */ -webkit-text-fill-color: currentcolor; /* safari disabled fix */
     &:focus {border-color: @c-main;}
+    //.form-field--invert > & {border-color: rgba(255,255,255, 0.4);}
+    //.form-field--main > & {border-color: @c-main; border-bottom-width: 2px;}
     .is-error > & {border-color: @c-red;}
+    .form-field--simulate > & {white-space: nowrap; user-select: all; overflow: hidden; text-overflow: ellipsis;}
+    .form-field--simulate.is-disabled > & {opacity: 0.75;}
+    .form-field--with-copy > & {padding-right: 26px;}
 }
-//.form-field__input--select {appearance: none; background: url(../img/icon-dropdown.svg) no-repeat 100% 50%; padding-right: 24px;}
+//.form-field__input--select {appearance: none; background: url(/img/icon-dropdown.svg) no-repeat 100% 50%; padding-right: 24px;}
+//.form-field__input--select--white {
+//    background-image: url(/img/icon-dropdown-white.svg);
+//    option {color: @c-black;}
+//}
 .form-field__label {
-    font-size: inherit; left: 16px; top: 18px; line-height: 20px; color: @c-black-light; position: absolute; transition: 0.15s; transform-origin: 0 0; user-select: none; white-space: nowrap;
-    .form-field__input:focus ~ &, .is-not-empty ~ & {transform: translateY(-10px) scale(.75); letter-spacing: 0.05em;}
+    font-size: 16px; line-height: @field-label-height; color: @c-black-light; position: absolute; left: 0; top: @field-label-top; transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1); transform-origin: 0 0; user-select: none; white-space: nowrap;
+    .form-field__input:focus ~ &, .is-not-empty ~ & {transform: translateY(@field-label-translate) scale(@field-label-scale); letter-spacing: 0.8px;}
     .form-field__input:focus ~ & {color: @c-main;}
     .form-field.is-error > & {color: @c-red;}
+    .form-field--simulate.is-disabled > & {opacity: 0.75;}
 }
-.help-text() {font-size: 12px; line-height: 16px; letter-spacing: 0.05em; font-weight: 500; padding: 0 16px; margin-top: 3px; display: block; overflow-wrap: break-word;}
-.error-text() {font-size: 12px; line-height: 16px; letter-spacing: 0.05em; font-weight: 500; color: @c-red; }
-.form-field__help {
-    .help-text();
-    .form-field__error + & {margin-top: 0;}
+.form-field__label--bright {opacity: 1;}
+.form-field__help {margin-top: 8px; display: block;}
+.form-field__copy {position: absolute; right: 0; bottom: 2px; z-index: 1; cursor: pointer;}
+.error-text() {font-size: 12px; line-height: 16px; color: @c-red; letter-spacing: 0.8px;}
+.form-field__error {.error-text(); margin-top: 4px; overflow-wrap: break-word; display: block;}
+@media (min-width: @breakpoint-large-up) {
+    .form-field--with-copy > .form-field__input {padding-right: 32px;}
 }
-.form-field__error {.help-text(); .error-text();}
+
+
+.form-checkbox {
+    position: relative; display: flex; user-select: none; cursor: pointer; font-weight: inherit; margin: 0;
+    &.is-error {color: @c-red;}
+    &+& {margin-top: 16px;}
+}
+.form-checkbox__input-native {position: absolute; left: 0; top: 0; opacity: 0; z-index: -1;}
+.form-checkbox__input-visible {
+    width: 20px; height: 20px; border-radius: 2px; border: 2px solid @c-black-light; margin-right: 16px; flex-shrink: 0; position: relative;
+    &::before {content: ''; width: 13px; height: 8px; margin: -6px 0 0 -6px; position: absolute; left: 50%; top: 50%; border: solid #fff; border-width: 0 0 2px 2px; visibility: hidden; transform: rotate(-45deg);}
+    .is-error > & {border-color: @c-red;}
+    .form-checkbox__input-native:focus + & {border-color: @c-main;}
+    .form-checkbox__input-native:checked + & {background: @c-main; border-color: @c-main;}
+    .form-checkbox__input-native:checked + &::before {visibility: visible;}
+}
+.form-checkbox__label {flex-grow: 2; line-height: 20px;}
+
+
+
+.form-phone {display: flex;}
+.form-phone__code {width: 50px; margin-right: 20px; flex-shrink: 0;}
+.form-phone__number {flex-grow: 2;}
 
 
 

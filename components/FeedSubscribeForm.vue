@@ -2,7 +2,7 @@
     import {validationMixin} from 'vuelidate';
     import required from 'vuelidate/lib/validators/required';
     import email from 'vuelidate/lib/validators/email';
-    import {register} from "~/api";
+    import {authRegister} from "~/api";
     import {getServerValidator, fillServerErrors, getErrorText} from "~/assets/server-error";
     import checkEmpty from '~/assets/v-check-empty';
 
@@ -47,7 +47,7 @@
                 this.isFormSending = true;
                 this.serverError = '';
                 this.serverSuccess = false;
-                register(this.form)
+                authRegister(this.form)
                     .then((response) => {
                         this.isFormSending = false;
                         this.serverSuccess = true;

@@ -3,7 +3,7 @@
     import required from 'vuelidate/lib/validators/required';
     import minLength from 'vuelidate/lib/validators/minLength';
     import maxLength from 'vuelidate/lib/validators/maxLength';
-    import {register} from "~/api";
+    import {authRegister} from "~/api";
     import {getServerValidator, fillServerErrors, getErrorText} from "~/assets/server-error";
     import {makeAccepter} from '~/assets/utils';
     import checkEmpty from '~/assets/v-check-empty';

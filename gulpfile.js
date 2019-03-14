@@ -17,6 +17,10 @@ const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const mozjpeg = require('imagemin-mozjpeg');
 const pngquant = require('imagemin-pngquant');
+// country data
+const fs = require('fs');
+/** @type {Array<{callingCode: Array}>} */
+const countryData = require('world-countries');
 
 
 let paths = {
@@ -36,6 +40,27 @@ let paths = {
         cacheDirName: 'gulp-cache',
     },
 };
+
+
+gulp.task('countries', function (cb) {
+    let countryCallingCodeList = [];
+
+    countryData.forEach((item) => {
+        // take only unique codes
+        const newCodes = item.callingCode.filter((code) => !countryCallingCodeList.includes(code));
+        countryCallingCodeList = countryCallingCodeList.concat(newCodes);
+    });
+
+
+    countryCallingCodeList.sort((a, b) => {
+        if (b.length !== a.length) {
+            return b.length - a.length;
+        } else {
+            return b - a;
+        }
+    });
+    fs.writeFile('tmp/country-codes.json', JSON.stringify(countryCallingCodeList), cb);
+});
 
 
 // LESS
@@ -99,17 +124,19 @@ gulp.task('imagemin:clean', gulp.parallel('imagemin:clean-dest', 'imagemin:clean
 
 
 // Полная сборка без вотча
-gulp.task('once', gulp.parallel('less', 'imagemin'));
+gulp.task('once', gulp.parallel('less', 'imagemin', 'countries'));
 // Полная сборка с вотчем
 gulp.task('default', gulp.series(
     'once',
     function watch() {
         gulp.watch(paths.watch.less, gulp.task('less'));
-        gulp.watch(paths.src.img, gulp.task('imagemin')).on('change', function(event) {
-            if (event.type === 'deleted') {
-                del(paths.dest.img + path.basename(event.path));
-            }
-        });
+        gulp.watch(paths.src.img, gulp.task('imagemin'))
+            .on('unlink', function(filePath) {
+                del(paths.dest.img + path.basename(filePath));
+            })
+            .on('unlinkDir', function(dirPath) {
+                del(paths.dest.img + path.basename(dirPath));
+            });
         setTimeout(function() {
             log('Watching...');
         });

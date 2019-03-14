@@ -2,11 +2,23 @@ import faker from 'faker';
 import minterorg from '~/api/minterorg';
 
 /**
- * @param data
- * @return {Promise<User|{confirmations: Array}>}
+ * @param username
+ * @param phone
+ * @return {Promise<{confirmation: {type: string, id: string}}>}
  */
-export function register(data) {
-    return minterorg.register(data, true);
+export function authRegister({username, phone}) {
+    return minterorg.post('auth/register', {username, phone})
+        .then((response) => response.data.data,);
+}
+
+/**
+ * @param csrf
+ * @param code
+ * @return {Promise<{token: TokenData, user: User}>}
+ */
+export function authConfirm(csrf, code) {
+    return minterorg.get(`auth/confirm/${csrf}/${code}`)
+        .then((response) => response.data.data,);
 }
 
 /**
