@@ -38,7 +38,7 @@ body {
     //position: relative; //в данной реализации модала не актуально // чтобы не разъезжался абсолютный контент при открытии модального
     font-family: @body-font-family;
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.25;
     color: @c-black;
     font-weight: 400;
     background: @body-bg-color;
@@ -65,14 +65,16 @@ a, .link {&:hover, &:focus {/*text-decoration: underline; */outline: none;}}
 .link--default {.link--main(); .link--underline();}
 button {cursor: pointer; outline: none;}
 p, ul, ol {margin: 0;}
-p + p {margin-top: 16px;}
+p, ul, ol, h5 {
+    &+& {margin-top: 10px;}
+}
 sub, sup { font-size: 75%;}
 .no-list {
     padding: 0; margin: 0;
     li {list-style: none;}
 }
 .list-simple {
-    padding: 0; line-height: 1.2;
+    padding: 0;
     li {
         list-style: none; position: relative; padding-left: 25px;
         &::before {content: '•'; position: absolute; left: 0; top: 0;}
@@ -91,10 +93,11 @@ h1, h2, h3, h4, h5, h6, .u-h {margin: 0; font-family: @heading-font-family; font
 //.h-title {font-size: 24px; text-transform: uppercase; margin-bottom: 12px;}
 .u-h1 {font-size: 32px; line-height: 1.22;}
 //.u-h2 {font-size: 22px; line-height: 1.23;}
-.u-h5 {font: inherit; font-weight: 700;}
+.u-h3 {font-size: 13px; line-height: 16px; text-transform: uppercase; font-weight: 600; letter-spacing: 4px;}
+.u-h5 {font: inherit; font-weight: 600;}
 @media (min-width: @breakpoint-small-up) {
     .u-h1 {font-size: 42px; line-height: 1.2;}
-    .u-h2 {font-size: 26px;}
+    //.u-h2 {font-size: 26px;}
 }
 
 
