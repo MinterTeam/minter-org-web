@@ -59,6 +59,9 @@ gulp.task('countries', function (cb) {
             return b - a;
         }
     });
+    if (!fs.existsSync('tmp')){
+        fs.mkdirSync('tmp');
+    }
     fs.writeFile('tmp/country-codes.json', JSON.stringify(countryCallingCodeList), cb);
 });
 
