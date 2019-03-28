@@ -1,9 +1,9 @@
 // const nodeExternals = require('webpack-node-externals');
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 
-const envConfig = dotenv.config();
+// const envConfig = dotenv.config();
 
-import langRu from './lang/ru';
+// import langRu from './lang/ru';
 import {BASE_TITLE, BASE_DESCRIPTION} from "./assets/variables";
 
 module.exports = {
@@ -49,7 +49,7 @@ module.exports = {
         // '~/plugins/translate.js',
         // '~/plugins/get-locale-path.js',
     ],
-    env: envConfig.error ? {} : envConfig.parsed,
+    // env: envConfig.error ? {} : envConfig.parsed,
  /*
     modules: [
         ['nuxt-i18n', {
