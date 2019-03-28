@@ -2,7 +2,7 @@
     export default {
         head() {
             const title = 'Get paid with Minter';
-            const description = 'By embracing a new approach of routing transfers via the trustless network, we let anyone in the world use the Internet on Money';
+            const description = 'By embracing a new approach of routing transfers via the trustless network, we let anyone in the world use the Internet of Money';
             // const localeSuffix = this.$i18n.locale === 'en' ? '' : '-' + this.$i18n.locale;
 
             return {
@@ -31,7 +31,7 @@
         <div class="u-section">
             <div class="u-container">
                 <h1 class="u-h1 u-mb-24">Minter changes the way people get paid and use money globally</h1>
-                <p>By embracing a new approach of routing transfers via the trustless network, we&nbsp;let anyone in the world use the Internet on Money.</p>
+                <p>By embracing a new approach of routing transfers via the trustless network, we&nbsp;let anyone in the world use the Internet of Money.</p>
                 <div class="vision__money">
                     <div class="vision__money-image u-mt-32 u-mb-32 u-hidden-medium-down u-aspect-ratio" style="--aspect-ratio:420/359; width:420px">
                         <img src="/img/vision-money.png" srcset="/img/vision-money@2x.png 2x" alt="" width="420" height="359" role="presentation">
