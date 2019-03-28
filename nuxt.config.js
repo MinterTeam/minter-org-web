@@ -36,20 +36,21 @@ module.exports = {
         linkActiveClass: '',
         linkExactActiveClass: 'is-active',
         middleware: [
-            // 'profile',
+            'vision',
             // 'auth',
-            'language',
+            // 'language',
         ],
     },
     plugins: [
         { src: '~/plugins/click-blur.js', ssr: false },
         // { src: '~/plugins/persistedState.js', ssr: false },
         { src: '~/plugins/track.js', ssr: false },
-        { src: '~/plugins/seo-gtm.js', ssr: false },
-        '~/plugins/translate.js',
-        '~/plugins/get-locale-path.js',
+        { src: '~/plugins/seo-ym.js', ssr: false },
+        // '~/plugins/translate.js',
+        // '~/plugins/get-locale-path.js',
     ],
     env: envConfig.error ? {} : envConfig.parsed,
+ /*
     modules: [
         ['nuxt-i18n', {
             locales: [
@@ -78,6 +79,7 @@ module.exports = {
             detectBrowserLanguage: false,
         }],
     ],
+*/
     /*
     ** Build configuration
     */
