@@ -2,7 +2,7 @@
     export default {
         head() {
             const title = 'Get paid with Minter';
-            const description = 'By embracing a new approach of routing transfers via the trustless network, we&nbsp;let anyone in the world use the Internet on Money';
+            const description = 'By embracing a new approach of routing transfers via the trustless network, we let anyone in the world use the Internet on Money';
             // const localeSuffix = this.$i18n.locale === 'en' ? '' : '-' + this.$i18n.locale;
 
             return {
@@ -28,7 +28,7 @@
                     <img src="/img/vision-money.png" srcset="/img/vision-money@2x.png 2x" alt="" width="420" height="359" role="presentation">
                 </div>
                 <div class="u-mt-24 u-mb-24">
-                    <h5 class="u-h5">Human history has seen four critical levels of money development:</h5>
+                    <h5 class="u-h5">Human history has seen four critical levels of money development:</h5>
                     <div class="u-h u-h3  vision__money-item-title">Local communities</div>
                     <p>Goods and cash as payment methods</p>
 
@@ -129,7 +129,3 @@
         </div>
     </div>
 </template>
-
-<style scoped>
-
-</style>
