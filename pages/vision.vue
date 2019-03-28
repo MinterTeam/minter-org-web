@@ -9,42 +9,70 @@
         <div class="u-container">
             <h1 class="u-h1 u-mb-24">Minter changes the way people get paid and use money globally</h1>
             <p>By embracing a new approach of routing transfers via the trustless network, we&nbsp;let anyone in the world use the Internet on Money.</p>
-            <!--@TODO replace with inline SVG with text nodes-->
-            <div class="vision__money-image u-aspect-ratio" style="--aspect-ratio:698/359; width:698px">
-                <img src="/img/vision-money.png" srcset="/img/vision-money@2x.png 2x" alt="" width="698" height="359" role="presentation">
+            <div class="vision__money">
+                <div class="vision__money-image u-mt-32 u-mb-32 u-hidden-medium-down u-aspect-ratio" style="--aspect-ratio:420/359; width:420px">
+                    <img src="/img/vision-money.png" srcset="/img/vision-money@2x.png 2x" alt="" width="420" height="359" role="presentation">
+                </div>
+                <div class="u-mt-24 u-mb-24">
+                    <h5 class="u-h5">Human history has seen four critical levels of money development:</h5>
+                    <div class="u-h u-h3  vision__money-item-title">Local communities</div>
+                    <p>Goods and cash as payment methods</p>
+
+                    <div class="u-h u-h3  vision__money-item-title">Cities</div>
+                    <p>Cash, checks, and banks</p>
+
+                    <div class="u-h u-h3  vision__money-item-title">Countries</div>
+                    <p>Banks, cards, and electronic wallets</p>
+
+                    <div class="u-h u-h3  vision__money-item-title">World</div>
+                    <p>Cards and e-wallets</p>
+                </div>
             </div>
+
             <p class="u-mb-16">With the growth in reach, the less efficient means of payment lose usage while retaining their position in specific countries and cities, as is seen with checks in the U.S. The main reason behind the application of more complex technologies on a world scale is the problem of reputation. Or, to put it in plain English: in a small community or town, individuals and businesses have a reputation, and it is easier for one to influence them and demand from them. In the world with hundreds of counterparties around us—counterparties that we will never know anything about even if we try hard to—a system of intermediaries occurs that transfers money from one trusted party to another. This scenario holds for the whole chain, which—in the case of making a regular payment via a bank card on a website—can include up to 20–30 companies.</p>
             <p class="u-mb-16">Let us define the key features of the modern world:</p>
-            <div class="u-mb-16 u-grid u-grid--medium u-grid--vertical-margin--medium">
+            <div class="u-mb-16 u-grid u-grid--medium u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-3">
-                    <h4 class="u-h1">1</h4>
-                    <p>The economies have more and more private actors on a global level, for example, freelancers;</p>
+                    <h4 class="u-h1 vision__feature-digit">1</h4>
+                    <p class="vision__feature-description">The economies have more and more private actors on a global level, for example, freelancers;</p>
                 </div>
                 <div class="u-cell u-cell--medium--1-3">
-                    <h4 class="u-h1">2</h4>
-                    <p>There is no single system for exchanging information about transfers;</p>
+                    <h4 class="u-h1 vision__feature-digit">2</h4>
+                    <p class="vision__feature-description">There is no single system for exchanging information about transfers;</p>
                 </div>
                 <div class="u-cell u-cell--medium--1-3">
-                    <h4 class="u-h1">3</h4>
-                    <p>There is no single protected environment that would guarantee the security of funds.</p>
+                    <h4 class="u-h1 vision__feature-digit">3</h4>
+                    <p class="vision__feature-description">There is no single protected environment that would guarantee the security of funds.</p>
                 </div>
             </div>
             <p>The financial system attempts to fulfill the needs of 200 countries by leveraging technologies and methods that have remained unchanged for decades. That is why a bank-to-bank money transfer even within the same state may take days to complete while sending an SMS to anyone in the world is lightning-fast.</p>
             <p class="u-mb-16">Let us explore how money transfers work today and what Minter has done to facilitate them.</p>
             <p class="u-mb-16">Any transfer is carried out in three fundamental steps:</p>
-            <div class="u-mb-16 u-grid u-grid--medium u-grid--vertical-margin--medium">
+            <div class="u-mb-16 u-grid u-grid--medium u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-3">
                     <h3 class="u-h3 u-mb-6">1. Sending</h3>
-                    <p>The sender “uploads” the money denominated in their national currency in the most convenient or familiar way—for example, using a bank card—and initiates the transfer/pays the invoice;</p>
+                    <p class="vision__steps-description">
+                        The sender “uploads” the money denominated in their national currency in the most convenient or familiar way—for example, using a bank card—and initiates the transfer/pays the invoice;
+                        <img class="vision__steps-line--1 u-hidden-medium-down" src="/img/vision-line-45-down.svg" alt="" role="presentation">
+                    </p>
                 </div>
                 <div class="u-cell u-cell--medium--1-3">
                     <h3 class="u-h3 u-mb-6">2. Receiving</h3>
-                    <p>The transfer is delivered to the receiver and transformed into the form of money accepted in their community;</p>
+                    <p class="vision__steps-description">
+                        The transfer is delivered to the receiver and transformed into the form of money accepted in their community;
+                        <img class="vision__steps-line--2 u-hidden-medium-down" src="/img/vision-line-45-down.svg" alt="" role="presentation">
+                    </p>
                 </div>
                 <div class="u-cell u-cell--medium--1-3">
                     <h3 class="u-h3 u-mb-6">3. Using</h3>
-                    <p>The receiver spends the money as they want.</p>
+                    <p class="vision__steps-description">
+                        The receiver spends the money as they want.
+                        <img class="vision__steps-line--3 u-hidden-medium-down" src="/img/vision-line-down.svg" alt="" role="presentation">
+                    </p>
                 </div>
+            </div>
+            <div class="vision__steps-image u-mb-32 u-aspect-ratio" style="--aspect-ratio:376/105; width:376px;">
+                <img src="/img/vision-steps.png" srcset="/img/vision-steps@2x.png 2x" alt="" width="376" height="105" role="presentation">
             </div>
             <p>For all three steps to work in a fast and cost-efficient way globally (something we have already experienced using various Internet services), we need to change the approach entirely. To achieve that, we have to gather all three functions (Sending, Receiving, and Using) in one place and put away such steps as Depositing, Withdrawing, and Converting.</p>
             <p>Minter has solved this problem by designing a unique system of electronic wallets that people, organizations, and payment partners can create and utilize on equal terms. How does this new kind of money transfer work?</p>

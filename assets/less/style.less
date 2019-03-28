@@ -120,6 +120,7 @@
 .footer__menu-item {
     font-size: 12px; font-weight: 600; text-transform: uppercase; display: inline-block;
 }
+.footer__copyright {font-size: 12px;}
 @media (min-width: @breakpoint-small-up) {
     .footer__container {align-items: center; justify-content: space-between;}
     .footer__logo {margin-top: -8px;}
@@ -150,7 +151,7 @@
 .index-intro__panel {max-width: 400px; margin: auto;}
 .index-intro__panel-title {font-size: 20px; font-weight: 700; text-transform: uppercase; text-align: center; margin-bottom: 20px;}
 .index-intro__form {}
-.index-intro__form-notice {align-self: center; font-size: 14px; }
+.index-intro__form-notice {align-self: center; font-size: 14px;}
 
 @media (min-width: @breakpoint-medium-up) {
     //.index-intro__container {display: flex; align-items: center; justify-content: space-between;}
@@ -165,5 +166,26 @@
 
 
 /* VISION */
-.vision__money-image {margin-left: -16%; margin-top: 32px; margin-bottom: 32px; max-width: calc(698px + 16%);}
-.vision__zero-image {margin-left: 20px; margin-top: -12px; float: right;}
+.vision__money {}
+.vision__money-item-title {margin-top: 16px;}
+.vision__zero-image {max-width: 50%; margin: 0 auto 16px;}
+@media (max-width: @breakpoint-medium-down) {
+    .vision__feature-digit {
+        display: inline; line-height: 20px;
+        &::after {content: '. ';}
+    }
+    .vision__feature-description {display: inline;}
+}
+@media (min-width: @breakpoint-small-up) {
+    .vision__zero-image {margin-left: 20px; margin-top: -12px; margin-bottom: 0; float: right;}
+}
+@media (min-width: @breakpoint-medium-up) {
+    .vision__money {display: flex; align-items: center; }
+    .vision__money-image {margin-left: -100px; margin-right: 12px; max-width: calc(50% + 100px); flex-shrink: 0;}
+    .vision__money-item-title {margin-top: 24px;}
+    .vision__steps-image {margin-top: (-28px - 16px); margin-right: 30px; margin-left: auto;}
+    .vision__steps-description {position: relative;}
+    .vision__steps-line--1 {position: absolute; left: 100%; bottom: 16px; width: 70px; height: 25px; margin-left: 10px;}
+    .vision__steps-line--2 {position: absolute; right: -10px; top: 89px; width: 28px; height: 38px;}
+    .vision__steps-line--3 {position: absolute; left: 84px; top: 100%; width: 3px; height: 80px; margin-top: 10px;}
+}
