@@ -1,6 +1,20 @@
 <script>
     export default {
+        head() {
+            const title = 'Get paid with Minter';
+            const description = 'By embracing a new approach of routing transfers via the trustless network, we&nbsp;let anyone in the world use the Internet on Money';
+            // const localeSuffix = this.$i18n.locale === 'en' ? '' : '-' + this.$i18n.locale;
 
+            return {
+                title: title,
+                meta: [
+                    { hid: 'og-title', name: 'og:title', content: title },
+                    { hid: 'description', name: 'description', content: description },
+                    { hid: 'og-description', name: 'og:description', content: description },
+                    // { hid: 'og-image', name: 'og:image', content: `/img/social-share-wallet${localeSuffix}.png` },
+                ],
+            };
+        },
     }
 </script>
 
