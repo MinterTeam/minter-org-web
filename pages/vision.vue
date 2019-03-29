@@ -92,7 +92,7 @@
                 <p>For all three steps to work in a fast and cost-efficient way globally (something we have already experienced using various Internet services), we need to change the approach entirely. To achieve that, we have to gather all three functions (Sending, Receiving, and Using) in one place and put away such steps as Depositing, Withdrawing, and Converting.</p>
                 <p>Minter has solved this problem by designing a unique system of electronic wallets that people, organizations, and payment partners can create and utilize on equal terms. How does this new kind of money transfer work?</p>
                 <h3 class="u-h3 u-mt-10 u-mb-05">Depositing</h3>
-                <p>The sender selects a payment partner to deposit the funds to their Minter account. The partner then assumes the “last mile” functions—runs the verification process, identifies the source of money, receives the payment, converts the received national currency into USD, and deposits a USD stablecoin to the user’s Minter account;</p>
+                <p>The sender selects a payment partner to deposit the funds to their Minter account. The partner then assumes the “last mile” functions—runs the verification process, identifies the source of money, receives the payment, calculates the corresponding amount in USD, and deposits a USD stablecoin to the user’s Minter account;</p>
                 <h3 class="u-h3 u-mt-10 u-mb-05">Paying</h3>
                 <p>The sender enters the phone number/username of the recipient, the amount to transact, and presses the “Send” button. In five seconds, the funds are debited from the sender’s account and credited to the account of the receiver;</p>
                 <h3 class="u-h3 u-mt-10 u-mb-05">Using</h3>
