@@ -32,16 +32,19 @@
 
 
 *, *::before, *::after {box-sizing: border-box;}
-html { overflow-y: scroll; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-overflow-scrolling: touch;}
-body {
-    margin: 0;
-    //position: relative; //в данной реализации модала не актуально // чтобы не разъезжался абсолютный контент при открытии модального
+html {
+    overflow-y: scroll; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-overflow-scrolling: touch;
     font-family: @body-font-family;
     font-size: 16px;
-    line-height: 1.25;
+    line-height: 1.375;
     color: @c-black;
     font-weight: 400;
     background: @body-bg-color;
+}
+body {
+    margin: 0;
+    //position: relative; //в данной реализации модала не актуально // чтобы не разъезжался абсолютный контент при открытии модального
+
 }
 
 a, .link {color: inherit; outline: none; text-decoration: none; text-decoration-skip-ink: auto; transition: 0.1s;}
@@ -66,7 +69,7 @@ a, .link {&:hover, &:focus {/*text-decoration: underline; */outline: none;}}
 button {cursor: pointer; outline: none;}
 p, ul, ol {margin: 0;}
 p, ul, ol, h5 {
-    &+& {margin-top: 10px;}
+    &+& {margin-top: 0.75rem;}
 }
 sub, sup { font-size: 75%;}
 .no-list {
@@ -96,8 +99,10 @@ h1, h2, h3, h4, h5, h6, .u-h {margin: 0; font-family: @heading-font-family; font
 .u-h3 {font-size: 13px; line-height: 16px; text-transform: uppercase; font-weight: 600; letter-spacing: 4px;}
 .u-h5 {font: inherit; font-weight: 600;}
 @media (min-width: @breakpoint-small-up) {
+    html {font-size: 18px; line-height: 1.333;}
     .u-h1 {font-size: 42px; line-height: 1.2;}
     //.u-h2 {font-size: 26px;}
+    .u-h3 {font-size: 14px; line-height: 18px;}
 }
 
 

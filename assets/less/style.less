@@ -113,22 +113,23 @@
 
 
 // footer
-.footer {background: #222; color: #fff; padding: 24px 0 26px; width: 100%; position: relative; z-index: 9;}
+.footer {background: #222; color: #fff; padding: 28px 0 30px; width: 100%; position: relative; z-index: 9;}
 .footer__container {display: flex; justify-content: center; flex-wrap: wrap;}
 .footer__logo-link {}
-.footer__logo {width: 76px; display: block;}
+.footer__logo {/*width: 76px;*/ display: block;}
 .footer__menu {width: 100%; text-align: center; display: flex; justify-content: space-between;}
 .footer__menu-item {
-    font-size: 12px; font-weight: 600; text-transform: uppercase; display: inline-block;
+    display: inline-block;
 }
 .footer__copyright {font-size: 12px;}
 @media (min-width: @breakpoint-small-up) {
     .footer__container {align-items: center; justify-content: space-between;}
-    .footer__logo {margin-top: -8px;}
+    .footer__logo {margin-top: -12px;}
     .footer__menu {width: auto;}
     .footer__menu-item {
-        &+& {margin-left: 48px;}
+        &+& {margin-left: 32px;}
     }
+    .footer__copyright {font-size: 14px;}
 }
 
 
@@ -178,15 +179,15 @@
     .vision__feature-description {display: inline;}
 }
 @media (min-width: @breakpoint-small-up) {
-    .vision__zero-image {margin-left: 20px; margin-top: -12px; margin-bottom: 0; float: right;}
+    .vision__zero-image {max-width: 40%; margin-left: 20px; margin-top: -12px; margin-bottom: 0; float: right;}
 }
 @media (min-width: @breakpoint-medium-up) {
     .vision__money {display: flex; align-items: center; }
     .vision__money-image {margin-left: -100px; margin-right: 12px; max-width: calc(50% + 100px); flex-shrink: 0;}
     .vision__money-item-title {margin-top: 24px;}
-    .vision__steps-image {margin-top: (-28px - 16px); margin-right: 30px; margin-left: auto;}
+    .vision__steps-image {margin-top: (-64px - 16px); margin-right: 30px; margin-left: auto;}
     .vision__steps-description {position: relative;}
-    .vision__steps-line--1 {position: absolute; left: 100%; bottom: 16px; width: 70px; height: 25px; margin-left: 10px;}
-    .vision__steps-line--2 {position: absolute; right: -10px; top: 89px; width: 28px; height: 38px;}
-    .vision__steps-line--3 {position: absolute; left: 84px; top: 100%; width: 3px; height: 80px; margin-top: 10px;}
+    .vision__steps-line--1 {position: absolute; left: 100%; bottom: 60px; width: 70px; height: 25px; margin-left: 10px;}
+    .vision__steps-line--2 {position: absolute; right: -10px; bottom: -38px; width: 28px; height: 38px;}
+    .vision__steps-line--3 {position: absolute; left: 84px; top: 100%; width: 3px; height: 110px; margin-top: 10px;}
 }
