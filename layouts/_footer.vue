@@ -26,7 +26,8 @@
             </div>
             <p class="footer__copyright u-mt-16">
                 Copyright © 2019 Minter Development Foundation. <br>
-                All Rights Reserved.548 Market St #32852, San&nbsp;Francisco, California 94104-5401 <br>
+                All Rights Reserved. <br>
+                548 Market St #32852, San&nbsp;Francisco, California 94104-5401 <br>
                 <a class="link--default" href="mailto:hello@minter.org">hello@minter.org</a>
             </p>
         </div>
