@@ -21,8 +21,8 @@
 <template>
     <div>
         <div class="u-section">
-            <div class="u-container">
-                <h1 class="u-h1 u-mb-15">Minter changes the way people get paid and use money globally</h1>
+            <div class="u-container u-container--large">
+                <h1 class="u-h1 u-mb-15">Minter changes the way people get&nbsp;paid and use money globally</h1>
                 <p>By embracing a new approach of routing transfers via the trustless network, we&nbsp;let anyone in the world use the Internet of Money.</p>
                 <div class="vision__money">
                     <div class="vision__money-image u-mt-20 u-mb-20 u-hidden-medium-down u-aspect-ratio" style="--aspect-ratio:420/359; width:420px">
@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <p class="u-mb-10">With the growth in reach, the less efficient means of payment lose usage while retaining their position in specific countries and cities, as is seen with checks in the U.S. The main reason behind the application of more complex technologies on a world scale is the problem of reputation. Or, to put it in plain English: in a small community or town, individuals and businesses have a reputation, and it is easier for one to influence them and demand from them. In the world with hundreds of counterparties around us&#xfeff;—counterparties that we will never know anything about even if we try hard to—a system of intermediaries occurs that transfers money from one trusted party to another. This scenario holds for the whole chain, which—in the case of making a regular payment via a bank card on a website&#xfeff;—can include up to 20–30 companies.</p>
+                <p class="u-mb-10">With the growth in reach, the less efficient means of payment lose usage while retaining their position in specific countries and cities, as is seen with checks in the U.S. The main reason behind the application of more complex technologies on a world scale is the problem of reputation. Or, to put it in plain English: in a small community or town, individuals and businesses have a reputation, and it is easier for one to influence them and demand from them. In the world with hundreds of counterparties around us&#xfeff;—counterparties that we will never know anything about even if we try hard to—a system of intermediaries occurs that transfers money from one trusted party to another. This scenario holds for the whole chain, which—in the case of making a regular payment via a bank card on a&nbsp;website&#xfeff;—can include up to 20–30 companies.</p>
                 <p class="u-mb-10">Let us define the key features of the modern economics:</p>
                 <div class="u-mb-10 u-grid u-grid--medium u-grid--vertical-margin--small">
                     <div class="u-cell u-cell--medium--1-3">
@@ -94,11 +94,11 @@
 -->
                 <p>For the modern money transfers to work in a fast and cost-efficient way globally (something we have already experienced using various Internet services), we need to change the approach entirely. Minter has solved this problem by designing a unique system of electronic wallets that people, organizations, and payment partners can create and utilize on equal terms. How does this new kind of money transfer work?</p>
                 <h3 class="u-h3 u-mt-10 u-mb-05">Depositing</h3>
-                <p>The sender selects a payment partner to deposit the funds to their Minter account. The partner then provides the “last mile” functions&#xfeff;—runs the verification process, identifies the source of money, receives the payment, calculates the corresponding amount in USD, and deposits a USD stablecoin to the user’s Minter account;</p>
+                <p>The sender selects a payment partner to deposit the funds to their Minter account. The partner then provides the “last mile” functions&#xfeff;—runs the verification process, identifies the source of money, receives the payment, calculates the corresponding amount in USD, and deposits a USD stablecoin to the user’s Minter&nbsp;account;</p>
                 <h3 class="u-h3 u-mt-10 u-mb-05">Paying</h3>
                 <p>The sender enters the phone number/username of the recipient, the amount to transact, and presses the “Send” button. In five seconds, the funds are debited from the sender’s account and credited to the account of the receiver;</p>
                 <h3 class="u-h3 u-mt-10 u-mb-05">Using</h3>
-                <p>The receiver, whose money is now stored in a totally secure and stable environment, can take their time and choose a format of usage that would suit their needs: transfer money to other entities or withdraw it to cash (through the partners), cards, e-wallets, and even cryptos. The withdrawal procedure resembles that of depositing, only the other way round: the user sends the money to the partner, and the partner helps the user receive the funds in the desired way.</p>
+                <p>The receiver, whose money is now stored in a totally secure and stable environment, can take their time and choose a format of usage that would suit their needs: transfer money to other entities or withdraw it to cash (through the partners), cards, e-wallets, and even cryptos. The withdrawal procedure resembles that of depositing, only the other way round: the user sends the money to the partner, and the partner helps the user receive the funds in the desired&nbsp;way.</p>
                 <p class="u-mt-10">Payment Processing Partners must serve as the the Deposit and Withdrawal gateways, while letting people manage money in a fast and secure way.</p>
 
                 <h2 class="u-h1 u-mt-20 u-mb-15">What are Minter’s key differences from current systems?</h2>
@@ -121,16 +121,16 @@
                 <p class="u-mt-15">But just how important are global transfers in general?</p>
                 <p>Today, the global remittance market alone amounts to over $500 billion, of which transaction fees account for $50 billion. Below are the key growth factors:</p>
                 <ul class="list-simple u-mb-10">
-                    <li>Every day, the number of intellectual market workers, who want to be employed on a global level and at the same time act as freelancers, is increasing;</li>
+                    <li>Every day, the number of intellectual market workers, who want to be employed on a global level and at the same time act as freelancers, is&nbsp;increasing;</li>
                     <li>Small-sized Internet businesses that are ready to offer their services to the world face severe problems when trying to implement merchant payment processing services;</li>
                     <li>2.5 billion people worldwide do not have any bank cards and are unlikely to ever have one: for example, in Mexico, this figure stands at 90% of the adult population;</li>
                     <li>That is the reason why the share of e-wallets is growing at the highest pace in the global non-cash payments volume, as today, anyone can set up an electronic wallet easily and quickly. Moreover, almost all electronic wallets now allow users to issue a virtual debit Visa/MasterCard card and connect it to Apple/Android Pay in an instant.</li>
                 </ul>
-                <p>Today we are talking about transfers between users, but what does the future behold?</p>
+                <p>Today we are talking about transfers between users, but what does <br class="u-hidden-small"> the future behold?</p>
                 <ul class="list-simple u-mb-10">
                     <li>Direct deposits without creating a Minter wallet: the user chooses the most preferred way to receive money and makes an invoice; the sender then pays using the most convenient local option, and the receiver sees the money on their account after all conversions have taken place. The transfer is transmitted from partner to partner within the Minter network, batched in one transaction and at the cost of less than 1 U.S. cent;</li>
                     <li>Checkout for e-commerce: any website or service will have an opportunity to conduct trade at the international level while receiving payments from customers in a chosen local format and having funds deposited to the store’s bank or electronic account;</li>
-                    <li>E-wallet settlement: market-leading e-wallet systems will utilize our solution for settling their own needs. It will be a revolution akin to the private cloud in hosting!</li>
+                    <li>E-wallet settlement: market-leading e-wallet systems will utilize our solution for&nbsp;settling their own needs. It will be a revolution akin to the private cloud in&nbsp;hosting!</li>
                 </ul>
             </div>
         </div>
