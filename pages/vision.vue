@@ -53,11 +53,11 @@
                 </div>
 
                 <p class="u-mb-10">With the growth in reach, the less efficient means of payment lose usage while retaining their position in specific countries and cities, as is seen with checks in the U.S. The main reason behind the application of more complex technologies on a world scale is the problem of reputation. Or, to put it in plain English: in a small community or town, individuals and businesses have a reputation, and it is easier for one to influence them and demand from them. In the world with hundreds of counterparties around us&#xfeff;—counterparties that we will never know anything about even if we try hard to—a system of intermediaries occurs that transfers money from one trusted party to another. This scenario holds for the whole chain, which—in the case of making a regular payment via a bank card on a&nbsp;website&#xfeff;—can include up to 20–30 companies.</p>
-                <p class="u-mb-10">Let us define the key features of the modern economics:</p>
+                <p class="u-mb-10">Let us define the key features of the modern economy:</p>
                 <div class="u-mb-10 u-grid u-grid--medium u-grid--vertical-margin--small">
                     <div class="u-cell u-cell--medium--1-3">
                         <h4 class="u-h1 vision__feature-digit">1</h4>
-                        <p class="vision__feature-description">The economies have more and more private actors on a global level, for example, freelancers;</p>
+                        <p class="vision__feature-description">The nations have more and more private actors on a global level, for example, freelancers;</p>
                     </div>
                     <div class="u-cell u-cell--medium--1-3">
                         <h4 class="u-h1 vision__feature-digit">2</h4>
