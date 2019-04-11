@@ -107,7 +107,7 @@
                 <p>The sender enters the phone number/username of the recipient, the amount to transact, and presses the “Send” button. In five seconds, the funds are debited from the sender’s account and credited to the account of the receiver;</p>
                 <h3 class="u-h3 u-mt-10 u-mb-05">Using</h3>
                 <p>The receiver, whose money is now stored in a totally secure and stable environment, can take their time and choose a format of usage that would suit their needs: transfer money to other entities or withdraw it to cash (through the partners), cards, e-wallets, and even cryptos. The withdrawal procedure resembles that of depositing, only the other way round: the user sends the money to the partner, and the partner helps the user receive the funds in the desired&nbsp;way.</p>
-                <p class="u-mt-10">Payment Processing Partners must serve as the the Deposit and Withdrawal gateways, while letting people manage money in a fast and secure way.</p>
+                <p class="u-mt-10">Payment Processing Partners must serve as the Deposit and Withdrawal gateways while letting people manage money in a fast and secure way.</p>
 
                 <h2 class="u-h1 u-mt-20 u-mb-15">What are Minter’s key differences from current systems?</h2>
                 <ul class="list-simple">
