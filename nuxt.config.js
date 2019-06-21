@@ -1,5 +1,7 @@
+// register env before other imports @see https://www.npmjs.com/package/dotenv#how-do-i-use-dotenv-with-import-
+import 'dotenv/config';
+import dotenv from 'dotenv';
 // const nodeExternals = require('webpack-node-externals');
-const dotenv = require('dotenv');
 
 const envConfig = dotenv.config();
 
