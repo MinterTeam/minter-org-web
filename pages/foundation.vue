@@ -20,6 +20,14 @@
 
 <template>
     <div>
+        <header class="header header--white">
+            <div class="header__container u-container u-container--large">
+                <div class="header__logo">
+                    <img class="header__logo-image" src="/img/minter-logo-circle.svg" alt="Minter" width="36" height="36">
+                </div>
+
+            </div>
+        </header>
         <div class="u-section">
             <div class="u-container u-container--large">
                 <h1 class="u-h1 u-mb-15">Minter Development Foundation</h1>
