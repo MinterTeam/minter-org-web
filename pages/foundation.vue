@@ -1,5 +1,9 @@
 <script>
     export default {
+        fetch() {
+            window.location.href = 'https://donate.minter.org';
+            return new Promise(() => {});
+        },
         head() {
             const title = 'Minter Development Foundation';
             const description = 'We support the research and development of novel methods of value exchange for the public good';
