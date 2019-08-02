@@ -27,7 +27,8 @@
             <p class="footer__copyright u-mt-10">
                 Copyright © 2019 Minter Development Foundation. <br>
                 All Rights Reserved. <br>
-                548 Market St #32852, San&nbsp;Francisco, California 94104-5401 <br>
+                75 Broadway, Suite 202, San&nbsp;Francisco, CA, 94111 <br>
+                For correspondence: 548 Market St #32852, San&nbsp;Francisco, CA 94104-5401 <br>
                 <a class="link--default" href="mailto:hello@minter.org">hello@minter.org</a>
             </p>
         </div>
