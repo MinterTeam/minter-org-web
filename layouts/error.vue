@@ -8,7 +8,7 @@
 
 <template>
     <div class="main-content--error">
-        <div class="error__container u-container u-section">
+        <div class="error__container u-container u-container--small u-section">
             <div class="error__inner">
                 <h1 class="error__title u-h1">Error {{ error.statusCode }}</h1>
                 <p class="error__description" v-if="error.statusCode === 404">We couldn't find the page you're looking for.</p>

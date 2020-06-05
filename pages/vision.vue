@@ -21,7 +21,7 @@
 <template>
     <div>
         <div class="u-section">
-            <div class="u-container u-container--medium">
+            <div class="u-container u-container--small">
                 <h1 class="u-h1 u-mb-15">Minter changes the way people get&nbsp;paid and use money globally</h1>
                 <p>By embracing a new approach of routing transfers via the trustless network, we&nbsp;let anyone in the world use the Internet of Money.</p>
                 <div class="vision__money">
@@ -30,16 +30,16 @@
                     </div>
                     <div class="u-mt-15 u-mb-15">
                         <h5 class="u-h5">There are four critical levels of mass-market money forms in the world:</h5>
-                        <div class="u-h u-h--uppercase  vision__money-item-title">Local communities</div>
+                        <div class="u-h u-h--uppercase-solid  vision__money-item-title">Local communities</div>
                         <p>Goods and cash as payment methods</p>
 
-                        <div class="u-h u-h--uppercase  vision__money-item-title">Cities</div>
+                        <div class="u-h u-h--uppercase-solid  vision__money-item-title">Cities</div>
                         <p>Cash, checks, and banks</p>
 
-                        <div class="u-h u-h--uppercase  vision__money-item-title">Countries</div>
+                        <div class="u-h u-h--uppercase-solid  vision__money-item-title">Countries</div>
                         <p>Banks, cards, and e-wallets</p>
 
-                        <div class="u-h u-h--uppercase  vision__money-item-title">World</div>
+                        <div class="u-h u-h--uppercase-solid  vision__money-item-title">World</div>
                         <p>Cards and e-wallets</p>
                     </div>
                 </div>
@@ -66,21 +66,21 @@
                 <p class="u-mb-10">Any transfer is carried out in three fundamental steps:</p>
                 <div class="u-mb-10 u-grid u-grid--vertical-margin--small">
                     <div class="u-cell u-cell--medium--1-3">
-                        <h3 class="u-h--uppercase u-mb-05">1. Sending</h3>
+                        <h3 class="u-h--uppercase-solid u-mb-05">1. Sending</h3>
                         <p class="vision__steps-description">
                             The sender “uploads” the money denominated in their national currency in the most convenient or familiar way—for example, using a bank card—and initiates the transfer/pays the invoice;
                             <img class="vision__steps-line--1 u-hidden-medium-down" src="/img/vision-line-45-down.svg" alt="" role="presentation">
                         </p>
                     </div>
                     <div class="u-cell u-cell--medium--1-3">
-                        <h3 class="u-h--uppercase u-mb-05">2. Receiving</h3>
+                        <h3 class="u-h--uppercase-solid u-mb-05">2. Receiving</h3>
                         <p class="vision__steps-description">
                             The transfer is delivered to the receiver and transformed into the form of money accepted in their community;
                             <img class="vision__steps-line--2 u-hidden-medium-down" src="/img/vision-line-45-down.svg" alt="" role="presentation">
                         </p>
                     </div>
                     <div class="u-cell u-cell--medium--1-3">
-                        <h3 class="u-h--uppercase u-mb-05">3. Using</h3>
+                        <h3 class="u-h--uppercase-solid u-mb-05">3. Using</h3>
                         <p class="vision__steps-description">
                             The receiver spends the money as they want.
                             <img class="vision__steps-line--3 u-hidden-medium-down" src="/img/vision-line-down.svg" alt="" role="presentation">
@@ -93,11 +93,11 @@
                 <p>For all three steps to work in a fast and cost-efficient way globally (something we have already experienced using various Internet services), we need to change the approach entirely. To achieve that, we have to gather all three functions (Sending, Receiving, and Using) in one place and put away such steps as Depositing, Withdrawing, and Converting.</p>
 -->
                 <p>For the modern money transfers to work in a fast and cost-efficient way globally (something we have already experienced using various Internet services), we need to change the approach entirely. Minter has solved this problem by designing a unique system of electronic wallets that people, organizations, and payment partners can create and utilize on equal terms. How does this new kind of money transfer work?</p>
-                <h3 class="u-h--uppercase u-mt-10 u-mb-05">Depositing</h3>
+                <h3 class="u-h--uppercase-solid u-mt-10 u-mb-05">Depositing</h3>
                 <p>The sender selects a payment partner to deposit the funds to their Minter account. The partner then provides the “last mile” functions&#xfeff;—runs the verification process, identifies the source of money, receives the payment, calculates the corresponding amount in USD, and deposits a USD stablecoin to the user’s Minter&nbsp;account;</p>
-                <h3 class="u-h--uppercase u-mt-10 u-mb-05">Paying</h3>
+                <h3 class="u-h--uppercase-solid u-mt-10 u-mb-05">Paying</h3>
                 <p>The sender enters the phone number/username of the recipient, the amount to transact, and presses the “Send” button. In five seconds, the funds are debited from the sender’s account and credited to the account of the receiver;</p>
-                <h3 class="u-h--uppercase u-mt-10 u-mb-05">Using</h3>
+                <h3 class="u-h--uppercase-solid u-mt-10 u-mb-05">Using</h3>
                 <p>The receiver, whose money is now stored in a totally secure and stable environment, can take their time and choose a format of usage that would suit their needs: transfer money to other entities or withdraw it to cash (through the partners), cards, e-wallets, and even cryptos. The withdrawal procedure resembles that of depositing, only the other way round: the user sends the money to the partner, and the partner helps the user receive the funds in the desired&nbsp;way.</p>
                 <p class="u-mt-10">Payment Processing Partners must serve as the Deposit and Withdrawal gateways while letting people manage money in a fast and secure way.</p>
 
