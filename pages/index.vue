@@ -51,7 +51,7 @@
                         <template v-else>Sign in to be among the first users.</template>
                     </h2>
                     <div class="u-mb-10" v-if="$store.state.user">
-                        <a class="intro__button button button--main" href="https://id.minter.org/profile">View profile</a>
+                        <a class="intro__button button button--main" href="https://id.minter.org/share">View profile</a>
                     </div>
                     <div class="u-mb-10" v-else>
                         <client-only class="u-mb-10" placeholder="Loading…">

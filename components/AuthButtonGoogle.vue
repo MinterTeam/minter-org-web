@@ -80,10 +80,10 @@
                 return this.$store.dispatch('AUTH_REGISTER', params)
                     .then(() => {
                         if (!this.$store.getters.isMinterIdProfileActive) {
-                            this.$router.push('/share');
+                            window.location = 'https://id.minter.org/share'
                         } else {
                             //@TODO page with complete registration
-                            this.$router.push('/share');
+                            window.location = 'https://id.minter.org/share'
                         }
                     })
                     .catch((err) => {
