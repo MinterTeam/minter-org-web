@@ -55,22 +55,17 @@ export function authCheckInvitation(invitation) {
 
 
 /**
- * @param {string} code - uuid from login link
+ * @param {string} id_token - google id_token
  * @return {Promise<MinterIdUser>}
  */
-export function authRegister({invitation, id_token}) {
+export function authorize(id_token) {
     return instance.post(`auth/google`, {
-        invitation,
-        id_token,
-    }, {withCredentials: true})
-    .then((response) => {
-        return response.data.data;
-        // setAuthToken(response.data);
-        return getUser();
-    })
-    // .then((user) => {
-    //     return user;
-    // })
+            invitation: 'future',
+            id_token,
+        }, {withCredentials: true})
+        .then((response) => {
+            return response.data.data;
+        })
 }
 
 /**

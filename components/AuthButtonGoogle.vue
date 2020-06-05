@@ -77,7 +77,7 @@
                     params.type = this.invitation.type;
                     params.invitation = this.invitation.code;
                 }
-                return this.$store.dispatch('AUTH_REGISTER', params)
+                return this.$store.dispatch('AUTHORIZE', response.id_token)
                     .then(() => {
                         if (!this.$store.getters.isMinterIdProfileActive) {
                             window.location = 'https://id.minter.org/share'
