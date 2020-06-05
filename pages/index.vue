@@ -62,7 +62,10 @@
                             <template v-else>{{ serverError }}</template>
                         </div>
                     </div>
-                    <p>No apps to download. No blockchain jargon to learn. No special skills to apply.</p>
+                    <p>No apps to download. No blockchain jargon to learn. <br> No special skills to apply.</p>
+                    <p>
+                        <nuxt-link class="link--default" to="/vision">Our vision</nuxt-link>
+                    </p>
                 </div>
             </div>
         </div>
