@@ -24,13 +24,18 @@
                     </div>
                 </div>
             </div>
-            <p class="footer__copyright u-mt-10">
-                Copyright © 2019 Minter Development Foundation. <br>
-                All Rights Reserved. <br>
-                75 Broadway, Suite 202, San&nbsp;Francisco, CA, 94111 <br>
-                For correspondence: 548 Market St #32852, San&nbsp;Francisco, CA 94104-5401 <br>
-                <a class="link--default" href="mailto:hello@minter.org">hello@minter.org</a>
-            </p>
+            <div class="footer__copyright-container u-mt-10">
+                <p class="footer__copyright">
+                    Copyright © 2019 Minter Development Foundation. <br>
+                    All Rights Reserved. <br>
+                </p>
+                <p class="footer__copyright">
+                    75 Broadway, Suite 202, San&nbsp;Francisco, CA, 94111 <br>
+                    For correspondence: 548 Market St #32852, San&nbsp;Francisco, CA 94104-5401 <br>
+                    <a class="link--default" href="mailto:hello@minter.org">hello@minter.org</a>
+                </p>
+            </div>
+
         </div>
     </footer>
 </template>

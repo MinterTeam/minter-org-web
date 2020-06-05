@@ -1,40 +1,22 @@
 import Vue from 'vue';
-import {setAuthToken, resetAuthToken} from "~/api/minterorg";
+import {resetAuthToken} from '~/api/id.js';
 
 export default {
-    LOGIN: (state, {user, token}) => {
-        LOGOUT(state);
-        state.authToken = token;
-        setAuthToken(token);
-        SET_PROFILE_USER(state, user);
+    SET_USER: (state, user) => {
+        state.user = {
+            ...user,
+            //@TODO use proper cachebust
+            picture: user.picture + '?v=' + Math.random(),
+        };
+        state.userTimeStamp = Date.now();
     },
-    // SET_AUTH_ADVANCED: (state, address) => {
-    //     LOGOUT(state);
-    //     state.auth.advanced = address;
-    // },
     LOGOUT,
-    SET_PROFILE_USER,
-    SET_PROFILE_ADDRESS: (state, address) => {
-        Vue.set(state.user, 'mainAddress', address);
+    SET_INVITATION_CACHE: (state, {invitation, name, type}) => {
+        Vue.set(state.invitationCache, invitation, {name, type, code: invitation})
     },
-    // UPDATE_PROFILE_PASSWORD: (state, password) => {
-    //     state.auth.password = password;
-    // },
-    // SET_PROFILE_ADDRESS_LIST: (state, addressList) => {
-    //     state.profileAddressList = addressList;
-    // },
-    // SET_TRANSACTION_LIST: (state, txListInfo) => {
-    //     state.transactionListInfo = txListInfo;
-    // },
-    SET_BALANCE: (state, balance) => {
-        state.balance = balance;
+    REMOVE_INVITATION_CACHE: (state, invitation) => {
+        delete state.invitationCache[invitation];
     },
-    // PUSH_HISTORY: (state, historyItem) => {
-    //     state.history.push(historyItem);
-    // },
-    // POP_HISTORY: (state) => {
-    //     state.history.pop();
-    // },
     /**
      * Show snackbar if it is inactive
      */
@@ -47,18 +29,11 @@ export default {
     SET_SNACKBAR_INACTIVE: (state) => {
         state.isSnackbarActive = false;
     },
-    SET_PREFERRED_LOCALE: (state, locale) => {
-        state.preferredLocale = locale;
-    },
 };
 
 function LOGOUT(state) {
-    state.user = {};
-    state.authToken = {};
+    state.user = null;
+    // state.auth.password = null;
+    // state.auth.advanced = null;
     resetAuthToken();
-}
-
-function SET_PROFILE_USER(state, profile) {
-    state.user = profile;
-    state.userTimeStamp = Date.now();
 }

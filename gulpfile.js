@@ -16,11 +16,8 @@ const path = require('path');
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const mozjpeg = require('imagemin-mozjpeg');
+const jpegtran = require('imagemin-jpegtran');
 const pngquant = require('imagemin-pngquant');
-// country data
-const fs = require('fs');
-/** @type {Array<{callingCode: Array}>} */
-const countryData = require('world-countries');
 
 
 let paths = {
@@ -41,29 +38,6 @@ let paths = {
     },
 };
 
-
-gulp.task('countries', function (cb) {
-    let countryCallingCodeList = [];
-
-    countryData.forEach((item) => {
-        // take only unique codes
-        const newCodes = item.callingCode.filter((code) => !countryCallingCodeList.includes(code));
-        countryCallingCodeList = countryCallingCodeList.concat(newCodes);
-    });
-
-
-    countryCallingCodeList.sort((a, b) => {
-        if (b.length !== a.length) {
-            return b.length - a.length;
-        } else {
-            return b - a;
-        }
-    });
-    if (!fs.existsSync('tmp')){
-        fs.mkdirSync('tmp');
-    }
-    fs.writeFile('tmp/country-codes.json', JSON.stringify(countryCallingCodeList), cb);
-});
 
 
 // LESS
@@ -100,7 +74,7 @@ gulp.task('imagemin', function() {
             imagemin([
                 imagemin.gifsicle({interlaced: true}),
                 mozjpeg({quality: 90}),
-                imagemin.jpegtran({progressive: true}),
+                jpegtran({progressive: true}),
                 pngquant(),
                 // imagemin.optipng({optimizationLevel: 5}),
                 imagemin.svgo({plugins: [{removeViewBox: false}]}),
@@ -127,7 +101,7 @@ gulp.task('imagemin:clean', gulp.parallel('imagemin:clean-dest', 'imagemin:clean
 
 
 // Полная сборка без вотча
-gulp.task('once', gulp.parallel('less', 'imagemin', 'countries'));
+gulp.task('once', gulp.parallel('less', 'imagemin'));
 // Полная сборка с вотчем
 gulp.task('default', gulp.series(
     'once',

@@ -1,63 +1,68 @@
 <script>
-    import RegisterForm from '~/components/RegisterForm';
+    import {hasAuthToken} from '~/api/id.js';
+    import AuthButtonGoogle from '~/components/AuthButtonGoogle.vue';
 
     export default {
-        layout: 'guest',
+        // fetchOnServer: false,
+        // fetch() {
+        //     // additional check to workaround generate mode not supporting client middlewares
+        //     // check authToken, because profile middleware doesn'nt work on generate
+        //     if (hasAuthToken()) {
+        //         return this.$router.replace('/share');
+        //     }
+        // },
         components: {
-            RegisterForm,
+            AuthButtonGoogle,
         },
-        head() {
-            // const title = getTitle(this.$store.state.sectionName, this.$i18n.locale);
-            const description = this.tt('Get paid in crypto for your digital goods and services', 'index.seo-description');
-            // const localeSuffix = this.$i18n.locale === 'en' ? '' : '-' + this.$i18n.locale;
-
-            return {
-                // title: title,
-                meta: [
-                    // { hid: 'og-title', name: 'og:title', content: title },
-                    { hid: 'description', name: 'description', content: description },
-                    { hid: 'og-description', name: 'og:description', content: description },
-                    // { hid: 'og-image', name: 'og:image', content: `/img/social-share-wallet${localeSuffix}.png` },
-                ],
-                script: [
-                    { src: 'https://sdk.accountkit.com/en_US/sdk.js' }
-                ]
-            };
-        },
+        // head() {
+        //     const title = 'Minter Development Foundation';
+        //     const description = 'We support the research and development of novel methods of value exchange for the public good.';
+        //     // const localeSuffix = this.$i18n.locale === 'en' ? '' : '-' + this.$i18n.locale;
+        //
+        //     return {
+        //         title: title,
+        //         meta: [
+        //             { hid: 'og-title', name: 'og:title', content: title },
+        //             { hid: 'description', name: 'description', content: description },
+        //             { hid: 'og-description', name: 'og:description', content: description },
+        //             // { hid: 'og-image', name: 'og:image', content: `/img/social-share-wallet${localeSuffix}.png` },
+        //         ],
+        //     };
+        // },
         data() {
             return {
-
+                serverError: '',
+                // isAuthLoading: false,
             };
         },
-
-
-    };
+    }
 </script>
 
 <template>
-    <main class="index-intro u-section main-content--index">
-        <div class="index-intro__container u-container">
-            <div class="index-intro__image u-aspect-ratio" style="--aspect-ratio:328/325; width:328px">
-                <img src="/img/index-intro.png" srcset="/img/index-intro@2x.png 2x" alt="" width="328" height="325" role="presentation">
-            </div>
+    <div class="u-section main-content--center">
+        <div class="u-container">
+            <div class="intro">
+                <img class="intro__image" src="/img/index-intro.png" srcset="/img/index-intro@2x.png 2x" alt="" role="presentation">
+                <div class="intro__content">
+                    <h1 class="u-h1 u-h1--small u-mb-20">Minter is building the&nbsp;simplest solution to receive, send and store any type of digital money. Or&nbsp;even create your own.</h1>
 
-            <div class="u-grid u-grid--vertical-margin--large">
-                <div class="u-cell u-cell--medium--1-2 index-intro__cell-content">
-                    <h1 class="index-intro__title u-h1">{{ tt('Your payment will reach any destination in&nbsp;5&nbsp;seconds', 'index.intro-title') }}</h1>
-                    <p class="index-intro__link u-hidden-medium-down">
-                        <a class="link--default" href="#">{{ tt('Want to learn more?', 'index.intro-link') }}</a>
-                    </p>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="index-intro__panel panel panel__section">
-                        <div class="index-intro__panel-title">Create your wallet</div>
-                        <RegisterForm class=" u-relative"/>
+                    <h2 class="u-h3 u-mb-10">
+                        <template v-if="$store.state.user">Thank you for registering.</template>
+                        <template v-else>Sign in to be among the first users.</template>
+                    </h2>
+                    <div class="u-mb-10" v-if="$store.state.user">
+                        <a class="intro__button button button--main" href="https://id.minter.org/profile">View profile</a>
                     </div>
-                    <p class="index-intro__link u-hidden-medium-up">
-                        <a class="link--default" href="#">{{ tt('Want to learn more?', 'index.intro-link') }}</a>
-                    </p>
+                    <client-only class="u-mb-10" placeholder="Loading…" v-else>
+                        <AuthButtonGoogle class="intro__button" @error="serverError = $event"/>
+                        <div class="form__error u-mt-10" v-if="serverError">
+                            <template v-if="serverError === 'forbidden'">Error: you are not registered. Register on <a class="link--underline" href="https://id.minter.org" target="_blank">MinterID</a> first</template>
+                            <template v-else>{{ serverError }}</template>
+                        </div>
+                    </client-only>
+                    <p>No apps to download. No blockchain jargon to learn. No special skills to apply.</p>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 </template>

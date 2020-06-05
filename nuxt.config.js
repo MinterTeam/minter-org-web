@@ -5,7 +5,6 @@ import dotenv from 'dotenv';
 
 const envConfig = dotenv.config();
 
-import langRu from './lang/ru';
 import {BASE_TITLE, BASE_DESCRIPTION} from "./assets/variables";
 
 module.exports = {
@@ -40,45 +39,16 @@ module.exports = {
         middleware: [
             // 'profile',
             // 'auth',
-            'language',
         ],
     },
     plugins: [
         { src: '~/plugins/click-blur.js', ssr: false },
         // { src: '~/plugins/persistedState.js', ssr: false },
-        { src: '~/plugins/track.js', ssr: false },
         { src: '~/plugins/seo-gtm.js', ssr: false },
-        '~/plugins/translate.js',
-        '~/plugins/get-locale-path.js',
+        { src: '~/plugins/init-client-middleware.js', ssr: false },
     ],
     env: envConfig.error ? {} : envConfig.parsed,
     modules: [
-        ['nuxt-i18n', {
-            locales: [
-                {
-                    code: 'en',
-                    iso: 'en',
-                    name: 'English',
-                },
-                {
-                    code: 'ru',
-                    iso: 'ru',
-                    name: 'Russian',
-                },
-            ],
-            defaultLocale: 'en',
-            strategy: 'prefix_except_default',
-            rootRedirect: null,
-            vueI18n: {
-                fallbackLocale: 'en',
-                messages: {
-                    ru: langRu,
-                    en: {},
-                },
-            },
-            // seo: false,
-            detectBrowserLanguage: false,
-        }],
     ],
     /*
     ** Build configuration
@@ -120,6 +90,17 @@ module.exports = {
             //     ];
             // }
         },
-        transpile: [/es6-promise|\.(?!(?:js|json)$).{1,5}$/i, /^lodash-es/, /^@material/],
+        transpile: [
+            'lodash-es/',
+            '@material/',
+            'imask/esm/',
+            'vue-imask/esm/',
+            'camelcase-keys/',
+            'camelcase/', // camelcase-keys
+            'map-obj/', // camelcase-keys
+            'quick-lru/', // camelcase-keys
+            'pretty-num/src/',
+            'v-file-input/src/',
+        ],
     },
 };
