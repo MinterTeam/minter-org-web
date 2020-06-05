@@ -53,13 +53,15 @@
                     <div class="u-mb-10" v-if="$store.state.user">
                         <a class="intro__button button button--main" href="https://id.minter.org/profile">View profile</a>
                     </div>
-                    <client-only class="u-mb-10" placeholder="Loading…" v-else>
-                        <AuthButtonGoogle class="intro__button" @error="serverError = $event"/>
+                    <div class="u-mb-10" v-else>
+                        <client-only class="u-mb-10" placeholder="Loading…">
+                            <AuthButtonGoogle class="intro__button" @error="serverError = $event"/>
+                        </client-only>
                         <div class="form__error u-mt-10" v-if="serverError">
                             <template v-if="serverError === 'forbidden'">Error: you are not registered. Register on <a class="link--underline" href="https://id.minter.org" target="_blank">MinterID</a> first</template>
                             <template v-else>{{ serverError }}</template>
                         </div>
-                    </client-only>
+                    </div>
                     <p>No apps to download. No blockchain jargon to learn. No special skills to apply.</p>
                 </div>
             </div>
