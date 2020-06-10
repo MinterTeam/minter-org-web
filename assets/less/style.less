@@ -20,7 +20,7 @@
 
 
 // common
-.main-wrap {display: flex; flex-direction: column; min-height: 100vh; position: relative;}
+.main-wrap {display: flex; flex-direction: column; min-height: 100vh; position: relative; overflow: hidden;}
 .main-content {width: 100%; flex-grow: 2;}
 
 
@@ -118,9 +118,13 @@
 }
 .card__avatar--pop {margin-top: -64px;}
 .card__address {
+    display: flex; justify-content: center; align-items: center;
     &+& {margin-top: 16px;}
 }
+.card__address-icon {font-size: 32px; line-height: 42px; margin-right: 16px;}
+.card__address-content {text-align: left; min-width: 0; overflow-wrap: break-word;}
 .card__address-name {color: @c-main; font-weight: 600;}
+.card__address-value {}
 .card__social-list {margin-top: (24px - @social-icon-margin);}
 .card__social-list--center {justify-content: center;}
 

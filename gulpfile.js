@@ -18,6 +18,10 @@ const imagemin = require('gulp-imagemin');
 const mozjpeg = require('imagemin-mozjpeg');
 const jpegtran = require('imagemin-jpegtran');
 const pngquant = require('imagemin-pngquant');
+// country data
+const fs = require('fs');
+const countryData = require('world-countries');
+const iso6391 = require('iso-639-3/to-1.json');
 
 
 let paths = {
@@ -37,6 +41,58 @@ let paths = {
         cacheDirName: 'gulp-cache',
     },
 };
+
+
+
+gulp.task('countries', function (cb) {
+    let countryList = countryData.map((item) => {
+        const lang = Object.keys(item.languages)[0];
+        return {
+            code: item.cca2, // ISO 3166-1 alpha-2
+            name: item.name.common || item.name.official,
+            lang: iso6391[lang] || '', // ISO 639-3 to ISO 639-1
+        };
+    })
+
+
+    countryList.sort((a, b) => {
+        return a.name.localeCompare(b.name);
+    });
+    if (!fs.existsSync('tmp')){
+        fs.mkdirSync('tmp');
+    }
+    fs.writeFile('tmp/country-list.json', JSON.stringify(countryList), cb);
+});
+
+gulp.task('country-languages', function (cb) {
+    let countryLanguageList = {};
+
+    countryData.forEach((item) => {
+        Object.keys(item.languages).forEach((langCode) => {
+            // take only unique languages
+            if (!countryLanguageList[langCode]) {
+                countryLanguageList[langCode] = item.languages[langCode];
+            }
+        })
+    });
+
+    // Object to Array
+    countryLanguageList = Object.keys(countryLanguageList).map((langCode) => {
+        return {
+            code: iso6391[langCode], // ISO 639-3 to ISO 639-1
+            name: countryLanguageList[langCode],
+        };
+    });
+
+
+    countryLanguageList.sort((a, b) => {
+        return a.name.localeCompare(b.name);
+    });
+    if (!fs.existsSync('tmp')){
+        fs.mkdirSync('tmp');
+    }
+    fs.writeFile('tmp/country-language-list.json', JSON.stringify(countryLanguageList), cb);
+});
 
 
 
@@ -101,7 +157,7 @@ gulp.task('imagemin:clean', gulp.parallel('imagemin:clean-dest', 'imagemin:clean
 
 
 // Полная сборка без вотча
-gulp.task('once', gulp.parallel('less', 'imagemin'));
+gulp.task('once', gulp.parallel('less', 'imagemin', 'countries', 'country-languages'));
 // Полная сборка с вотчем
 gulp.task('default', gulp.series(
     'once',

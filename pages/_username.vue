@@ -3,6 +3,11 @@
     import checkEmpty from '~/assets/v-check-empty.js';
     import getTitle from '~/assets/get-title.js';
     import {getErrorData} from '~/assets/server-error.js';
+    import {getBalance} from '~/api/explorer.js';
+    /** @type {Array<{code: string, name: string}>} */
+    const countryList = require('~/tmp/country-list.json');
+    /** @type {Array<{code: string, name: string}>} */
+    const languageList = require('~/tmp/country-language-list.json');
 
 
     export default {
@@ -12,7 +17,10 @@
             checkEmpty,
         },
         head() {
-            const title = getTitle('Profile');
+            if (!this.user) {
+                return {}
+            }
+            const title = getTitle(this.user.name);
             return {
                 title: title,
                 meta: [
@@ -29,6 +37,7 @@
                         //@TODO use proper cachebust
                         picture: user.picture + '?v=' + Math.random(),
                     };
+                    this.getBalanceList();
                 })
                 .catch((error) => {
                     let errorData = getErrorData(error);
@@ -41,30 +50,82 @@
         data() {
             return {
                 user: null,
+                balanceList: {},
             }
         },
         computed: {
-            userPhone() {
+            prettyPhone() {
                 if (!this.user?.contacts?.phone) {
                     return '';
                 }
 
                 return this.user.contacts.phone.replace(/(\d+)(\d\d\d)(\d\d\d)(\d\d\d\d)$/, '+$1 $2-$3-$4')
-            }
+            },
+            prettyWebsite() {
+                if (!this.user?.website) {
+                    return '';
+                }
+
+                return this.user.website.replace(/^https?:\/\//, '').replace(/^ftp:\/\//, '');
+            },
+            minterContacts() {
+                if (!this.user?.contacts?.minter) {
+                    return [];
+                }
+
+                return this.user.contacts.minter.filter((item) => item.value)
+            },
+            country() {
+                const countryItem = countryList.find((item) => item.code === this.user.country);
+                return countryItem?.name;
+            },
+            language() {
+                const languageItem = languageList.find((item) => item.code === this.user.language);
+                return languageItem?.name;
+            },
         },
         methods: {
-
+            getBalanceList() {
+                this.user.contacts.minter.forEach((item) => {
+                    if (!item.value) {
+                        return;
+                    }
+                    getBalance(item.value)
+                        .then((balanceData) => {
+                            this.balanceList[item.value] = balanceData.totalBalanceSum;
+                        });
+                });
+            },
+            getBalanceEmoji(address) {
+                const balance = this.balanceList[address];
+                const million = 1000000;
+                if (balance >= 100 * million) {
+                    return '🐬';
+                } else if (balance >= 10 * million) {
+                    return '🐋';
+                } else if (balance >= million) {
+                    return '🦈';
+                } else if (balance >= 0.1 * million) {
+                    return '🐠';
+                } else if (balance >= 10000) {
+                    return '🦀';
+                } else if (balance >= 1000) {
+                    return '🐚';
+                } else {
+                    return '🦐';
+                }
+            }
         },
     }
 </script>
 
 <template>
     <div class="u-container u-container--small">
-        <div class="u-section card--section-with-image" v-if="user">
-            <div class="card u-text-center">
-                <div class="card__content card__content--pop">
-                    <div class="card__avatar card__avatar--pop" :style="{backgroundImage: `url('${user.picture}&alias=x2')`}"></div>
-                    <h1 class="u-h2 u-mt-05">
+        <div class="u-section card--section u-text-center" v-if="user">
+            <div class="card u-mb-20">
+                <div class="card__content">
+                    <div class="card__avatar" :style="{backgroundImage: `url('${user.picture}&alias=x2')`}"></div>
+                    <h1 class="u-h2 u-mt-10">
                         {{ user.name }}
                     </h1>
                     <p class="u-fw-600" v-if="user.about">{{ user.about }}</p>
@@ -73,45 +134,56 @@
                     <div class="u-fw-700 u-text-muted u-mb-15">of {{ user.ratingTotal }} people</div>
 
                     <div>
-                        <div class="u-mb-05" v-if="user.website && user.website !== 'https://'">
-                            <a :href="user.website" class="link--default-green" target="_blank" rel="noopener">{{ user.website }}</a>
+                        <div class="u-mb-05 u-text-break" v-if="prettyWebsite">
+                            <a :href="user.website" class="link--default-green" target="_blank" rel="noopener">{{ prettyWebsite }}</a>
                         </div>
-                        <div class="u-mb-05" v-if="user.contacts.publicEmail">
+                        <div class="u-mb-05 u-text-break" v-if="user.contacts.publicEmail">
                             <a :href="'mailto:' + user.contacts.publicEmail" class="link--default-green" target="_blank" rel="noopener">{{ user.contacts.publicEmail }}</a>
                         </div>
                         <div class="u-mb-05" v-if="user.contacts.phone">
-                            <a :href="'tel:+' + user.contacts.phone" class="u-fw-600" target="_blank" rel="noopener">{{ userPhone }}</a>
+                            <a :href="'tel:+' + user.contacts.phone" class="u-fw-600" target="_blank" rel="noopener">{{ prettyPhone }}</a>
                         </div>
                     </div>
 
                     <div class="social-list card__social-list card__social-list--center">
-                        <a v-if="user.contacts.socialTelegram" :href="'tg://resolve?domain=' + user.contacts.socialTelegram" class="social-icon"><img src="/img/icon-social-tg.svg" alt="Telegram"></a>
-                        <a v-if="user.contacts.socialTwitter" :href="'https://twitter.com/' + user.contacts.socialTwitter" class="social-icon"><img src="/img/icon-social-tw.svg" alt="Twitter"></a>
-                        <a v-if="user.contacts.socialFacebook" :href="user.contacts.socialFacebook" class="social-icon"><img src="/img/icon-social-fb.svg" alt="Facebook"></a>
-                        <a v-if="user.contacts.socialInstagram" :href="'https://instagram.com/' + user.contacts.socialInstagram" class="social-icon"><img src="/img/icon-social-ig.svg" alt="Instagram"></a>
-                        <a v-if="user.contacts.socialYoutube" :href="user.contacts.socialYoutube" class="social-icon"><img src="/img/icon-social-yt.svg" alt="YouTube"></a>
-                        <a v-if="user.contacts.socialMedium" :href="user.contacts.socialMedium" class="social-icon"><img src="/img/icon-social-mm.svg" alt="Medium"></a>
-
-
+                        <a v-if="user.contacts.socialTelegram" :href="'tg://resolve?domain=' + user.contacts.socialTelegram" class="social-icon" target="_blank" rel="noopener">
+                            <img src="/img/icon-social-tg.svg" alt="Telegram">
+                        </a>
+                        <a v-if="user.contacts.socialTwitter" :href="'https://twitter.com/' + user.contacts.socialTwitter" class="social-icon" target="_blank" rel="noopener">
+                            <img src="/img/icon-social-tw.svg" alt="Twitter">
+                        </a>
+                        <a v-if="user.contacts.socialFacebook" :href="user.contacts.socialFacebook" class="social-icon" target="_blank" rel="noopener">
+                            <img src="/img/icon-social-fb.svg" alt="Facebook">
+                        </a>
+                        <a v-if="user.contacts.socialInstagram" :href="'https://instagram.com/' + user.contacts.socialInstagram" class="social-icon" target="_blank" rel="noopener">
+                            <img src="/img/icon-social-ig.svg" alt="Instagram">
+                        </a>
+                        <a v-if="user.contacts.socialYoutube" :href="user.contacts.socialYoutube" class="social-icon" target="_blank" rel="noopener">
+                            <img src="/img/icon-social-yt.svg" alt="YouTube">
+                        </a>
+                        <a v-if="user.contacts.socialMedium" :href="user.contacts.socialMedium" class="social-icon" target="_blank" rel="noopener">
+                            <img src="/img/icon-social-mm.svg" alt="Medium">
+                        </a>
                     </div>
                 </div>
-                <div class="card__content">
+                <div class="card__content" v-if="minterContacts.length">
                     <div class="u-h--uppercase u-mb-10">Minter wallets</div>
 
-                    <div class="card__address" v-for="minterItem in user.contacts.minter">
-                        <div class="card__address-icon"></div>
+                    <div class="card__address" v-for="minterItem in minterContacts">
+                        <div class="card__address-icon">{{ getBalanceEmoji(minterItem.value) }}</div>
                         <div class="card__address-content">
                             <div class="card__address-name ">{{ minterItem.name }}</div>
-                            <div class="card__address-value">{{ minterItem.value }}</div>
+                            <a class="card__address-value link--hover" :href="'https://explorer.minter.network/address/' + minterItem.value">{{ minterItem.value }}</a>
                         </div>
                     </div>
                 </div>
                 <div class="card__content">
-                    <a class="button button--ghost-green" :href="'https://id.minter.org/invite/' + user.invitation">
-                        Do you want a page like that?
-                    </a>
+                    <p class="u-fw-600">{{ user.name }} is from {{ country }} and speaks {{ language }}.</p>
                 </div>
             </div>
+            <a class="button button--ghost-green" :href="'https://id.minter.org/invite/' + user.invitation">
+                Do you want a page like that?
+            </a>
         </div>
     </div>
 </template>
