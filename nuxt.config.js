@@ -37,7 +37,7 @@ module.exports = {
         linkActiveClass: '',
         linkExactActiveClass: 'is-active',
         middleware: [
-            // 'profile',
+            'profile',
             // 'auth',
         ],
     },

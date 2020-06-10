@@ -21,7 +21,7 @@
 
 // common
 .main-wrap {display: flex; flex-direction: column; min-height: 100vh; position: relative;}
-.main-content {width: 100%; flex-grow: 2; overflow: hidden;}
+.main-content {width: 100%; flex-grow: 2;}
 
 
 // nuxt page transition
@@ -93,6 +93,56 @@
     color: #fff; background: @c-whatsapp;
     &:hover, &:focus {background: tint(@c-whatsapp, 15%);}
     &:active {background: shade(@c-whatsapp, 10%);}
+}
+
+
+/* CARDS */
+@card-padding-large: 32px;
+@card-chevron-width: 8px;
+.card {
+    background: #fff; box-shadow: 0 15px 50px rgba(0,0,0,0.1); position: relative;
+    &::before {content: ''; display: table;} // fix firefox incorrect collapsing negative margin
+}
+.card--section-with-image {padding-top: 32px;}
+.card__content {
+    padding: 24px 20px;
+    &:last-child {padding-bottom: 30px;}
+    &+& {border-top: 1px solid @c-border;}
+}
+.card__content--small {padding: 20px 16px;}
+.card__content--pop {padding-top: 0;}
+.card__avatar {
+    position: relative; width: 128px; height: 128px; border-radius: 50%; background: /*url(../img/default-avatar.png)*/ 50% 50% no-repeat @c-black-light; background-size: cover; z-index: 1; margin: auto; color: #fff;
+    &::before {content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; border-radius: 50%; background: rgba(0,0,0,0.7); opacity: 0; z-index: -1; transition: 0.15s;}
+    &.is-loading::before {opacity: 1;}
+}
+.card__avatar--pop {margin-top: -64px;}
+.card__address {
+    &+& {margin-top: 16px;}
+}
+.card__address-name {color: @c-main; font-weight: 600;}
+
+
+@media (min-width: @breakpoint-medium-up) {
+    .card--section-with-image {padding-top: 46px;}
+    .card__content {
+        padding-left: @card-padding-large; padding-right: @card-padding-large;
+        &:first-child {padding-top: @card-padding-large;}
+        &:last-child {padding-bottom: 40px;}
+    }
+    .card__content--pop {
+        && {padding-top: 0;}
+    }
+    //.card__meta {position: relative}
+    //.card__badge--large {top: 50%; transform: translateY(-50%); right: -@card-padding-large;}
+
+    .card__avatar {width: 174px; height: 174px;}
+    .card__avatar--pop {margin-top: -87px;}
+}
+
+@media (min-width: @breakpoint-large-up) {
+    .card--section {margin-top: -48px; padding-top: 0;}
+
 }
 
 

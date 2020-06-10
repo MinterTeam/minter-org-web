@@ -64,28 +64,10 @@ export function authorize(id_token) {
             id_token,
         }, {withCredentials: true})
         .then((response) => {
-            return response.data.data;
+            return prettifyMinterIdUser(response.data.data);
         })
 }
 
-/**
- *
- * @param {string} invitation
- * @param {string} id_token
- * @return {Promise<MinterIdUser>}
- */
-export function authLogin({invitation, id_token}) {
-    return instance.post(`auth/google`, {
-            id_token,
-        })
-        // .then((response) => {
-        //     setAuthToken(response.data);
-        //     return getUser();
-        // })
-        // .then((user) => {
-        //     return user;
-        // })
-}
 
 /**
  *
@@ -93,16 +75,36 @@ export function authLogin({invitation, id_token}) {
  */
 export function getUser() {
     return instance.get(`user`, {withCredentials: true})
-        .then((response) => response.data.data);
+        .then((response) => prettifyMinterIdUser(response.data.data));
 }
 
 /**
  * @param {MinterIdUser} user
- * @return {Promise<AxiosResponse<T>>}
+ * @param {MinterIdUser} [originalUser]
+ * @return {Promise<MinterIdUser>}
  */
-export function updateUser(user) {
-    return instance.put(`user`, user, {withCredentials: true})
-        .then((response) => response.data.data);
+export function updateUser(user, originalUser) {
+    let userData = originalUser ? toOriginalMinterIdUser(user, originalUser) : user;
+    return instance.put(`user`, userData, {withCredentials: true})
+        .then((response) => prettifyMinterIdUser(response.data.data));
+}
+
+/**
+ * @param {Object} user
+ * @return {MinterIdUser}
+ */
+function prettifyMinterIdUser(user) {
+    user.originalContacts = user.contacts || [];
+    let contacts = {minter: []};
+    user.originalContacts.forEach((contactItem) => {
+        if (contactItem.type === 'minter') {
+            contacts.minter.push(contactItem);
+        } else {
+            contacts[snakeToCamel(contactItem.type)] = contactItem.value;
+        }
+    })
+    user.contacts = contacts;
+    return user;
 }
 
 /**
@@ -128,7 +130,7 @@ export function updateProfileAvatar(data, userId) {
 /**
  * @typedef {Object} MinterIdUser
  * @property {number} id
- * @property {string} username
+ * @property {string} {username}
  * @property {string} name
  * @property {string} email
  * @property {string} country
@@ -142,6 +144,25 @@ export function updateProfileAvatar(data, userId) {
  * @property {number} ratingTotal
  * @property {string} [picture] - google avatar
  * @property {string} [locale] - google locale
+ * @property {MinterIdUserContactList} contacts
+ * @property {Array} originalContacts
+ */
+
+/**
+ * @typedef {Object} MinterIdUserContactList
+ * @property {string} phone
+ * @property {string} publicEmail
+ * @property {string} socialTwitter
+ * @property {string} socialTelegram
+ * @property {string} socialFacebook
+ * @property {string} socialInstagram
+ * @property {string} socialMedium
+ * @property {string} socialYoutube
+ * @property {MinterIdUserContactAddress} minter
+ */
+
+/**
+ * @typedef {Array<{name: string, value: string}>} MinterIdUserContactAddress
  */
 
 /**
@@ -149,3 +170,19 @@ export function updateProfileAvatar(data, userId) {
  * @property {string} name
  * @property {string} type
  */
+
+
+
+function snakeToCamel(val) {
+    const list = val.split('_');
+    list.forEach((item, index) => {
+        if (index > 0) {
+            list[index] = item[0].toUpperCase() + item.substr(1);
+        }
+    })
+    return list.join('');
+}
+
+function camelToSnake(val) {
+    return val.replace(/([A-Z])/g, '_$1').toLowerCase();
+}
