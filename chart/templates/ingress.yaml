@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: {{ include "chart.fullname" . }}
+spec:
+  rules:
+    - host: "{{ .Values.ingress.domain }}"
+      http:
+        paths:
+          - backend:
+              serviceName: "{{ include "chart.fullname" . }}"
+              servicePort: {{ .Values.service.port }}
+            path: /
+  tls:
+    - hosts:
+        - "{{ .Values.ingress.domain }}"
+      secretName: "{{ .Values.ingress.tls.secret }}"

@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+      args:
+        APP_ENV: ${APP_ENV}
+        APP_ID_API_URL: ${APP_ID_API_URL}
+        APP_ID_COOKIE_DOMAIN: ${APP_ID_COOKIE_DOMAIN}
+        APP_IMAGE_API_URL: ${APP_IMAGE_API_URL}
+        APP_GOOGLE_SIGNIN_CLIENT_ID: ${APP_GOOGLE_SIGNIN_CLIENT_ID}
+    ports:
+      -  ${EXPLORER_WEB_PORT}:80

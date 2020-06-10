@@ -1,0 +1,15 @@
+version: 1.0.0
+apiVersion: v2
+name: minter-org
+icon: https://explorer.minter.network/img/minter-logo-circle.svg
+description: A Helm chart for Minter Org Web
+
+appVersion: latest
+
+home: https://github.com/MinterTeam/minter-org-web
+keywords:
+  - minter-org
+maintainers:
+  - name: shrpne
+    email: shrpne@gmail.com
+
