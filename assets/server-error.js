@@ -76,3 +76,24 @@ export function getErrorText(error, startErrorText = 'Error: ') {
         return 'Something went wrong';
     }
 }
+
+
+/**
+ * @param {AxiosError} error
+ * @return {{message: string, status: number}}
+ */
+export function getErrorData(error) {
+    console.log(error, error.response);
+    if (error.response && error.response.status) {
+        const message = error.response.status === 429 ? 'Too many requests, please try again later' : error.response.statusText;
+        return {
+            status: error.response.status,
+            message,
+        }
+    } else {
+        return {
+            status: error.request && error.request.status,
+            message: error.message,
+        }
+    }
+}

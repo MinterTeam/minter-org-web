@@ -171,6 +171,15 @@ export function updateProfileAvatar(data, userId) {
  * @property {string} type
  */
 
+/**
+ *
+ * @return {Promise<MinterIdUser>}
+ */
+export function getUserByUsername(username) {
+    return instance.get(`user/${username}`, {withCredentials: true})
+        .then((response) => prettifyMinterIdUser(response.data.data));
+}
+
 
 
 function snakeToCamel(val) {

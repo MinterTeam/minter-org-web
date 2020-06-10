@@ -4,6 +4,7 @@ export const BASE_DESCRIPTION = 'Get paid in crypto for your digital goods and s
 export const MINTERORG_API_URL = process.env.APP_API_URL + '/api/v1/';
 export const ID_API_URL = process.env.APP_ID_API_URL;
 export const IMAGE_API_URL = process.env.APP_IMAGE_API_URL;
+export const EXPLORER_API_URL = process.env.APP_EXPLORER_API_URL;
 export const GOOGLE_SIGNIN_CLIENT_ID = process.env.APP_GOOGLE_SIGNIN_CLIENT_ID;
 export const LANGUAGE_COOKIE_KEY = 'minter-language';
 export const ID_COOKIE_KEY = 'midsession'; // minter id session
