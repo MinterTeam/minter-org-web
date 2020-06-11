@@ -1,7 +1,7 @@
 <script>
     export default {
         beforeMount() {
-            this.$router.replace('/?1');
+            window.location = '/?1';
         }
     }
 </script>
