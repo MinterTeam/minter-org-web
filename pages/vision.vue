@@ -1,7 +1,7 @@
 <script>
     export default {
         beforeMount() {
-            this.$router.replace('/');
+            this.$router.replace('/?1');
         }
     }
 </script>
