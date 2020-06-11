@@ -167,6 +167,11 @@ hr {border: none; border-top: 1px solid @c-border;}
 //    color: @c-main; background: #fff;
 //    &:active {background: shade(#fff, 10%);}
 //}
+.button--ghost {
+    color: @c-black; background: transparent; border-color: @c-black;
+    &:hover, &:focus {background: fade(@c-black, 10%);}
+    &:active {background: fade(@c-black, 20%);}
+}
 .button--ghost-green {
     color: @c-green; background: transparent; border-color: @c-green;
     &:hover, &:focus {background: fade(@c-green, 20%);}

@@ -85,9 +85,14 @@ export function getUser() {
  */
 export function updateUser(user, originalUser) {
     let userData = originalUser ? toOriginalMinterIdUser(user, originalUser) : user;
+    userData = Object.keys(userData).reduce((accamulator, key) => {
+        accamulator[camelToSnake(key)] = userData[key];
+        return accamulator;
+    }, {});
     return instance.put(`user`, userData, {withCredentials: true})
         .then((response) => prettifyMinterIdUser(response.data.data));
 }
+
 
 /**
  * @param {Object} user
@@ -105,6 +110,51 @@ function prettifyMinterIdUser(user) {
     })
     user.contacts = contacts;
     return user;
+}
+
+/**
+ * @param {MinterIdUser} user
+ * @param {MinterIdUser} [originalUser]
+ */
+function toOriginalMinterIdUser(user, originalUser) {
+    if (!originalUser) {
+        originalUser = user;
+    }
+    let contacts = [];
+    Object.keys(user.contacts).forEach((type) => {
+        if (type === 'minter') {
+            let fixedMinter = user.contacts.minter.slice(0);
+            if (originalUser.contacts?.minter) {
+                // update contacts according database order (ordered by id)
+                originalUser.contacts.minter.forEach((item, index) => {
+                    if (fixedMinter[index]) {
+                        // replace old item with new
+                        fixedMinter[index].id = item.id;
+                    } else {
+                        // make old item empty to delete it
+                        fixedMinter[index] = {name: '', value: '', id: item.id};
+                    }
+                })
+            }
+            fixedMinter.forEach((item) => {
+                item.type = 'minter';
+            })
+            contacts = contacts.concat(fixedMinter);
+        } else {
+            let newOriginalContactItem = {type: camelToSnake(type), value: user.contacts[type] || ''};
+            const oldOriginalContactItem = originalUser.originalContacts.find((item) => item.type === camelToSnake(type));
+            if (oldOriginalContactItem) {
+                newOriginalContactItem.id = oldOriginalContactItem.id;
+            }
+            contacts.push(newOriginalContactItem);
+        }
+    });
+    let newUser = {
+        ...user,
+        contacts,
+    }
+    delete newUser.originalContacts;
+    return newUser;
 }
 
 /**
@@ -139,6 +189,7 @@ export function updateProfileAvatar(data, userId) {
  * @property {string} [about]
  * @property {string} invitation - invite link
  * @property {boolean} isActive
+ * @property {boolean} isPublic
  * @property {number} rating
  * @property {number} ratingPosition
  * @property {number} ratingTotal
@@ -172,7 +223,7 @@ export function updateProfileAvatar(data, userId) {
  */
 
 /**
- *
+ * @param {string} username
  * @return {Promise<MinterIdUser>}
  */
 export function getUserByUsername(username) {

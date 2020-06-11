@@ -3,7 +3,7 @@
     import {getUserByUsername} from '~/api/id.js';
     import checkEmpty from '~/assets/v-check-empty.js';
     import getTitle from '~/assets/get-title.js';
-    import {getErrorData} from '~/assets/server-error.js';
+    import {getErrorData, getErrorText} from '~/assets/server-error.js';
     import {getAddressStakeList, getBalance} from '~/api/explorer.js';
     /** @type {Array<{code: string, name: string}>} */
     const countryList = require('~/tmp/country-list.json');
@@ -53,6 +53,8 @@
                 user: null,
                 balanceList: {},
                 stakeList: {},
+                isFormSending: false,
+                serverError: '',
             }
         },
         computed: {
@@ -88,7 +90,13 @@
             idLink() {
                 // check if current user is signed in
                 return this.$store.state.user ? 'https://id.minter.org/share' : 'https://id.minter.org/invite/' + this.user.invitation
-            }
+            },
+            userHasPublicProfile() {
+                return this.$store.state.user?.isPublic && this.$store.state.user?.username;
+            },
+            isSelfProfile() {
+                return this.$store.state.user?.username === this.user?.username;
+            },
         },
         methods: {
             getBalanceList() {
@@ -124,6 +132,17 @@
                 } else {
                     return '🦐';
                 }
+            },
+            deactivateProfile() {
+                this.isFormSending = true;
+                this.$store.dispatch('UPDATE_PROFILE', {isHiddenProfile: true})
+                    .then(() => {
+                        this.$router.push('/');
+                    })
+                    .catch((error) => {
+                        this.serverError = getErrorText(error);
+                        this.isFormSending = false;
+                    });
             }
         },
     }
@@ -183,15 +202,30 @@
                         <div class="card__address-icon">{{ getBalanceEmoji(minterItem.value) }}</div>
                         <div class="card__address-content">
                             <div class="card__address-name ">{{ minterItem.name }}</div>
-                            <a class="card__address-value link--hover" :href="'https://explorer.minter.network/address/' + minterItem.value">{{ minterItem.value }}</a>
+                            <a class="card__address-value link--hover" :href="'https://explorer.minter.network/address/' + minterItem.value" target="_blank" rel="noopener">{{ minterItem.value }}</a>
                         </div>
                     </div>
                 </div>
-                <div class="card__content">
-                    <p class="u-fw-600">{{ user.name }} is from {{ country }} and speaks {{ language }}.</p>
+                <div class="card__content card__content--symmetric" v-if="country || language">
+                    <p class="u-fw-600">
+                        {{ user.name }}
+                        <span v-if="country">is from {{ country }}</span>
+                        <span v-if="country && language">and</span><span v-if="language"> speaks {{ language }}</span>.
+                    </p>
                 </div>
             </div>
-            <a class="button button--ghost-green" :href="idLink">
+            <div v-if="isSelfProfile || isFormSending">
+                <button class="button button--ghost" :class="{'is-loading': isFormSending}" @click="deactivateProfile">
+                    <span class="button__content">Deactivate this public profile page</span>
+                    <svg class="loader loader--button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+                        <circle class="loader__path" cx="21" cy="21" r="14"></circle>
+                    </svg>
+                </button>
+                <div class="form__error u-mt-10 u-text-center" v-if="serverError">
+                    {{ serverError }}
+                </div>
+            </div>
+            <a class="button button--ghost-green" :href="idLink" v-else-if="!userHasPublicProfile">
                 Do you want a page like that?
             </a>
         </div>
