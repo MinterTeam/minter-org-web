@@ -8,6 +8,7 @@ export default function({app, store, route, redirect, error}) {
 
     const urlShouldNotCheckUser = [
         /^\/vision/,
+        /^\/our-vision/,
         /^\/foundation/,
     ].some((pathRegex) => {
         return pathRegex.test(route.path);

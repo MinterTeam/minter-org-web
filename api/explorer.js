@@ -1,6 +1,6 @@
 import axios from 'axios';
 import stripZeros from 'pretty-num/src/strip-zeros';
-import {EXPLORER_API_URL} from "~/assets/variables";
+import {EXPLORER_API_URL, COIN_NAME} from "~/assets/variables";
 import addToCamelInterceptor from '~/assets/to-camel.js';
 
 const instance = axios.create({
@@ -48,4 +48,39 @@ export function prepareBalance(balanceList) {
  * @property {string} totalBalanceSum
  * @property {string} totalBalanceSumUsd
  * @property {Array<CoinItem>} balances
+ */
+
+/**
+ * @typedef {Object} CoinItem
+ * @property {string|number} amount
+ * @property {string} coin
+ */
+
+/**
+ * @param {string} address
+ * @return {Promise}
+ */
+export function getAddressStakeList(address) {
+    return instance.get(`addresses/${address}/delegations`)
+        .then((response) => response.data);
+}
+
+
+
+/**
+ * @typedef {Object} StakeItem
+ * @property {string} [pubKey]
+ * @property {ValidatorMeta} [validatorMeta]
+ * @property {string} [address]
+ * @property {string|number} value
+ * @property {string|number} bipValue
+ * @property {string} coin
+ */
+
+/**
+ * @typedef {Object} ValidatorMeta
+ * @property {string} name
+ * @property {string} description
+ * @property {string} iconUrl
+ * @property {string} siteUrl
  */

@@ -64,7 +64,7 @@
                     </div>
                     <p>No apps to download. No blockchain jargon to learn. <br> No special skills to apply.</p>
                     <p>
-                        <nuxt-link class="link--default" to="/vision">Our vision</nuxt-link>
+                        <nuxt-link class="link--default" to="/our-vision">Our vision</nuxt-link>
                     </p>
                 </div>
             </div>

@@ -9,6 +9,7 @@ export const GOOGLE_SIGNIN_CLIENT_ID = process.env.APP_GOOGLE_SIGNIN_CLIENT_ID;
 export const LANGUAGE_COOKIE_KEY = 'minter-language';
 export const ID_COOKIE_KEY = 'midsession'; // minter id session
 export const ID_COOKIE_DOMAIN = '.minter.org';
+export const COIN_NAME = 'BIP';
 
 export const USERNAME_MIN_LENGTH = 5;
 export const USERNAME_MAX_LENGTH = 16;

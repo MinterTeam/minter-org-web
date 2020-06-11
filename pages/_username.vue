@@ -1,9 +1,10 @@
 <script>
+    import Vue from 'vue';
     import {getUserByUsername} from '~/api/id.js';
     import checkEmpty from '~/assets/v-check-empty.js';
     import getTitle from '~/assets/get-title.js';
     import {getErrorData} from '~/assets/server-error.js';
-    import {getBalance} from '~/api/explorer.js';
+    import {getAddressStakeList, getBalance} from '~/api/explorer.js';
     /** @type {Array<{code: string, name: string}>} */
     const countryList = require('~/tmp/country-list.json');
     /** @type {Array<{code: string, name: string}>} */
@@ -51,6 +52,7 @@
             return {
                 user: null,
                 balanceList: {},
+                stakeList: {},
             }
         },
         computed: {
@@ -92,12 +94,16 @@
                     }
                     getBalance(item.value)
                         .then((balanceData) => {
-                            this.balanceList[item.value] = balanceData.totalBalanceSum;
+                            Vue.set(this.balanceList, item.value, balanceData.totalBalanceSum)
+                        });
+                    getAddressStakeList(item.value)
+                        .then((stakeData) => {
+                            Vue.set(this.stakeList, item.value, stakeData.meta.additional.totalDelegatedBipValue)
                         });
                 });
             },
             getBalanceEmoji(address) {
-                const balance = this.balanceList[address];
+                const balance = Number(this.balanceList[address]) + Number(this.stakeList[address]);
                 const million = 1000000;
                 if (balance >= 100 * million) {
                     return '🐬';
