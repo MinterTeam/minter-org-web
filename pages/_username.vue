@@ -85,6 +85,10 @@
                 const languageItem = languageList.find((item) => item.code === this.user.language);
                 return languageItem?.name;
             },
+            idLink() {
+                // check if current user is signed in
+                return this.$store.state.user ? 'https://id.minter.org/share' : 'https://id.minter.org/invite/' + this.user.invitation
+            }
         },
         methods: {
             getBalanceList() {
@@ -187,7 +191,7 @@
                     <p class="u-fw-600">{{ user.name }} is from {{ country }} and speaks {{ language }}.</p>
                 </div>
             </div>
-            <a class="button button--ghost-green" :href="'https://id.minter.org/invite/' + user.invitation">
+            <a class="button button--ghost-green" :href="idLink">
                 Do you want a page like that?
             </a>
         </div>
