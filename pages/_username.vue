@@ -193,6 +193,12 @@
                         <a v-if="user.contacts.socialMedium" :href="user.contacts.socialMedium" class="social-icon" target="_blank" rel="noopener">
                             <img src="/img/icon-social-mm.svg" alt="Medium">
                         </a>
+                        <a v-if="user.contacts.socialGithub" :href="'https://github.com/' + user.contacts.socialGithub" class="social-icon" target="_blank" rel="noopener">
+                            <img src="/img/icon-social-gh.svg" alt="Github">
+                        </a>
+                        <a v-if="user.contacts.socialBehance" :href="'https://behance.net/' + user.contacts.socialBehance" class="social-icon" target="_blank" rel="noopener">
+                            <img src="/img/icon-social-be.svg" alt="Behance">
+                        </a>
                     </div>
                 </div>
                 <div class="card__content" v-if="minterContacts.length">

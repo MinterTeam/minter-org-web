@@ -209,6 +209,8 @@ export function updateProfileAvatar(data, userId) {
  * @property {string} socialInstagram
  * @property {string} socialMedium
  * @property {string} socialYoutube
+ * @property {string} socialGithub
+ * @property {string} socialBehance
  * @property {MinterIdUserContactAddress} minter
  */
 

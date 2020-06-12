@@ -4,7 +4,7 @@ name: minter-org
 icon: https://explorer.minter.network/img/minter-logo-circle.svg
 description: A Helm chart for Minter Org Web
 
-appVersion: latest
+appVersion: v1.0.1
 
 home: https://github.com/MinterTeam/minter-org-web
 keywords:
