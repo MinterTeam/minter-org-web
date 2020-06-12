@@ -31,7 +31,7 @@
             };
         },
         fetch() {
-            return getUserByUsername(this.$route.params.username)
+            return getUserByUsername(this.$route.params.username.toLowerCase())
                 .then((user) => {
                     this.user = {
                         ...user,
