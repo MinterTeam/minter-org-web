@@ -204,11 +204,15 @@
                 <div class="card__content" v-if="minterContacts.length">
                     <div class="u-h--uppercase u-mb-10">Minter wallets</div>
 
-                    <div class="card__address" v-for="minterItem in minterContacts">
-                        <div class="card__address-icon">{{ getBalanceEmoji(minterItem.value) }}</div>
-                        <div class="card__address-content">
-                            <div class="card__address-name ">{{ minterItem.name }}</div>
-                            <a class="card__address-value link--hover" :href="'https://explorer.minter.network/address/' + minterItem.value" target="_blank" rel="noopener">{{ minterItem.value }}</a>
+                    <div class="card__address-wrap-outer">
+                        <div class="card__address-wrap-inner">
+                            <div class="card__address" v-for="minterItem in minterContacts">
+                                <div class="card__address-icon">{{ getBalanceEmoji(minterItem.value) }}</div>
+                                <div class="card__address-content">
+                                    <div class="card__address-name ">{{ minterItem.name }}</div>
+                                    <a class="card__address-value link--hover" :href="'https://explorer.minter.network/address/' + minterItem.value" target="_blank" rel="noopener">{{ minterItem.value }}</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

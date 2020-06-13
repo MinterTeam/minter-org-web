@@ -101,7 +101,8 @@ export function updateUser(user, originalUser) {
 function prettifyMinterIdUser(user) {
     user.originalContacts = user.contacts || [];
     let contacts = {minter: []};
-    user.originalContacts.forEach((contactItem) => {
+    // sort ascending
+    user.originalContacts.sort((a, b) => a.id - b.id).forEach((contactItem) => {
         if (contactItem.type === 'minter') {
             contacts.minter.push(contactItem);
         } else {
