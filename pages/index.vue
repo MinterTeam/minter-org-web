@@ -1,8 +1,9 @@
 <script>
-    import {hasAuthToken} from '~/api/id.js';
+    import {ID_HOST} from '~/assets/variables.js';
     import AuthButtonGoogle from '~/components/AuthButtonGoogle.vue';
 
     export default {
+        ID_HOST,
         // fetchOnServer: false,
         // fetch() {
         //     // additional check to workaround generate mode not supporting client middlewares
@@ -54,13 +55,7 @@
                         <a class="intro__button button button--main" href="https://id.minter.org/share">View profile</a>
                     </div>
                     <div class="u-mb-10" v-else>
-                        <client-only class="u-mb-10" placeholder="Loading…">
-                            <AuthButtonGoogle class="intro__button" @error="serverError = $event"/>
-                        </client-only>
-                        <div class="form__error u-mt-10" v-if="serverError">
-                            <template v-if="serverError === 'forbidden'">Error: you are not registered. Register on <a class="link--underline" href="https://id.minter.org" target="_blank">MinterID</a> first</template>
-                            <template v-else>{{ serverError }}</template>
-                        </div>
+                        <AuthButtonGoogle class="intro__button" invitation="future" :idHost="$options.ID_HOST"/>
                     </div>
                     <p>No apps to download. No blockchain jargon to learn. <br> No special skills to apply.</p>
                     <p>

@@ -1,22 +1,6 @@
-import {authCheckInvitation, authorize, getUser, updateUser} from "~/api/id.js";
+import {getUser, updateUser} from "~/api/id.js";
 
 export default {
-    AUTHORIZE: ({commit}, id_token) => {
-        return authorize(id_token)
-            .then((user) => {
-                commit('SET_USER', user);
-            });
-    },
-    AUTH_CHECK_INVITATION: ({commit}, invitation) => {
-        return authCheckInvitation(invitation)
-            .then((invitationData) => {
-                commit('SET_INVITATION_CACHE', {
-                    invitation,
-                    name: invitationData.name,
-                    type: invitationData.type,
-                });
-            });
-    },
     UPDATE_PROFILE: ({ state, commit }, userData) => {
         return updateUser(userData)
             .then((user) => {
