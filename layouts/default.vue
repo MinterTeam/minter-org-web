@@ -1,7 +1,9 @@
 <script>
+    import {ID_HOST} from '~/assets/variables.js';
     import Footer from '~/layouts/_footer';
 
     export default {
+        ID_HOST,
         components: {
 
             Footer,
@@ -12,10 +14,7 @@
             };
         },
         computed: {
-            isActiveProfile() {
-                const user = this.$store.state.user;
-                return user?.username && user.isPublic && !user.isHiddenProfile;
-            }
+
         },
         methods: {
 
@@ -38,7 +37,7 @@
                         Login
                     </nuxt-link>
                     <button class="header__controls-link link link&#45;&#45;opacity u-semantic-button" @click="logout" v-if="$store.state.user && isProfilePage">Logout</button>-->
-                    <nuxt-link :to="'/' + $store.state.user.username" class="header__controls-link header__controls-user link--opacity" v-if="isActiveProfile"> <!-- && !isCardLayout-->
+                    <a :href="ID_HOST + '/profile'" class="header__controls-link header__controls-user link--opacity" v-if="this.$store.state.user"> <!-- && !isCardLayout-->
                         <!--
                                                 <div class="header__controls-user-name" v-if="$store.state.user.username">
                                                     @{{ $store.state.user.username }}
@@ -46,7 +45,7 @@
                         -->
                         <div class="header__controls-user-name">Profile</div>
                         <div class="header__controls-user-avatar" :style="`background-image: url(${$store.state.user.picture}&alias=thumb-x2);`" v-if="$store.state.user.picture"></div>
-                    </nuxt-link>
+                    </a>
                 </div>
 
             </div>
