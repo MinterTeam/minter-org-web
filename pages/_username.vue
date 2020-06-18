@@ -5,6 +5,7 @@
     import getTitle from '~/assets/get-title.js';
     import {getErrorData, getErrorText} from '~/assets/server-error.js';
     import {getAddressStakeList, getBalance} from '~/api/explorer.js';
+    import {ID_HOST} from '~/assets/variables.js';
     /** @type {Array<{code: string, name: string}>} */
     const countryList = require('~/tmp/country-list.json');
     /** @type {Array<{code: string, name: string}>} */
@@ -53,8 +54,6 @@
                 user: null,
                 balanceList: {},
                 stakeList: {},
-                isFormSending: false,
-                serverError: '',
             }
         },
         computed: {
@@ -89,7 +88,11 @@
             },
             idLink() {
                 // check if current user is signed in
-                return this.$store.state.user ? 'https://id.minter.org/share' : 'https://id.minter.org/invite/' + this.user.invitation
+                return this.$store.state.user ? `${ID_HOST}/share` : `${ID_HOST}/invite/${this.user.invitation}`
+            },
+            editProfileLink() {
+                // check if current user is signed in
+                return `${ID_HOST}/profile/edit-public`;
             },
             userHasPublicProfile() {
                 return this.$store.state.user?.isPublic && this.$store.state.user?.username;
@@ -133,17 +136,6 @@
                     return '🦐';
                 }
             },
-            deactivateProfile() {
-                this.isFormSending = true;
-                this.$store.dispatch('UPDATE_PROFILE', {isHiddenProfile: true})
-                    .then(() => {
-                        this.$router.push('/');
-                    })
-                    .catch((error) => {
-                        this.serverError = getErrorText(error);
-                        this.isFormSending = false;
-                    });
-            }
         },
     }
 </script>
@@ -224,17 +216,9 @@
                     </p>
                 </div>
             </div>
-            <div v-if="isSelfProfile || isFormSending">
-                <button class="button button--ghost" :class="{'is-loading': isFormSending}" @click="deactivateProfile">
-                    <span class="button__content">Deactivate this public profile page</span>
-                    <svg class="loader loader--button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
-                        <circle class="loader__path" cx="21" cy="21" r="14"></circle>
-                    </svg>
-                </button>
-                <div class="form__error u-mt-10 u-text-center" v-if="serverError">
-                    {{ serverError }}
-                </div>
-            </div>
+            <a class="button button--ghost" :href="editProfileLink" v-if="isSelfProfile">
+                Edit public profile
+            </a>
             <a class="button button--ghost-green" :href="idLink" v-else-if="!userHasPublicProfile">
                 Do you want a page like that?
             </a>
