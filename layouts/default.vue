@@ -37,7 +37,7 @@
                         Login
                     </nuxt-link>
                     <button class="header__controls-link link link&#45;&#45;opacity u-semantic-button" @click="logout" v-if="$store.state.user && isProfilePage">Logout</button>-->
-                    <a :href="ID_HOST + '/profile'" class="header__controls-link header__controls-user link--opacity" v-if="this.$store.state.user"> <!-- && !isCardLayout-->
+                    <a :href="$options.ID_HOST + '/profile'" class="header__controls-link header__controls-user link--opacity" v-if="this.$store.state.user"> <!-- && !isCardLayout-->
                         <!--
                                                 <div class="header__controls-user-name" v-if="$store.state.user.username">
                                                     @{{ $store.state.user.username }}
