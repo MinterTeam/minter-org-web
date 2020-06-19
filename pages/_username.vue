@@ -198,7 +198,7 @@
                             <img src="/img/icon-social-reddit.svg" alt="Reddit">
                         </a>
                         <a v-if="user.contacts.socialMedium" :href="user.contacts.socialMedium" class="social-icon" target="_blank" rel="noopener">
-                            <img src="/img/icon-social-mediumm.svg" alt="Medium">
+                            <img src="/img/icon-social-medium.svg" alt="Medium">
                         </a>
                         <a v-if="user.contacts.socialGithub" :href="'https://github.com/' + user.contacts.socialGithub" class="social-icon" target="_blank" rel="noopener">
                             <img src="/img/icon-social-gh.svg" alt="Github">
