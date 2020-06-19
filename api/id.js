@@ -209,6 +209,7 @@ export function updateProfileAvatar(data, userId) {
  * @property {string} socialFacebook
  * @property {string} socialInstagram
  * @property {string} socialMedium
+ * @property {string} socialReddit
  * @property {string} socialYoutube
  * @property {string} socialGithub
  * @property {string} socialBehance

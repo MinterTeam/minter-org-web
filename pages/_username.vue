@@ -57,6 +57,18 @@
             }
         },
         computed: {
+            userPicture() {
+                if (!this.user?.picture) {
+                    return '';
+                }
+
+                const isGoogle = this.user.picture.indexOf('googleusercontent.com') >= 0;
+                if (isGoogle) {
+                    return this.user.picture.replace('=s96-c', '=s352-c');
+                } else {
+                    return this.user.picture + '&alias=big-x2';
+                }
+            },
             prettyPhone() {
                 if (!this.user?.contacts?.phone) {
                     return '';
@@ -145,7 +157,7 @@
         <div class="u-section card--section u-text-center" v-if="user">
             <div class="card u-mb-20">
                 <div class="card__content">
-                    <div class="card__avatar" :style="{backgroundImage: `url('${user.picture}&alias=x2')`}"></div>
+                    <div class="card__avatar" :style="{backgroundImage: `url('${userPicture}')`}"></div>
                     <h1 class="u-h2 u-mt-10">
                         {{ user.name }}
                     </h1>
@@ -182,8 +194,11 @@
                         <a v-if="user.contacts.socialYoutube" :href="user.contacts.socialYoutube" class="social-icon" target="_blank" rel="noopener">
                             <img src="/img/icon-social-yt.svg" alt="YouTube">
                         </a>
+                        <a v-if="user.contacts.socialReddit" :href="'https://reddit.com/user/' + user.contacts.socialReddit" class="social-icon" target="_blank" rel="noopener">
+                            <img src="/img/icon-social-reddit.svg" alt="Reddit">
+                        </a>
                         <a v-if="user.contacts.socialMedium" :href="user.contacts.socialMedium" class="social-icon" target="_blank" rel="noopener">
-                            <img src="/img/icon-social-mm.svg" alt="Medium">
+                            <img src="/img/icon-social-mediumm.svg" alt="Medium">
                         </a>
                         <a v-if="user.contacts.socialGithub" :href="'https://github.com/' + user.contacts.socialGithub" class="social-icon" target="_blank" rel="noopener">
                             <img src="/img/icon-social-gh.svg" alt="Github">
