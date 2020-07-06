@@ -6,7 +6,7 @@
 
 <template>
     <footer class="footer">
-        <div class="u-container u-container--large">
+        <div class="u-container">
             <div class="footer__container">
                 <img class="footer__logo u-hidden-small-down" src="/img/minter-logo-white.svg" width="95" height="30" alt="Minter">
                 <div class="footer__menu">

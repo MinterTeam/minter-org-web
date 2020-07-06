@@ -228,13 +228,74 @@
 
 /* INDEX intro */
 .intro {display: flex; flex-direction: column; align-items: center;}
-.intro__content {width: 100%; max-width: 474px; /*margin-left: auto; margin-right: auto;*/}
+.intro__content {width: 100%; /*margin-left: auto; margin-right: auto;*/}
 .intro__content--queue {max-width: 400px;}
 .intro__image {max-width: 300px; margin-bottom: 24px; margin-top: -10px; display: block;}
-
+.intro__list {margin-bottom: 40px;}
 @media (min-width: @breakpoint-medium-up) {
-    .intro {flex-direction: row; position: relative; min-height: 550px;}
-    .intro__image { max-width: none; position: absolute; left: 474px;}
+    .intro {flex-direction: row; align-items: flex-start; position: relative; min-height: 550px;}
+    .intro__content { max-width: 503px;}
+    .intro__image { max-width: none; margin-left: 50px; margin-right: -190px; margin-top: 10px; order: 2;}
+    .intro__list {margin-right: -50px;}
+}
+
+.index__description {font-size: 17px; line-height: 1.368;}
+.index__wallets-image-cell {order: -1;}
+.index__wallets-image-wrap {max-width: 80%; margin: auto;}
+.index__wallets-image {
+    && {left: -13.8%; width: 127.573%; top: 0; bottom: -16%; height: auto;}
+}
+.index__contests-description {max-width: 566px;}
+.index__contests-image {position: absolute; bottom: 0; right: 0; max-width: 95%; height: auto;}
+.index__social-link {display: inline-flex; align-items: center; vertical-align: top;}
+.index__social-icon {margin-right: 16px;}
+.index__social-caption {font-size: 19px; font-weight: 700;}
+.index__conversation-image {position: absolute; right: 100%; top: 0; margin-right: 16px;}
+.index__rank-panel {background: url(../img/index-rating-splat.png) top right no-repeat, url(../img/index-rating-splat-2.png) 75% 100% no-repeat #fff; background-size: 140px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 48px; margin-left: -48px; margin-right: -48px;}
+.index__rank-price {font-size: 56px; line-height: 60px; font-weight: 800; letter-spacing: 1px; position: relative; display: inline-block;}
+.index__rank-price-splat {position: absolute; top: 100%; right: 18px; margin-top: 4px;}
+@media(min-width: @breakpoint-small-up) {
+    .index__description {font-size: 19px;}
+}
+@media (min-width: @breakpoint-medium-up) {
+    .index__wallets-image-cell {order: 0;}
+    .index__wallets-image-wrap {position: absolute; right: 0; bottom: 0; max-width: 100%;}
+    .index__rank-panel {padding: 80px; margin-left: -80px; margin-right: -80px; background-size: auto;}
+}
+@media (min-width: @breakpoint-large-up) {
+    .index__contests-image {right: 31px;}
+}
+
+
+.resource-columns {}
+.resource {
+    padding-left: 52px; position: relative; page-break-inside: avoid;
+    &+& {margin-top: 32px;}
+}
+.resource__link {
+    display: inline-flex; align-items: center; padding-top: 6px; margin-bottom: 10px;
+    &:hover, &:focus {
+        .resource__title {text-decoration: underline;}
+    }
+}
+.resource-project__link {
+    &:hover, &:focus {
+        .resource__title {text-decoration: underline;}
+    }
+}
+.resource-project__meta {display: inline-flex; align-items: center; margin-top: 22px;}
+.resource__icon {border-radius: 10px; position: absolute; left: 0; top: 0; box-shadow: 0 10px 10px rgba(0,0,0,0.1);}
+.resource-project__image {border-radius: 10px; box-shadow: 0 10px 10px rgba(0,0,0,0.1);}
+.resource__title {font-size: 19px; line-height: 24px; font-weight: 700; color: @c-orange;}
+.resource__tag {
+    font-weight: 600; font-size: 13px; line-height: 16px; padding: 4px 8px; border-radius: 4px; border: 1px solid @c-border; margin-left: 16px;
+    &+& {margin-left: 8px;}
+}
+@media (min-width: @breakpoint-medium-up) {
+    .resource-columns {columns: 2;}
+}
+@media (min-width: @breakpoint-large-up) {
+    .resource-columns {columns: 3;}
 }
 
 

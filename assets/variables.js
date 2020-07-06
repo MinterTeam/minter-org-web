@@ -6,6 +6,7 @@ export const ID_API_URL = process.env.APP_ID_API_URL;
 export const ID_HOST = process.env.APP_ID_HOST;
 export const IMAGE_API_URL = process.env.APP_IMAGE_API_URL;
 export const EXPLORER_API_URL = process.env.APP_EXPLORER_API_URL;
+export const BIP_CONVERT_API_URL = process.env.APP_BIP_CONVERT_API_URL;
 export const GOOGLE_SIGNIN_CLIENT_ID = process.env.APP_GOOGLE_SIGNIN_CLIENT_ID;
 export const LANGUAGE_COOKIE_KEY = 'minter-language';
 export const ID_COOKIE_KEY = 'midsession'; // minter id session

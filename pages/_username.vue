@@ -209,7 +209,9 @@
                     </div>
                 </div>
                 <div class="card__content" v-if="minterContacts.length">
-                    <div class="u-h--uppercase u-mb-10">Minter wallets</div>
+                    <div class="u-h--uppercase u-mb-10">
+                        Minter wallet<span v-if="minterContacts.length > 1">s</span>
+                    </div>
 
                     <div class="card__address-wrap-outer">
                         <div class="card__address-wrap-inner">

@@ -3,10 +3,10 @@
 
 
 // container
-.u-container {padding: 0 @container-padding-small; margin: 0 auto; width: 100%;}
+.u-container {padding-inline: @container-padding-small; margin: 0 auto; width: 100%;}
 .u-container-margin {margin: 0 auto;}
 @media (min-width: @breakpoint-small-up) {
-    .u-container {padding: 0 @container-padding; max-width: @container-width + @container-padding * 2;}
+    .u-container {padding-inline: @container-padding; max-width: @container-width + @container-padding * 2;}
     .u-container--small {max-width: 640px + @container-padding * 2;}
     .u-container--medium {max-width: @container-width-medium + @container-padding * 2;}
     .u-container--large {max-width: @container-width-large + @container-padding * 2;}
@@ -19,9 +19,13 @@
 
 
 .u-section {padding-top: 48px; padding-bottom: 48px;}
+.u-section--top-margin {margin-top: 48px;}
 .u-section--gray {background: #f8f8f8;}
 @media (min-width: @breakpoint-medium-up) {
     .u-section {padding-top: 64px; padding-bottom: 64px;}
+    .u-section--top-margin {margin-top: 64px;}
+    .u-section--large {padding-top: 80px; padding-bottom: 80px;}
+    .u-section--top-large-margin {margin-top: 80px;}
 }
 
 
@@ -78,6 +82,10 @@
     .u-grid--small {
         margin-left: -@container-padding-small;
         & > .u-cell { padding-left: @container-padding-small;}
+    }
+    .u-grid--vertical-margin--medium--default {
+        margin-top: -@grid-vertical-margin;
+        & > .u-cell { padding-top: @grid-vertical-margin;}
     }
 }
 
