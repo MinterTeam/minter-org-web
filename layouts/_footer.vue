@@ -8,7 +8,7 @@
     <footer class="footer">
         <div class="u-container">
             <div class="footer__container">
-                <img class="footer__logo u-hidden-small-down" src="/img/minter-logo-white.svg" width="95" height="30" alt="Minter">
+                <img class="footer__logo u-hidden-medium-down" src="/img/minter-logo-white.svg" width="95" height="30" alt="Minter">
                 <div class="footer__menu">
                     <div class="footer__menu-item">
                         <a class="footer__link u-h link--hover" href="/legal/terms.pdf" target="_blank">Terms</a>
@@ -20,7 +20,10 @@
                         <a class="footer__link u-h link--hover" href="https://help.minter.network" target="_blank">Help</a>
                     </div>
                     <div class="footer__menu-item">
-                        <a class="footer__link u-h link--hover" href="mailto:hello@minter.org" target="_blank" rel="nofollow noopener">Contact</a>
+                        <a class="footer__link u-h link--hover" href="mailto:hello@minter.org" target="_blank" rel="noopener">Contact</a>
+                    </div>
+                    <div class="footer__menu-item">
+                        <a class="footer__link u-h link--hover" href="https://kit.minter.org" target="_blank">Media kit</a>
                     </div>
                 </div>
             </div>

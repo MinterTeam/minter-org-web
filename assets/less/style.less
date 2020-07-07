@@ -194,22 +194,20 @@
 
 // footer
 .footer {background: #222; color: #fff; padding: 28px 0 30px; width: 100%; position: relative; z-index: 9;}
-.footer__container {display: flex; justify-content: center; flex-wrap: wrap;}
+.footer__container {display: flex; flex-wrap: wrap;}
 .footer__logo-link {}
 .footer__logo {/*width: 76px;*/ display: block;}
-.footer__menu {width: 100%; text-align: center; display: flex; justify-content: space-between;}
-.footer__menu-item {display: inline-block;}
+.footer__menu {text-align: center; display: flex; flex-wrap: wrap; margin-left: -24px;}
+.footer__menu-item {display: inline-block; margin-left: 24px;}
 .footer__link {.u-h--uppercase();}
 .footer__copyright {font-size: 12px;}
-@media (min-width: @breakpoint-small-up) {
+@media (min-width: @breakpoint-medium-up) {
     .footer__container {
         align-items: center; justify-content: space-between;
     }
-    .footer__logo {margin-top: -12px; margin-right: 50%;}
-    .footer__menu {width: auto;}
-    .footer__menu-item {
-        &+& {margin-left: 32px;}
-    }
+    .footer__logo {margin-top: -12px; /*margin-right: 50%;*/}
+    .footer__menu {margin-left: -32px;}
+    .footer__menu-item {margin-left: 32px;}
     .footer__copyright-container {display: flex; justify-content: space-between;}
     .footer__copyright {font-size: 14px; min-width: 50%; margin-top: 0;}
     .footer__copyright:last-child {text-align: right;}
@@ -240,10 +238,10 @@
 }
 
 .index__description {font-size: 17px; line-height: 1.368;}
-.index__wallets-image-cell {order: -1;}
+.index__wallets-image-cell {order: -1; position: relative;}
 .index__wallets-image-wrap {max-width: 80%; margin: auto;}
 .index__wallets-image {
-    && {left: -13.8%; width: 127.573%; top: 0; bottom: -16%; height: auto;}
+    && {left: -13.8%; width: 127.573%; top: 0; bottom: -16%; height: auto; z-index: -1;}
 }
 .index__contests-description {max-width: 566px;}
 .index__contests-image {position: absolute; bottom: 0; right: 0; max-width: 95%; height: auto;}

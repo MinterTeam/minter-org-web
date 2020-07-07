@@ -18,7 +18,6 @@
         <fail unless="env.app_id_host" message="app_id_host environment variable is not set"/>
         <fail unless="env.app_image_api_url" message="app_image_api_url environment variable is not set"/>
         <fail unless="env.app_explorer_api_url" message="app_explorer_api_url environment variable is not set"/>
-        <fail unless="env.app_bip_convert_api_url" message="app_bip_convert_api_url environment variable is not set"/>
         <fail unless="env.app_google_signin_client_id" message="app_google_signin_client_id environment variable is not set"/>
     </target>
 </project>

@@ -8,6 +8,12 @@ const instance = axios.create({
 });
 addToCamelInterceptor(instance);
 
+
+export function getBipPrice() {
+    return instance.get('status')
+        .then((response) => response.data.data.bipPriceUsd);
+}
+
 /**
  *
  * @param {string} address

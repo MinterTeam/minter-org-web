@@ -1,7 +1,7 @@
 <script>
+    import prettyNum, {PRECISION_SETTING} from 'pretty-num';
     import {ID_HOST} from '~/assets/variables.js';
-    import {getBipPrice} from '~/api/convert.js';
-    import {prettyPrecise} from '~/assets/utils.js';
+    import {getBipPrice} from '~/api/explorer.js';
     import AuthButtonGoogle from '~/components/AuthButtonGoogle.vue';
     import ResourceItem from '~/components/ResourceItem.vue';
     import ResourceProjectItem from '~/components/ResourceProjectItem.vue';
@@ -45,7 +45,7 @@
             };
         },
         methods: {
-            prettyPrecise,
+            coinPrice: (value) => prettyNum(value, {precision: 4, precisionSetting: PRECISION_SETTING.FIXED}),
         },
     }
 </script>
@@ -53,7 +53,7 @@
 <template>
     <div class="u-section main-content--center">
         <div class="u-container">
-            <h1 class="u-h1 u-h1--large u-mb-25">Minter is building the&nbsp;simplest solution to receive, send and store any type of digital money. Or&nbsp;even create your own.</h1>
+            <h1 class="u-h1 u-h1--large u-mb-25">Minter is building the&nbsp;simplest solution to receive, send, and store any type of digital money. Or&nbsp;even create your own.</h1>
             <div class="intro">
                 <img class="intro__image" src="/img/index-intro.png" srcset="/img/index-intro@2x.png 2x" alt="" role="presentation">
                 <div class="intro__content">
@@ -68,9 +68,6 @@
                         <AuthButtonGoogle class="intro__button" invitation="future" :idHost="$options.ID_HOST"/>
                     </div>
                     <p>No apps to download. No blockchain jargon to learn. <br> No special skills to apply.</p>
-                    <p>
-                        <nuxt-link class="link--default" to="/vision">Our vision</nuxt-link>
-                    </p>
 
                     <div class="u-section u-section--large">
                         <blockquote class="intro__quote">
@@ -78,7 +75,7 @@
                             <p>Minter lets any brand, blogger, or community to create their own coin and implement it in reward and loyalty systems. Coins can be transferred between users, exchanged for one another, or instantly spent on goods and services. Everyone is welcome to come up with their own terms of using the coins while Minter will take care of the rest.</p>
                         </blockquote>
                     </div>
-                    <h2 class="u-h2 intro__list">One glance at our list of tools &&nbsp;projects is worth a thousand words</h2>
+                    <h2 class="u-h2 intro__list">One glance at our list of tools and&nbsp;projects is worth a thousand words</h2>
                 </div>
             </div>
 
@@ -103,7 +100,7 @@
                         <p>User-friendly and feature-rich wallet released as an application for Android devices.</p>
                     </ResourceItem>
                 </div>
-                <div class="u-cell u-cell--large--2-3 u-cell--medium--1-2 u-relative index__wallets-image-cell">
+                <div class="u-cell u-cell--large--2-3 u-cell--medium--1-2 index__wallets-image-cell">
                     <figure class="index__wallets-image-wrap u-aspect-ratio" style="--aspect-ratio:515/349; width: 515px;">
                         <img class="index__wallets-image" src="/img/index-wallets.png" srcset="/img/index-wallets@2x.png 2x" alt="" role="presentation">
                     </figure>
@@ -143,7 +140,7 @@
                             title="Monke"
                             tag="app"
                     >
-                        <p>With this third-party app all your Minter coins are available in any application of your choice, always at your fingertips, and can be accessed in the most easy-to-understand way—from your keyboard. Available both for iOS and Android.</p>
+                        <p>With this third-party app, all your Minter coins are available in any application of your choice, always at your fingertips, and can be accessed in the most easy-to-understand way—from your keyboard. Available both for iOS and Android.</p>
                     </ResourceItem>
                 </div>
             </div>
@@ -292,11 +289,21 @@
                         <p>A service for streamers that allows you to quickly, simply, and securely receive donations from viewers, enjoying all of the Minter blockchain’s benefits.</p>
                     </ResourceProjectItem>
                 </div>
+                <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
+                    <ResourceProjectItem
+                            link="https://bipchange.org/"
+                            src="/img/resources/project-bipchange.png"
+                            title="BipChange"
+                            tag="web"
+                    >
+                        <p>This exchange rate monitoring service  is designed to enable you to quickly locate the best BIP buy/sale offers on the market.</p>
+                    </ResourceProjectItem>
+                </div>
             </div>
 
             <hr class="hr--divider hr--divider-large">
 
-            <h2 class="u-h1 u-h1--large u-mb-05">Send & spend</h2>
+            <h2 class="u-h1 u-h1--large u-mb-05">Send and spend</h2>
             <p class="u-mb-20 index__description">In just a few clicks, you can send Minter-based coins to anyone who can then spend them on numerous goods and services around the world. No need to install a wallet.</p>
             <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
                 <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
@@ -425,7 +432,7 @@
                 </div>
             </div>
 
-            <div class="u-section--top-margin u-section--top-large-margin index__rank-panel">
+            <div class="u-section--margin u-section--margin-large index__rank-panel">
                 <h2 class="u-h1 u-h1--large u-mb-05">Rankings and exchanges</h2>
                 <p class="u-mb-20 index__description">Trade BIP on exchanges or track Minter’s performance in various rankings.</p>
                 <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
@@ -441,7 +448,7 @@
                             <template v-if="bipPrice">
                                 <div class="u-h--uppercase u-mt-20 u-mb-05">Current BIP price</div>
                                 <div class="index__rank-price u-text-number">
-                                    ${{ prettyPrecise(bipPrice) }}
+                                    ${{ coinPrice(bipPrice) }}
                                     <img class="index__rank-price-splat" src="/img/index-rating-splat-3.png" srcset="/img/index-rating-splat-3@2x.png 2x" alt="" role="presentation"/>
                                 </div>
                             </template>
@@ -497,6 +504,16 @@
                             <p>Citex is a South Korea-based digital asset trading platform founded in 2018. It supports spot trading, over-the-counter trading, PoS staking, masternode hosting, grid trading, ETF trading, and options trading. Fee = 0.2%, for withdrawing BIP = 6&nbsp;BIP.</p>
                         </ResourceItem>
                     </div>
+                    <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
+                        <ResourceItem
+                                link="https://my.minter.global"
+                                icon="rank-global"
+                                title="Minter Global"
+                                tag="web"
+                        >
+                            <p>Minter Global OÜ is an Estonian company that is licensed to sell and purchase virtual assets, such as BIP tokens. It offers fully compliant exchange services to the corporate customers and natural persons with the access to SEPA payment accounts.</p>
+                        </ResourceItem>
+                    </div>
                 </div>
 
                 <h2 class="u-h1 u-h1--large u-mb-05 u-section--top-margin u-section--top-margin-large">Track BIP</h2>
@@ -534,6 +551,10 @@
                     </div>
                 </div>
             </div>
+
+            <h2 class="u-h--uppercase u-mb-10">Disclaimer</h2>
+            <p>Minter.org contains webpages that may provide links to websites and the content of third parties. We do not monitor, review or update, and do not have any control over any third party content or third party websites. We do not guarantee the accuracy of the exchange rates provided by third parties. Before you perform transactions related to currency conversion, check the current exchange rate.</p>
+            <p>This information is for informational purposes only, you should not construe any such information or other material as financial, investment or other advice.</p>
 
         </div>
     </div>
