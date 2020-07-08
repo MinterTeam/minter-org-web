@@ -249,7 +249,7 @@
 .index__social-icon {margin-right: 16px;}
 .index__social-caption {font-size: 19px; font-weight: 700;}
 .index__conversation-image {position: absolute; right: 100%; top: 0; margin-right: 16px;}
-.index__rank-panel {background: url(../img/index-rating-splat.png) top right no-repeat, url(../img/index-rating-splat-2.png) 75% 100% no-repeat #fff; background-size: 140px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 48px; margin-left: -48px; margin-right: -48px;}
+.index__rank-panel {background: url(../img/index-rating-splat.png) top right no-repeat, url(../img/index-rating-splat-2.png) 75% 100% no-repeat #fff; background-size: 140px; border-radius: 30px; box-shadow: 0 10px 30px -20px rgba(0,0,0,0.1); padding: 48px; margin-left: -48px; margin-right: -48px;}
 .index__rank-price {font-size: 56px; line-height: 60px; font-weight: 800; letter-spacing: 1px; position: relative; display: inline-block;}
 .index__rank-price-splat {position: absolute; top: 100%; right: 18px; margin-top: 4px;}
 @media(min-width: @breakpoint-small-up) {
@@ -282,8 +282,8 @@
     }
 }
 .resource-project__meta {display: inline-flex; align-items: center; margin-top: 22px;}
-.resource__icon {border-radius: 10px; position: absolute; left: 0; top: 0; box-shadow: 0 10px 10px rgba(0,0,0,0.1);}
-.resource-project__image {border-radius: 10px; box-shadow: 0 10px 10px rgba(0,0,0,0.1);}
+.resource__icon {border-radius: 10px; position: absolute; left: 0; top: 0; box-shadow: 0 10px 10px -6px rgba(0,0,0,0.1);}
+.resource-project__image {border-radius: 10px; box-shadow: 0 10px 10px -6px rgba(0,0,0,0.1);}
 .resource__title {font-size: 19px; line-height: 24px; font-weight: 700; color: @c-orange;}
 .resource__tag {
     font-weight: 600; font-size: 13px; line-height: 16px; padding: 4px 8px; border-radius: 4px; border: 1px solid @c-border; margin-left: 16px;
@@ -322,4 +322,16 @@
     .vision__steps-line--1 {position: absolute; left: 100%; bottom: 60px; width: 70px; height: 25px; margin-left: 10px;}
     .vision__steps-line--2 {position: absolute; right: -10px; bottom: -38px; width: 28px; height: 38px;}
     .vision__steps-line--3 {position: absolute; left: 84px; top: 100%; width: 3px; height: 110px; margin-top: 10px;}
+}
+
+
+.projects__container {max-width: 640px;}
+.projects__lead {margin-bottom: 40px;}
+.projects__title {}
+.projects__cover {box-shadow: 0 10px 10px rgba(0,0,0,0.1); border-radius: 10px;}
+.projects__collage {position: relative;}
+.projects__collage-item {
+    && {width: var(--collage-width); height: auto;}
+    &:nth-child(1) {left: 0; top: 0;}
+    &:nth-child(2) {right: 0; bottom: 0; left: auto; top: auto;}
 }

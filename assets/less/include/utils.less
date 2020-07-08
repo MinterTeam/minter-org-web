@@ -9,6 +9,7 @@
 .u-display-block {display: block !important;}
 .u-display-ib {display: inline-block !important;}
 .u-relative {position: relative; z-index: 1;}
+.u-mb-025 {margin-bottom: 0.25rem !important;}
 .u-mb-05 {margin-bottom: 0.5rem !important;}
 .u-mb-10 {margin-bottom: 1rem !important;}
 .u-mb-15 {margin-bottom: 1.5rem !important;}
@@ -28,13 +29,13 @@
 
 .u-aspect-ratio {
     max-width: 100%; margin: 0;
-    & > img, & > svg { width: 100%; height: auto; }
+    & > img, & > svg, & > iframe { width: 100%; height: auto; }
 }
 @supports (--a:b) {
     .u-aspect-ratio {
         position: relative;
         &::before {content: ""; display: block; padding-bottom: calc(100% / (var(--aspect-ratio)));}
-        & > img, & > svg {position: absolute; top: 0; left: 0; height: 100%;}
+        & > img, & > svg, & > iframe {position: absolute; top: 0; left: 0; height: 100%;}
     }
 }
 

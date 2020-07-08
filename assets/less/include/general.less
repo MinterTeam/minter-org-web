@@ -66,8 +66,8 @@ a, .link {&:hover, &:focus {/*text-decoration: underline; */outline: none;}}
     text-decoration: underline;
     &:hover, &:focus {text-decoration: none;}
 }
-.link--default {.link--main(); .link--underline(); font-weight: 600;}
-.link--default-green {.link--green(); .link--underline(); font-weight: 600;}
+.link--default {.link--main(); .link--hover(); font-weight: 600;}
+.link--default-green {.link--green(); .link--hover(); font-weight: 600;}
 button {cursor: pointer; outline: none;}
 p, ul, ol {margin: 0;}
 p, ul, ol, h5 {
@@ -187,6 +187,11 @@ blockquote {
     color: @c-green; background: transparent; border-color: @c-green;
     &:hover, &:focus {background: fade(@c-green, 20%);}
     &:active {background: fade(@c-green, 40%);}
+}
+.button--ghost-main {
+    color: @c-main; background: transparent; border-color: @c-main;
+    &:hover, &:focus {background: fade(@c-main, 20%);}
+    &:active {background: fade(@c-main, 40%);}
 }
 //.button--ghost-white {
 //    color: #fff; background: transparent; border-color: #fff;

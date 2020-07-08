@@ -171,6 +171,7 @@ gulp.task('imagemin:clean', gulp.parallel('imagemin:clean-dest', 'imagemin:clean
 gulp.task('once', gulp.parallel('less', 'imagemin', 'countries', 'country-languages'));
 // Полная сборка с вотчем
 gulp.task('default', gulp.series(
+    'imagemin:clean-dest',
     'once',
     function watch() {
         gulp.watch(paths.watch.less, gulp.task('less'));

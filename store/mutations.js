@@ -2,6 +2,9 @@ import Vue from 'vue';
 import {resetAuthToken} from '~/api/id.js';
 
 export default {
+    SET_SECTION_NAME: (state, sectionName) => {
+        state.sectionName = sectionName;
+    },
     SET_USER: (state, user) => {
         state.user = {
             ...user,

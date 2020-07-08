@@ -1,5 +1,6 @@
 export default function createStore() {
     return {
+        sectionName: '',
         /** @type MinterIdUser|null */
         user: null,
         userTimeStamp: 0,
