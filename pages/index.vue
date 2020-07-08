@@ -302,7 +302,7 @@
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
             <div class="u-cell u-cell--large--1-3"><!--placeholder--></div>
             <div class="u-cell u-cell--large--1-3">
-                <nuxt-link class="button button--ghost-main button--full" to="/projects">More Projects</nuxt-link>
+                <nuxt-link class="button button--ghost-main button--full" to="/projects">More projects</nuxt-link>
             </div>
             <div class="u-cell u-cell--large--1-3"><!--placeholder--></div>
         </div>

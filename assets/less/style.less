@@ -335,3 +335,10 @@
     &:nth-child(1) {left: 0; top: 0;}
     &:nth-child(2) {right: 0; bottom: 0; left: auto; top: auto;}
 }
+
+@media (min-width: @breakpoint-large-up) {
+    .projects__title {
+        position: relative;
+        &::before {content: ''; position: absolute; right: 100%; top: 50%; margin-right: 24px; width: 50vw; height: 3px; margin-top: -1px; background: @c-main;}
+    }
+}
