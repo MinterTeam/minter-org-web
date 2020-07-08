@@ -246,6 +246,299 @@
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/unWc4-D82wQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </figure>
 
+
+ <hr class="hr--divider hr--divider-large">
+
+
+            <!-- Bots -->
+            <h1 class="u-h1 u-h1--large u-mb-10">Bots</h1>
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://t.me/MinterWalletBot" target="_blank" rel="noopener">Minter Wallet</a>
+            </h2>
+
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:390/352; width: 390px;">
+                <img class="projects__cover" src="/img/projects/minterwalletbot.png" srcset="/img/projects/minterwalletbot@2x.png 2x" alt="" role="presentation" width="390" height="352">
+            </figure>
+
+            <p class="u-mb-20"> Third-party multi-functional Telegram bot wallet that allows you to not only receive and send coins without leaving Telegram but also manage checks, save frequently used addresses, receive notifications, and play built-in mini-games that run on the Minter blockchain.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
+                    <div><a class="link--default" href="https://t.me/MinterWalletBot">t.me/MinterWalletBot</a></div>
+                </div>
+            </div>
+            
+            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>Create and share personalized checks and multi-checks directly within Telegram groups.</p>
+            <p>Only the Telegram user you have selected can redeem a personalized check. As for multi-checks, they can be used by as many people as you have specified.</p>
+            <p>With this bot, you can:</p>
+            <ul class="list-simple">
+                <li>Set a wallet name</li>
+                <li>Enable balance change notifications</li>
+                <li>Add your other wallets or set up new ones</li>
+                <li>Manage an address list</li>
+                <li>Play built-in mini-games powered by <a class="link--default" href="https://telegram.org/blog/folders#and-one-more-thing" target="_blank" rel="noopener">Telegram randomization</a> and Minter blockchain</li>
+            </ul>
+            <p>The games are all about users winning when some random conditions coincide, for example, if the number on the die is even. There are also all kinds of multipliers.</p>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://t.me/MinterLikeBot" target="_blank" rel="noopener">LIKE</a>
+            </h2>
+
+            <p>A minimalistic bot that rewards chat members in the LIKE coin. All you need to do is invite the bot to your group. After that, any user with a positive coin balance in the bot can like other people’s messages, thus sending LIKE coins.</p>
+            <p class="u-mb-20">The chat owner gets 10% of all rewards.</p>
+
+             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
+                    <div><a class="link--default" href="hhttps://t.me/MinterLikeBot">t.me/MinterLikeBot</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Coin</div>
+                    <div><a class="link--default" href="https://chainik.io/coin/LIKE">chainik.io/coin/LIKE</a></div>
+                </div>
+            </div>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+             <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://t.me/paytominter_bot" target="_blank" rel="noopener">Pay to Minter</a>
+            </h2>
+
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/439">
+                <img class="projects__cover" src="/img/projects/paytominter@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/paytominter@640w.png 640w,
+                        /img/projects/paytominter@686w.png 750w,
+                        /img/projects/paytominter@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">The scope of this bot’s features lies with transferring Minter network coins to the members or airdropping them to the most active participants.</p>
+            
+             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
+                    <div><a class="link--default" href="https://t.me/paytominter_bot">t.me/paytominter_bot</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Documentation</div>
+                    <div><a class="link--default" href="https://telegra.ph/paytointer-BOT-v092-06-15-2">telegra.ph/paytointer-BOT-v092-06-15-2</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>To start using the bot, add it to your group and grant corresponding rights.</p>
+            <ul class="list-simple">
+                <li>Send coins to a specific user</li>
+                <li>Send coins to multiple users by specifying usernames</li>
+                <li>Airdrop coins to the specified number of users who sent messages to the chat in the last X minutes (5 to 720)</li>
+                <li>Distribute among random users</li>
+                <li>Send coins to a specific wallet (Mx)</li>
+            </ul>
+            <p>Received coins can stay in the bot until further distribution, be withdrawn to a wallet, or spent on goods and services.</p>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+             <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://t.me/MinterToolsBot" target="_blank" rel="noopener">Minter Tools</a>
+            </h2>
+
+              <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/418">
+                <img class="projects__cover" src="/img/projects/mintertools@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/mintertools@640w.png 640w,
+                        /img/projects/mintertools@686w.png 750w,
+                        /img/projects/mintertools@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">A super useful tool if you need to get some Minter network info real quick and without leaving Telegram.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
+                    <div><a class="link--default" href="https://t.me/MinterToolsBot">t.me/MinterToolsBot</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/MinterTools">t.me/MinterTools</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/MinterToolsChat">t.me/MinterToolsChat</a></div>
+                </div>
+            </div>
+             <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>The bot allows you to work with your addresses and view balances, delegated funds, and capitalization. Need information about a validator? Not a problem, either: names, addresses, current and minimum stakes, number of slots taken, voting power, age—you name it.</p>
+            <p>Also in the bot you can always find latest BIP rates across various exchange venues.</p>
+            
+
+            <hr class="hr--divider hr--divider-large">
+
+
+             <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://t.me/MinterInfoBot" target="_blank" rel="noopener">Minter Info bot</a>
+            </h2>
+
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:450/334; width: 450px;">
+                <img class="projects__cover" src="/img/projects/minterinfobot.png" srcset="/img/projects/minterinfobot@2x.png 2x" alt="" role="presentation" width="450" height="334">
+            </figure>
+
+            <p class="u-mb-20">Useful bot showing network statistics.</p>
+             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
+                    <div><a class="link--default" href="https://t.me/MinterInfoBot">t.me/MinterInfoBot</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/MIB_Chat">t.me/MIB_Chat</a></div>
+                </div>
+            </div>
+
+             <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>This bot will help you estimate the delegator rewards and efficient re-delegation for any address, predict supply, rank the coins by their reserves, show summary information about a specific coin, and track auto-unbonds and slashes.</p>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+             <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://t.me/MinterNotifyBot" target="_blank" rel="noopener">Minter Notify</a>
+            </h2>
+
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/475">
+                <img class="projects__cover" src="/img/projects/minternotify@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/minternotify@640w.png 640w,
+                        /img/projects/minternotify@686w.png 750w,
+                        /img/projects/minternotify@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">An excellent demo of the Telegram + Minter synergy: this simple yet useful bot will keep you posted on all transactions made by the addresses you choose.</p>
+             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
+                    <div><a class="link--default" href="https://t.me/MinterNotifyBot">t.me/MinterNotifyBot</a></div>
+                </div>
+            </div>
+
+             <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>Add the addresses you need to the list, name them, select the types of events you are interested in, and receive alerts without leaving Telegram.</p>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <!-- Others -->
+            <h1 class="u-h1 u-h1--large u-mb-10">Others</h1>
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://minteralerts.com" target="_blank" rel="noopener">Minter Alerts</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/409">
+                <img class="projects__cover" src="/img/projects/minteralerts@640w.jpg" alt="" role="presentation"
+                     srcset="/img/projects/minteralerts@640w.jpg 640w,
+                        /img/projects/minteralerts@686w.jpg 750w,
+                        /img/projects/minteralerts@1280w.jpg 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">This service allows streamers to quickly, simply, and securely receive donations from viewers, enjoying all of the Minter blockchain’s benefits.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://minteralerts.com">minteralerts.com</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/MinterAlerts">t.me/MinterAlerts</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Features</h3>
+            <ul class="list-simple">
+                <li>Select alert sounds</li>
+                <li>Customization of notifications</li>
+                <li>Stats dashboard</li>
+                <li>Integration with Twitch API</li>
+                <li>Minter blockchain under the hood</li>
+            </ul>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Advantages</h3>
+            <ul class="list-simple">
+                <li>Withdraw funds without unnecessary barriers: there are no withdrawal limits as your money is yours, period</li>
+                <li>Low fees: transactions cost less than $.001</li>
+                <li>Low confirmation times: only 5 sec. to send or receive a donation</li>
+                <li>Coins can be easily exchanged for BTC, ETH, USDT, or any other cryptocurrency (using external exchange platforms) or spent immediately on goods and services listed across the Minter Push services</li>
+            </ul>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://bipchange.org/?lang=en" target="_blank" rel="noopener">BipChange</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/409">
+                <img class="projects__cover" src="/img/projects/bipchange@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/bipchange@640w.png 640w,
+                        /img/projects/bipchange@686w.png 750w,
+                        /img/projects/bipchange@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">This exchange rate monitoring service is designed to enable you to quickly locate the best BIP buy/sell offers on the market.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://bipchange.org/?lang=en">bipchange.org</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/Bip_Change">t.me/Bip_Change</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
+                    <div><a class="link--default" href="https://t.me/bipchange_org_bot">t.me/bipchange_org_bot</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Support</div>
+                    <div><a class="link--default" href="https://t.me/in_mint_bot">t.me/in_mint_bot</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">API</div>
+                    <div><a class="link--default" href="https://bipchange.org/howtoapi?lang=en">bipchange.org/howtoapi</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">What's the exposure?</h3>
+            <ul class="list-simple">
+                <li>6 cryptocurrencies</li>
+                <li>9 electronic money systems</li>
+                <li>15 banks</li>
+                <li>17 exchange services</li>
+                <li>150 currency pairs</li>
+            </ul>
+            <p>The daily volume chart allows you to assess the current trading situation in the market.</p>
+            <p>BipChange does also have an average BIP price <a class="link--default" href="https://bipchange.org/widget?lang=en" target="_blank" rel="noopener">widget</a> that you can integrate into your own website.</p>
+
+
+           
         </div>
     </div>
 </template>
