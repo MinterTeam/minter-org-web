@@ -31,424 +31,6 @@
         <div class="projects__container">
             <p class="projects__lead">On this page, you can find a list of community-built projects that are either powered by the Minter blockchain or using its capabilities.</p>
 
-            <!-- INFRASTRUCTURE -->
-            <h1 class="u-h1 u-h1--large u-mb-10">Infrastructure</h1>
-            <h2 class="projects__title u-h2 u-mb-15">
-                <a class="link--hover link--main" href="https://minterscan.net" target="_blank" rel="noopener">Minterscan</a>
-            </h2>
-            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/404">
-                <img class="projects__cover" src="/img/projects/minterscan@640w.png" alt="" role="presentation"
-                     srcset="/img/projects/minterscan@640w.png 640w,
-                        /img/projects/minterscan@686w.png 750w,
-                        /img/projects/minterscan@1280w.png 1280w"
-                     sizes="(min-width: 640px) 640w, 100vw"
-                >
-            </figure>
-
-            <p class="u-mb-20">A modern Minter network explorer, which offers a wider range of intuitive and relevant tools compared to the official explorer: profile icons, validator rankings, purpose-specific tools, and more.</p>
-
-            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://minterscan.net" target="_blank" rel="noopener">minterscan.net</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Coin</div>
-                    <div><a class="link--default" href="https://chainik.io/coin/MSCAN" target="_blank" rel="noopener">chainik.io/coin/MSCAN</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/minterscan" target="_blank" rel="noopener">t.me/minterscan</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/minter_zen" target="_blank" rel="noopener">t.me/minter_zen</a></div>
-                </div>
-            </div>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Explorer</h3>
-            <p>The blockchain explorer allows you to view all information about any block, transaction, or address on the Minter network. Aside from standard functionality, Minterscan offers a number of additional useful services.</p>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Profiles</h3>
-            <p>Address <a class="link--default" href="https://minterscan.net/profiles" target="_blank" rel="noopener">profiles</a> allow any person or project to set their avatar, name, and description, as well as undergo the verification process to prove ownership over a certain address.</p>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Validator ranking</h3>
-            <p>Validator <a class="link--default" href="https://minterscan.net/validators" target="_blank" rel="noopener">ranking</a> shows the list of active validators that can be ordered by various filters—for example, stake size or voting power.</p>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Proposal voting</h3>
-            <p><a class="link--default" href="https://minterscan.net/proposals" target="_blank" rel="noopener">Proposals</a> are ideas put forward by the community or core dev team, aimed to improve the blockchain or its individual components. This tool is mostly used for voting on major Minter network upgrades. Validators send a transaction expressing their support for either of two options, namely ACCEPT or REJECT, in the payload. For an upgrade to be accepted and proceeded with, a two-thirds majority is required.</p>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Exchanging</h3>
-            <p>Exchange <a class="link--default" href="https://minterscan.net/exchanges/" target="_blank" rel="noopener">monitoring</a> aggregates the best offers to buy or sell BIP across numerous platforms.</p>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Other services</h3>
-            <ul class="list-simple">
-                <li><a class="link--default" href="https://minterscan.net/calc" target="_blank" rel="noopener">Calculators</a>: estimate the price of a coin or potential delegation rewards</li>
-                <li><a class="link--default" href="https://minterscan.net/faq/multisend" target="_blank" rel="noopener">Multi-sends</a>: make multi-send transactions using a utility or an on-line version</li>
-            </ul>
-
-
-            <hr class="hr--divider hr--divider-large">
-
-
-            <h2 class="projects__title u-h2 u-mb-15">
-                <a class="link--hover link--main" href="https://chainik.io" target="_blank" rel="noopener">Chainik</a>
-            </h2>
-            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/441">
-                <img class="projects__cover" src="/img/projects/chainik@640w.png" alt="" role="presentation"
-                     srcset="/img/projects/chainik@640w.png 640w,
-                        /img/projects/chainik@686w.png 750w,
-                        /img/projects/chainik@1280w.png 1280w"
-                     sizes="(min-width: 640px) 640w, 100vw"
-                >
-            </figure>
-
-            <p class="u-mb-20">CoinMarketCap for Minter. Coin ranking, all info on tokens and their transactions you could possibly imagine, list of network addresses ordered by their total balance or the amount of funds in delegation, a lot of useful datasets and statistics.</p>
-
-            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://chainik.io" target="_blank" rel="noopener">chainik.io</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/chainik_io" target="_blank" rel="noopener">t.me/chainik_io</a></div>
-                </div>
-                <div class="u-cell">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/joinchat/C8wVAE2zAtfJOQBqgbfWBA" target="_blank" rel="noopener">t.me/joinchat/C8wVAE2zAtfJOQBqgbfWBA</a></div>
-                </div>
-            </div>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Coins</h3>
-            <p>The coin explorer allows you to view full information about every token issued on the network. The homepage provides a list of coins ranked by market cap along with the essential data:</p>
-            <ul class="list-simple">
-                <li>Coin name and icon</li>
-                <li>Constant reserve ratio</li>
-                <li>Coin price (in BIP)</li>
-                <li>24-hour price change</li>
-                <li>24-hour trading volume (coin conversions Minter-wise)</li>
-                <li>Number of conversions in the last 24 hours</li>
-                <li>Current reserve (in BIP)</li>
-                <li>Share of delegated coins in total supply</li>
-                <li>Creator address and creation date</li>
-                <li>7-day price mini-chart</li>
-            </ul>
-            <p>The coin page contains all necessary information, including creation parameters, current indicators, transactions, and different holder and trader rankings. A TradingView-based price chart will allow you to track the coin’s performance down to the moment of its issuance.</p>
-
-            <figure class="u-aspect-ratio u-mt-20 u-mb-20" style="--aspect-ratio:640/500;">
-                <img class="projects__collage-item projects__cover" src="/img/projects/chainik-2.png" srcset="/img/projects/chainik-2@2x.png 2x" alt="" role="presentation" style="--collage-width:75%">
-                <img class="projects__collage-item projects__cover" src="/img/projects/chainik-3.png" srcset="/img/projects/chainik-3@2x.png 2x" alt="" role="presentation" style="--collage-width:75%">
-            </figure>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Rich List</h3>
-            <p>The <a class="link--default" href="https://chainik.io/richlist" target="_blank" rel="noopener">Rich list</a> ranks all network addresses by their total balance. With this tool, you can view the worth of all coins an address holds, the amount it has delegated, and how it measures up against others. You can use the search bar at the top to look for a specific address. The Tag column reveals the address’ plans for Minter’s year two.</p>
-
-
-            <hr class="hr--divider hr--divider-large">
-
-
-            <h2 class="projects__title u-h2 u-mb-15">
-                <a class="link--hover link--main" href="https://funfasy.dev" target="_blank" rel="noopener">FunFaSy</a>
-            </h2>
-            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/441">
-                <img class="projects__cover" src="/img/projects/funfasy@640w.png" alt="" role="presentation"
-                     srcset="/img/projects/funfasy@640w.png 640w,
-                        /img/projects/funfasy@686w.png 750w,
-                        /img/projects/funfasy@1280w.png 1280w"
-                     sizes="(min-width: 640px) 640w, 100vw"
-                >
-            </figure>
-
-            <p class="u-mb-20">The FunFaSy API suite provides quick access to the Minter network via HTTPS. The&nbsp;infrastructure for your Web 3.0 application has never been easier.</p>
-
-            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://funfasy.dev" target="_blank" rel="noopener">funfasy.dev</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Documentation</div>
-                    <div><a class="link--default" href="https://funfasy.dev/info/docs/" target="_blank" rel="noopener">funfasy.dev/info/docs</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/funfasy" target="_blank" rel="noopener">t.me/funfasy</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/funfasy_dev" target="_blank" rel="noopener">t.me/funfasy_dev</a></div>
-                </div>
-            </div>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
-            <p>FunFaSy uses an advanced micro-service architecture behind its APIs. Developers can access the Minter network via HTTPS, with queries processed faster than if using other services or in-house solutions. APIs are constantly kept up-to-date, supporting all of the network upgrades and available even when those are taking place.</p>
-            <ul class="list-simple">
-                <li>An expert customer care team is ready to respond to all changes in the network’s operation 24/7</li>
-                <li>All data transmitted is secured with 256-bit SSL encryption (HTTPS)</li>
-                <li>The service is built upon a combination of Google Cloud and Hetzner infrastructures</li>
-                <li>There is a free plan</li>
-            </ul>
-
-
-            <hr class="hr--divider hr--divider-large">
-
-
-            <h2 class="projects__title u-h2 u-mb-15">
-                <a class="link--hover link--main" href="https://paymnt.io" target="_blank" rel="noopener">PayMnt</a>
-            </h2>
-            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/372">
-                <img class="projects__cover" src="/img/projects/paymnt@640w.jpg" alt="" role="presentation"
-                     srcset="/img/projects/paymnt@640w.jpg 640w,
-                        /img/projects/paymnt@686w.jpg 750w,
-                        /img/projects/paymnt@1280w.jpg 1280w"
-                     sizes="(min-width: 640px) 640w, 100vw"
-                >
-            </figure>
-            <p class="u-mb-20">Want to start accepting payments on your website with coins of the Minter network? Use ready-made PayMnt modules that do not require further development. You can accept payments from both natural and legal persons.</p>
-
-            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://paymnt.io" target="_blank" rel="noopener">paymnt.io</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">GitHub</div>
-                    <div><a class="link--default" href="https://github.com/ValidatorCenter" target="_blank" rel="noopener">github.com/ValidatorCenter</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/minterscan" target="_blank" rel="noopener">t.me/paymnt</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/minter_zen" target="_blank" rel="noopener">t.me/ValidatorCenterChat</a></div>
-                </div>
-            </div>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">B2B</h3>
-            <p>Enables you to accept payments from legal entities on your website. The customer confirms payment in one click, while you get an instant notification.</p>
-            <p>The payment from an organization is no different from that of a regular individual: it is processed on the blockchain, uninterrupted. Once completed, you are notified that you can ship now. The customer spends less time and gets what they ordered straight away, meaning higher conversion rates in sight. As for you, costs associated with warehousing and payment processing will reduce.</p>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Self-Employed</h3>
-            <p>PayMnt’s solution for natural persons. Make invoices for the work performed or goods supplied, receive payments to a single blockchain address, and keep track of them.</p>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Ready-Made Modules</h3>
-            <p>You don’t need to develop anything from scratch, simply install the module and fill in a couple of fields. The service’s modules are available for most of the popular CMSes, SaaSes, CRMs, and frameworks. In case there is no module for your platform, reach out to the support team.</p>
-            <ul class="list-simple">
-                <li><a class="link--default" href="https://paymnt.io/mdl/joomla-joomshopping.zip" target="_blank" rel="noopener">Joomla - JoomShopping</a></li>
-                <li><a class="link--default" href="https://paymnt.io/mdl/opencart.zip" target="_blank" rel="noopener">OpenCart</a></li>
-                <li><a class="link--default" href="https://paymnt.io/mdl/prestashop.zip" target="_blank" rel="noopener">PrestaShop</a></li>
-                <li><a class="link--default" href="https://paymnt.io/mdl/wordpress-woocommerce.zip" target="_blank" rel="noopener">Wordpress - WooCommerce</a></li>
-                <li><a class="link--default" href="https://paymnt.io/mdl/drupal-commerce.zip" target="_blank" rel="noopener">Drupal - Commerce</a></li>
-            </ul>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">API</h3>
-            <p>The service provides an easy-to-understand and logical REST API, there are SDKs for the most widely used programming languages, libraries with easily deployed payment forms for websites & mobile apps, and thorough documentation.</p>
-
-
-            <hr class="hr--divider hr--divider-large">
-
-
-            <h2 class="projects__title u-h2 u-mb-15">
-                <a class="link--hover link--main" href="https://minter-service.online/en" target="_blank" rel="noopener">Minter Notifications</a>
-            </h2>
-            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/392">
-                <img class="projects__cover" src="/img/projects/minternotifications@640w.png" alt="" role="presentation"
-                     srcset="/img/projects/minternotifications@640w.png 640w,
-                        /img/projects/minternotifications@686w.png 750w,
-                        /img/projects/minternotifications@1280w.png 1280w"
-                     sizes="(min-width: 640px) 640w, 100vw"
-                >
-            </figure>
-
-            <p class="u-mb-20">The Minter Notification service guarantees to notify you only about what you really need, without endless API queries sent to the node.</p>
-
-            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://minter-service.online/en">minter-service.online/en</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">FAQ</div>
-                    <div><a class="link--default" href="https://minter-service.online/en/faq">minter-service.online/en/faq</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/webcounters_public">t.me/webcounters_public</a></div>
-                </div>
-            </div>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
-            <p>You can receive messages when transferring coins to or from a wallet, delegating funds, unbonding from a node, creating a coin, getting rewards from a node to a wallet, sending or exchanging a coin, all transactions of a certain type, and so on.</p>
-            <p>You can even mix and retrieve, for example, a send transaction from a specific wallet to the desired wallet in a certain coin.</p>
-            <p>All this will allow you to instantly see the payment, change in the wallet balance, change in the coin price, authorization and confirmation of something about the transaction, modification of the profile of the node and wallet, if the validator failed to sign a block for security systems, and much more.</p>
-            <p>If your server or processing service is “stuck,” it does not matter. The system will wait until you‘re back and deliver the data you need without loss.</p>
-            <ul class="list-simple">
-                <li>One notification, instead of tens of thousands per day</li>
-                <li>Ability to receive notifications over the HTTP Protocol</li>
-                <li>User-friendly interface for adding and editing</li>
-                <li>Instant delivery of confirmation notifications</li>
-                <li>Receiving notifications on devices with microcontrollers</li>
-                <li>Open source standard for this ideology, available on Github</li>
-            </ul>
-
-
-            <hr class="hr--divider hr--divider-large">
-
-
-            <!-- GAMES -->
-            <h1 class="u-h1 u-h1--large u-mb-10">Games</h1>
-            <h2 class="projects__title u-h2 u-mb-15">
-                <a class="link--hover link--main" href="https://timeloop.games" target="_blank" rel="noopener">TimeLoop</a>
-            </h2>
-            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/372">
-                <img class="projects__cover" src="/img/projects/timeloop@640w.jpg" alt="" role="presentation"
-                     srcset="/img/projects/timeloop@640w.jpg 640w,
-                        /img/projects/timeloop@686w.jpg 750w,
-                        /img/projects/timeloop@1280w.jpg 1280w"
-                     sizes="(min-width: 640px) 640w, 100vw"
-                >
-            </figure>
-
-            <p class="u-mb-20">The Time Loop arcade is one of the most popular Minter-powered games. You control a spaceship equipped with guns, and the task is to score as many points as possible in one flight.</p>
-
-            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://timeloop.games" target="_blank" rel="noopener">timeloop.games</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Coin</div>
-                    <div><a class="link--default" href="https://chainik.io/coin/TIME" target="_blank" rel="noopener">chainik.io/coin/TIME</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/timeloopnews" target="_blank" rel="noopener">t.me/timeloopnews</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/joinchat/AAI0FlFIj7OECibAuLhHpA" target="_blank" rel="noopener">t.me/joinchat/AAI0FlFIj7OECibAuLhHpA</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="https://t.me/timeloopminterbot" target="_blank" rel="noopener">t.me/timeloopminterbot</a></div>
-                </div>
-            </div>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
-            <p>First off, Time Loop is a game of time. You have a spaceship with a machine gun and rockets and return to the same point in time over and over again. Just like in the Back to the Future movie, you can observe what you did in the past and influence events to change the future.</p>
-            <p>You compete for points with other players who have also fallen into the loop. You can earn points by destroying their ships and collecting gold coins. A situation where you need to take out an enemy ship before it takes out your ship from the past is very common in this game.</p>
-            <p>The entire game is built around the Minter-based TIME coin. It is spent when you travel in time, that is, do the flights. And it is awarded to the winner of each match.</p>
-            <p>The economy depends on the blockchain entirely. The movements of coins between players after each game occur as real transactions on the Minter blockchain, between real wallets. But they are so quick and cheap that for players, the process is invisible. Everything works as fast as in regular games of the pre-blockchain era.</p>
-
-
-            <hr class="hr--divider hr--divider-large">
-
-
-            <h2 class="projects__title u-h2 u-mb-15">
-                <a class="link--hover link--main" href="https://bipgame.io" target="_blank" rel="noopener">Galaxy Online</a>
-            </h2>
-            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/441">
-                <img class="projects__cover" src="/img/projects/galaxy@640w.jpg" alt="" role="presentation"
-                     srcset="/img/projects/galaxy@640w.jpg 640w,
-                        /img/projects/galaxy@686w.jpg 750w,
-                        /img/projects/galaxy@1280w.jpg 1280w"
-                     sizes="(min-width: 640px) 640w, 100vw"
-                >
-            </figure>
-            <p class="u-mb-20">Galaxy Online is a cosmic MMORTS, one the Minter network’s first. Conquer the planets, engage in space battles, and complete missions and expeditions. And don’t forget to level up!</p>
-
-            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://bipgame.io" target="_blank" rel="noopener">bipgame.io</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Guides</div>
-                    <div><a class="link--default" href="https://bipgame.io/faq/index/01galaxy-planets-minerals" target="_blank" rel="noopener">bipgame.io/faq/index/01galaxy-planets-minerals</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/bipgame_news" target="_blank" rel="noopener">t.me/bipgame_news</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/bipgame_io" target="_blank" rel="noopener">t.me/bipgame_io</a></div>
-                </div>
-            </div>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
-            <p>The universe is nearly endless, consisting of many galaxies where players fight one another in ruthless battles for domination over planets and rich territories.</p>
-            <p>Capture planets, mine minerals, upgrade skills and technologies, build a fleet, trade, attack and defend, join corporations and clans.</p>
-            <p>There are several PVP modes playable without providing a private key to your wallet. No personal data of yours is needed to sign up.</p>
-
-            <figure class="u-aspect-ratio u-mt-10" style="--aspect-ratio:640/360;">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/vhuvgselML8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </figure>
-
-
-            <hr class="hr--divider hr--divider-large">
-
-
-            <h2 class="projects__title u-h2 u-mb-15">
-                <a class="link--hover link--main" href="https://cubegame.pro" target="_blank" rel="noopener">Cube</a>
-            </h2>
-            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/496">
-                <img class="projects__cover" src="/img/projects/cube@640w.jpg" alt="" role="presentation"
-                     srcset="/img/projects/cube@640w.jpg 640w,
-                        /img/projects/cube@686w.jpg 750w,
-                        /img/projects/cube@1280w.jpg 1280w"
-                     sizes="(min-width: 640px) 640w, 100vw"
-                >
-            </figure>
-            <p class="u-mb-20">Cube is a real-time multi-player strategy. Use your skills to claim enemy-controlled territories and earn CUBE coins.</p>
-
-            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://cubegame.pro" target="_blank" rel="noopener">cubegame.pro</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Coin</div>
-                    <div><a class="link--default" href="https://chainik.io/coin/CUBE" target="_blank" rel="noopener">chainik.io/coin/CUBE</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/cubenews_ru" target="_blank" rel="noopener">t.me/cubenews_ru</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/cubechat_ru" target="_blank" rel="noopener">t.me/cubechat_ru</a></div>
-                </div>
-                <div class="u-cell u-cell--medium--1-2">
-                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="https://t.me/CubeMinterBot" target="_blank" rel="noopener">t.me/CubeMinterBot</a></div>
-                </div>
-            </div>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
-            <p>The game can be played by 2–8 people simultaneously. Each player has a main building called <strong>Base</strong>, the very first cube which powers everything with the energy. It is the most important cube; if you lose it, you lose the game.</p>
-            <p>There are also <strong>generators</strong> scattered on the map. To capture, move your cube close to&nbsp;them.</p>
-            <p>Each cube has its value, or <strong>energy</strong>. The energy of an ordinary cube is re-filled every 25&nbsp;seconds. The energy of bases and generators, every second.</p>
-            <p>Energy is spent on opening new cubes and entering into the battles over bases and&nbsp;generators.</p>
-
-            <figure class="u-aspect-ratio u-mt-10 u-mb-10" style="--aspect-ratio:640/360;">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/FU0MapyxVf8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </figure>
-
-            <h3 class="u-h3 u-mb-05 u-mt-20">Gaming process</h3>
-            <ul class="list-simple">
-                <li>WASD keys and arrows are the controls. You can move in any direction, except diagonally. You can also click anywhere on the map (energy does not move when you do so)</li>
-                <li>To capture a new cube, you need 1 unit of energy; to re-capture a cube, the same 1 unit + energy of that cube</li>
-                <li>Move energy around the map with your cursor</li>
-                <li>The mission is to claim the bases of all players on the map</li>
-                <li>The whole map is covered by the fog of war; each cube has the visibility of 1, meaning it lifts the fog 1 cell in each direction</li>
-            </ul>
-
-
-            <hr class="hr--divider hr--divider-large">
-
 
             <!-- SEND -->
             <h1 class="u-h1 u-h1--large u-mb-10">Send and spend</h1>
@@ -692,7 +274,7 @@
                 <a class="link--hover link--main" href="https://wallet.reef.mn" target="_blank" rel="noopener">REEF Wallet</a>
             </h2>
 
-             <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/402">
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/402">
                 <img class="projects__cover" src="/img/projects/reef@640w.png" alt="" role="presentation"
                      srcset="/img/projects/reef@640w.png 640w,
                         /img/projects/reef@686w.png 750w,
@@ -705,15 +287,15 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://wallet.reef.mn/">wallet.reef.mn/</a></div>
+                    <div><a class="link--default" href="https://wallet.reef.mn/" target="_blank" rel="noopener">wallet.reef.mn/</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/reefmn_chat_en">t.me/reefmn_chat_en</a></div>
+                    <div><a class="link--default" href="https://t.me/reefmn_chat_en" target="_blank" rel="noopener">t.me/reefmn_chat_en</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">iOS App</div>
-                    <div><a class="link--default" href="https://t.me/reefmn_en">t.me/reefmn_en</a></div>
+                    <div><a class="link--default" href="https://t.me/reefmn_en" target="_blank" rel="noopener">t.me/reefmn_en</a></div>
                 </div>
             </div>
 
@@ -737,8 +319,6 @@
             <blockquote class="u-mt-20">Besides this, our UI is intuitive and rapid. We are following the high security standards of the official Minter wallets: <strong>your seed phrases are always stored locally and never leave your device.</strong></blockquote>
 
 
-
-
             <hr class="hr--divider hr--divider-large">
 
 
@@ -757,19 +337,19 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://en.monke.io">en.monke.io</a></div>
+                    <div><a class="link--default" href="https://en.monke.io" target="_blank" rel="noopener">en.monke.io</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/MonkeApp">t.me/MonkeApp</a></div>
+                    <div><a class="link--default" href="https://t.me/MonkeApp" target="_blank" rel="noopener">t.me/MonkeApp</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">iOS App</div>
-                    <div><a class="link--default" href="https://apps.apple.com/ru/app/monke-the-money-keyboard/id1470869897?l=en">apps.apple.com/ru/app/monke-the-money-keyboard/id1470869897</a></div>
+                    <div><a class="link--default" href="https://apps.apple.com/ru/app/monke-the-money-keyboard/id1470869897?l=en" target="_blank" rel="noopener">apps.apple.com/ru/app/monke-the-money-keyboard/id1470869897</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Android App</div>
-                    <div><a class="link--default" href="https://play.google.com/store/apps/details?id=io.monke.app">play.google.com/store/apps/details?id=io.monke.app</a></div>
+                    <div><a class="link--default" href="https://play.google.com/store/apps/details?id=io.monke.app" target="_blank" rel="noopener">play.google.com/store/apps/details?id=io.monke.app</a></div>
                 </div>
             </div>
             <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
@@ -810,15 +390,15 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/RundaxCom">t.me/RundaxCom</a></div>
+                    <div><a class="link--default" href="https://t.me/RundaxCom" target="_blank" rel="noopener">t.me/RundaxCom</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/RundaxComGroup">t.me/RundaxComGroupp</a></div>
+                    <div><a class="link--default" href="https://t.me/RundaxComGroup" target="_blank" rel="noopener">t.me/RundaxComGroupp</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">iOS App</div>
-                    <div><a class="link--default" href="https://apps.apple.com/ru/app/rundax-wallet/id1519026967">apps.apple.com/ru/app/rundax-wallet/id1519026967</a></div>
+                    <div><a class="link--default" href="https://apps.apple.com/ru/app/rundax-wallet/id1519026967" target="_blank" rel="noopener">apps.apple.com/ru/app/rundax-wallet/id1519026967</a></div>
                 </div>
             </div>
 
@@ -834,6 +414,428 @@
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/Lw6Tfhj3g8Q?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </figure>
             <blockquote class="u-mt-20">We rethought the whole pushing process, starting with the basics. We threw away everything that affects the speed and clutters the UX. No more extra features or buttons. Then we did something that radically speeds up and facilitates sending - we transferred the entire stage of creating a push right inside the usual Minter's wallet. Now the user only needs to click the GIFT button in the wallet and share the link with a friend. A couple of taps, a few seconds.</blockquote>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <!-- GAMES -->
+            <h1 class="u-h1 u-h1--large u-mb-10">Games</h1>
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://timeloop.games" target="_blank" rel="noopener">TimeLoop</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/372">
+                <img class="projects__cover" src="/img/projects/timeloop@640w.jpg" alt="" role="presentation"
+                     srcset="/img/projects/timeloop@640w.jpg 640w,
+                        /img/projects/timeloop@686w.jpg 750w,
+                        /img/projects/timeloop@1280w.jpg 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">The Time Loop arcade is one of the most popular Minter-powered games. You control a spaceship equipped with guns, and the task is to score as many points as possible in one flight.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://timeloop.games" target="_blank" rel="noopener">timeloop.games</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Coin</div>
+                    <div><a class="link--default" href="https://chainik.io/coin/TIME" target="_blank" rel="noopener">chainik.io/coin/TIME</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/timeloopnews" target="_blank" rel="noopener">t.me/timeloopnews</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/joinchat/AAI0FlFIj7OECibAuLhHpA" target="_blank" rel="noopener">t.me/joinchat/AAI0FlFIj7OECibAuLhHpA</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
+                    <div><a class="link--default" href="https://t.me/timeloopminterbot" target="_blank" rel="noopener">t.me/timeloopminterbot</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>First off, Time Loop is a game of time. You have a spaceship with a machine gun and rockets and return to the same point in time over and over again. Just like in the Back to the Future movie, you can observe what you did in the past and influence events to change the future.</p>
+            <p>You compete for points with other players who have also fallen into the loop. You can earn points by destroying their ships and collecting gold coins. A situation where you need to take out an enemy ship before it takes out your ship from the past is very common in this game.</p>
+            <p>The entire game is built around the Minter-based TIME coin. It is spent when you travel in time, that is, do the flights. And it is awarded to the winner of each match.</p>
+            <p>The economy depends on the blockchain entirely. The movements of coins between players after each game occur as real transactions on the Minter blockchain, between real wallets. But they are so quick and cheap that for players, the process is invisible. Everything works as fast as in regular games of the pre-blockchain era.</p>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://bipgame.io" target="_blank" rel="noopener">Galaxy Online</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/441">
+                <img class="projects__cover" src="/img/projects/galaxy@640w.jpg" alt="" role="presentation"
+                     srcset="/img/projects/galaxy@640w.jpg 640w,
+                        /img/projects/galaxy@686w.jpg 750w,
+                        /img/projects/galaxy@1280w.jpg 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+            <p class="u-mb-20">Galaxy Online is a cosmic MMORTS, one the Minter network’s first. Conquer the planets, engage in space battles, and complete missions and expeditions. And don’t forget to level up!</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://bipgame.io" target="_blank" rel="noopener">bipgame.io</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Guides</div>
+                    <div><a class="link--default" href="https://bipgame.io/faq/index/01galaxy-planets-minerals" target="_blank" rel="noopener">bipgame.io/faq/index/01galaxy-planets-minerals</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/bipgame_news" target="_blank" rel="noopener">t.me/bipgame_news</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/bipgame_io" target="_blank" rel="noopener">t.me/bipgame_io</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>The universe is nearly endless, consisting of many galaxies where players fight one another in ruthless battles for domination over planets and rich territories.</p>
+            <p>Capture planets, mine minerals, upgrade skills and technologies, build a fleet, trade, attack and defend, join corporations and clans.</p>
+            <p>There are several PVP modes playable without providing a private key to your wallet. No personal data of yours is needed to sign up.</p>
+
+            <figure class="u-aspect-ratio u-mt-10" style="--aspect-ratio:640/360;">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/vhuvgselML8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </figure>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://cubegame.pro" target="_blank" rel="noopener">Cube</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/496">
+                <img class="projects__cover" src="/img/projects/cube@640w.jpg" alt="" role="presentation"
+                     srcset="/img/projects/cube@640w.jpg 640w,
+                        /img/projects/cube@686w.jpg 750w,
+                        /img/projects/cube@1280w.jpg 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+            <p class="u-mb-20">Cube is a real-time multi-player strategy. Use your skills to claim enemy-controlled territories and earn CUBE coins.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://cubegame.pro" target="_blank" rel="noopener">cubegame.pro</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Coin</div>
+                    <div><a class="link--default" href="https://chainik.io/coin/CUBE" target="_blank" rel="noopener">chainik.io/coin/CUBE</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/cubenews_ru" target="_blank" rel="noopener">t.me/cubenews_ru</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/cubechat_ru" target="_blank" rel="noopener">t.me/cubechat_ru</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
+                    <div><a class="link--default" href="https://t.me/CubeMinterBot" target="_blank" rel="noopener">t.me/CubeMinterBot</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>The game can be played by 2–8 people simultaneously. Each player has a main building called <strong>Base</strong>, the very first cube which powers everything with the energy. It is the most important cube; if you lose it, you lose the game.</p>
+            <p>There are also <strong>generators</strong> scattered on the map. To capture, move your cube close to&nbsp;them.</p>
+            <p>Each cube has its value, or <strong>energy</strong>. The energy of an ordinary cube is re-filled every 25&nbsp;seconds. The energy of bases and generators, every second.</p>
+            <p>Energy is spent on opening new cubes and entering into the battles over bases and&nbsp;generators.</p>
+
+            <figure class="u-aspect-ratio u-mt-10 u-mb-10" style="--aspect-ratio:640/360;">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/FU0MapyxVf8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </figure>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Gaming process</h3>
+            <ul class="list-simple">
+                <li>WASD keys and arrows are the controls. You can move in any direction, except diagonally. You can also click anywhere on the map (energy does not move when you do so)</li>
+                <li>To capture a new cube, you need 1 unit of energy; to re-capture a cube, the same 1 unit + energy of that cube</li>
+                <li>Move energy around the map with your cursor</li>
+                <li>The mission is to claim the bases of all players on the map</li>
+                <li>The whole map is covered by the fog of war; each cube has the visibility of 1, meaning it lifts the fog 1 cell in each direction</li>
+            </ul>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+
+
+
+            <!-- ESSENTIALS -->
+            <h1 class="u-h1 u-h1--large u-mb-10">Essentials</h1>
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://minterscan.net" target="_blank" rel="noopener">Minterscan</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/404">
+                <img class="projects__cover" src="/img/projects/minterscan@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/minterscan@640w.png 640w,
+                        /img/projects/minterscan@686w.png 750w,
+                        /img/projects/minterscan@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">A modern Minter network explorer, which offers a wider range of intuitive and relevant tools compared to the official explorer: profile icons, validator rankings, purpose-specific tools, and more.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://minterscan.net" target="_blank" rel="noopener">minterscan.net</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Coin</div>
+                    <div><a class="link--default" href="https://chainik.io/coin/MSCAN" target="_blank" rel="noopener">chainik.io/coin/MSCAN</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/minterscan" target="_blank" rel="noopener">t.me/minterscan</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/minter_zen" target="_blank" rel="noopener">t.me/minter_zen</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Explorer</h3>
+            <p>The blockchain explorer allows you to view all information about any block, transaction, or address on the Minter network. Aside from standard functionality, Minterscan offers a number of additional useful services.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Profiles</h3>
+            <p>Address <a class="link--default" href="https://minterscan.net/profiles" target="_blank" rel="noopener">profiles</a> allow any person or project to set their avatar, name, and description, as well as undergo the verification process to prove ownership over a certain address.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Validator ranking</h3>
+            <p>Validator <a class="link--default" href="https://minterscan.net/validators" target="_blank" rel="noopener">ranking</a> shows the list of active validators that can be ordered by various filters—for example, stake size or voting power.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Proposal voting</h3>
+            <p><a class="link--default" href="https://minterscan.net/proposals" target="_blank" rel="noopener">Proposals</a> are ideas put forward by the community or core dev team, aimed to improve the blockchain or its individual components. This tool is mostly used for voting on major Minter network upgrades. Validators send a transaction expressing their support for either of two options, namely ACCEPT or REJECT, in the payload. For an upgrade to be accepted and proceeded with, a two-thirds majority is required.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Exchanging</h3>
+            <p>Exchange <a class="link--default" href="https://minterscan.net/exchanges/" target="_blank" rel="noopener">monitoring</a> aggregates the best offers to buy or sell BIP across numerous platforms.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Other services</h3>
+            <ul class="list-simple">
+                <li><a class="link--default" href="https://minterscan.net/calc" target="_blank" rel="noopener">Calculators</a>: estimate the price of a coin or potential delegation rewards</li>
+                <li><a class="link--default" href="https://minterscan.net/faq/multisend" target="_blank" rel="noopener">Multi-sends</a>: make multi-send transactions using a utility or an on-line version</li>
+            </ul>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://chainik.io" target="_blank" rel="noopener">Chainik</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/441">
+                <img class="projects__cover" src="/img/projects/chainik@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/chainik@640w.png 640w,
+                        /img/projects/chainik@686w.png 750w,
+                        /img/projects/chainik@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">CoinMarketCap for Minter. Coin ranking, all info on tokens and their transactions you could possibly imagine, list of network addresses ordered by their total balance or the amount of funds in delegation, a lot of useful datasets and statistics.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://chainik.io" target="_blank" rel="noopener">chainik.io</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/chainik_io" target="_blank" rel="noopener">t.me/chainik_io</a></div>
+                </div>
+                <div class="u-cell">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/joinchat/C8wVAE2zAtfJOQBqgbfWBA" target="_blank" rel="noopener">t.me/joinchat/C8wVAE2zAtfJOQBqgbfWBA</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Coins</h3>
+            <p>The coin explorer allows you to view full information about every token issued on the network. The homepage provides a list of coins ranked by market cap along with the essential data:</p>
+            <ul class="list-simple">
+                <li>Coin name and icon</li>
+                <li>Constant reserve ratio</li>
+                <li>Coin price (in BIP)</li>
+                <li>24-hour price change</li>
+                <li>24-hour trading volume (coin conversions Minter-wise)</li>
+                <li>Number of conversions in the last 24 hours</li>
+                <li>Current reserve (in BIP)</li>
+                <li>Share of delegated coins in total supply</li>
+                <li>Creator address and creation date</li>
+                <li>7-day price mini-chart</li>
+            </ul>
+            <p>The coin page contains all necessary information, including creation parameters, current indicators, transactions, and different holder and trader rankings. A TradingView-based price chart will allow you to track the coin’s performance down to the moment of its issuance.</p>
+
+            <figure class="u-aspect-ratio u-mt-20 u-mb-20" style="--aspect-ratio:640/500;">
+                <img class="projects__collage-item projects__cover" src="/img/projects/chainik-2.png" srcset="/img/projects/chainik-2@2x.png 2x" alt="" role="presentation" style="--collage-width:75%">
+                <img class="projects__collage-item projects__cover" src="/img/projects/chainik-3.png" srcset="/img/projects/chainik-3@2x.png 2x" alt="" role="presentation" style="--collage-width:75%">
+            </figure>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Rich List</h3>
+            <p>The <a class="link--default" href="https://chainik.io/richlist" target="_blank" rel="noopener">Rich list</a> ranks all network addresses by their total balance. With this tool, you can view the worth of all coins an address holds, the amount it has delegated, and how it measures up against others. You can use the search bar at the top to look for a specific address. The Tag column reveals the address’ plans for Minter’s year two.</p>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://funfasy.dev" target="_blank" rel="noopener">FunFaSy</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/441">
+                <img class="projects__cover" src="/img/projects/funfasy@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/funfasy@640w.png 640w,
+                        /img/projects/funfasy@686w.png 750w,
+                        /img/projects/funfasy@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">The FunFaSy API suite provides quick access to the Minter network via HTTPS. The&nbsp;infrastructure for your Web 3.0 application has never been easier.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://funfasy.dev" target="_blank" rel="noopener">funfasy.dev</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Documentation</div>
+                    <div><a class="link--default" href="https://funfasy.dev/info/docs/" target="_blank" rel="noopener">funfasy.dev/info/docs</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/funfasy" target="_blank" rel="noopener">t.me/funfasy</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/funfasy_dev" target="_blank" rel="noopener">t.me/funfasy_dev</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>FunFaSy uses an advanced micro-service architecture behind its APIs. Developers can access the Minter network via HTTPS, with queries processed faster than if using other services or in-house solutions. APIs are constantly kept up-to-date, supporting all of the network upgrades and available even when those are taking place.</p>
+            <ul class="list-simple">
+                <li>An expert customer care team is ready to respond to all changes in the network’s operation 24/7</li>
+                <li>All data transmitted is secured with 256-bit SSL encryption (HTTPS)</li>
+                <li>The service is built upon a combination of Google Cloud and Hetzner infrastructures</li>
+                <li>There is a free plan</li>
+            </ul>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://paymnt.io" target="_blank" rel="noopener">PayMnt</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/372">
+                <img class="projects__cover" src="/img/projects/paymnt@640w.jpg" alt="" role="presentation"
+                     srcset="/img/projects/paymnt@640w.jpg 640w,
+                        /img/projects/paymnt@686w.jpg 750w,
+                        /img/projects/paymnt@1280w.jpg 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+            <p class="u-mb-20">Want to start accepting payments on your website with coins of the Minter network? Use ready-made PayMnt modules that do not require further development. You can accept payments from both natural and legal persons.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://paymnt.io" target="_blank" rel="noopener">paymnt.io</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">GitHub</div>
+                    <div><a class="link--default" href="https://github.com/ValidatorCenter" target="_blank" rel="noopener">github.com/ValidatorCenter</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/minterscan" target="_blank" rel="noopener">t.me/paymnt</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/minter_zen" target="_blank" rel="noopener">t.me/ValidatorCenterChat</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">B2B</h3>
+            <p>Enables you to accept payments from legal entities on your website. The customer confirms payment in one click, while you get an instant notification.</p>
+            <p>The payment from an organization is no different from that of a regular individual: it is processed on the blockchain, uninterrupted. Once completed, you are notified that you can ship now. The customer spends less time and gets what they ordered straight away, meaning higher conversion rates in sight. As for you, costs associated with warehousing and payment processing will reduce.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Self-Employed</h3>
+            <p>PayMnt’s solution for natural persons. Make invoices for the work performed or goods supplied, receive payments to a single blockchain address, and keep track of them.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Ready-Made Modules</h3>
+            <p>You don’t need to develop anything from scratch, simply install the module and fill in a couple of fields. The service’s modules are available for most of the popular CMSes, SaaSes, CRMs, and frameworks. In case there is no module for your platform, reach out to the support team.</p>
+            <ul class="list-simple">
+                <li><a class="link--default" href="https://paymnt.io/mdl/joomla-joomshopping.zip" target="_blank" rel="noopener">Joomla - JoomShopping</a></li>
+                <li><a class="link--default" href="https://paymnt.io/mdl/opencart.zip" target="_blank" rel="noopener">OpenCart</a></li>
+                <li><a class="link--default" href="https://paymnt.io/mdl/prestashop.zip" target="_blank" rel="noopener">PrestaShop</a></li>
+                <li><a class="link--default" href="https://paymnt.io/mdl/wordpress-woocommerce.zip" target="_blank" rel="noopener">Wordpress - WooCommerce</a></li>
+                <li><a class="link--default" href="https://paymnt.io/mdl/drupal-commerce.zip" target="_blank" rel="noopener">Drupal - Commerce</a></li>
+            </ul>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">API</h3>
+            <p>The service provides an easy-to-understand and logical REST API, there are SDKs for the most widely used programming languages, libraries with easily deployed payment forms for websites & mobile apps, and thorough documentation.</p>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://minter-service.online/en" target="_blank" rel="noopener">Minter Notifications</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/392">
+                <img class="projects__cover" src="/img/projects/minternotifications@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/minternotifications@640w.png 640w,
+                        /img/projects/minternotifications@686w.png 750w,
+                        /img/projects/minternotifications@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">The Minter Notification service guarantees to notify you only about what you really need, without endless API queries sent to the node.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://minter-service.online/en" target="_blank" rel="noopener">minter-service.online/en</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">FAQ</div>
+                    <div><a class="link--default" href="https://minter-service.online/en/faq" target="_blank" rel="noopener">minter-service.online/en/faq</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/webcounters_public" target="_blank" rel="noopener">t.me/webcounters_public</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>You can receive messages when transferring coins to or from a wallet, delegating funds, unbonding from a node, creating a coin, getting rewards from a node to a wallet, sending or exchanging a coin, all transactions of a certain type, and so on.</p>
+            <p>You can even mix and retrieve, for example, a send transaction from a specific wallet to the desired wallet in a certain coin.</p>
+            <p>All this will allow you to instantly see the payment, change in the wallet balance, change in the coin price, authorization and confirmation of something about the transaction, modification of the profile of the node and wallet, if the validator failed to sign a block for security systems, and much more.</p>
+            <p>If your server or processing service is “stuck,” it does not matter. The system will wait until you‘re back and deliver the data you need without loss.</p>
+            <ul class="list-simple">
+                <li>One notification, instead of tens of thousands per day</li>
+                <li>Ability to receive notifications over the HTTP Protocol</li>
+                <li>User-friendly interface for adding and editing</li>
+                <li>Instant delivery of confirmation notifications</li>
+                <li>Receiving notifications on devices with microcontrollers</li>
+                <li>Open source standard for this ideology, available on Github</li>
+            </ul>
 
 
             <hr class="hr--divider hr--divider-large">
@@ -1157,23 +1159,23 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://flat.audio">flat.audio/</a></div>
+                    <div><a class="link--default" href="https://flat.audio" target="_blank" rel="noopener">flat.audio/</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Coin</div>
-                    <div><a class="link--default" href="https://chainik.io/coin/FLATCOIN">chainik.io/coin/FLATCOIN</a></div>
+                    <div><a class="link--default" href="https://chainik.io/coin/FLATCOIN" target="_blank" rel="noopener">chainik.io/coin/FLATCOIN</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/flataudio">t.me/flataudio</a></div>
+                    <div><a class="link--default" href="https://t.me/flataudio" target="_blank" rel="noopener">t.me/flataudio</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/flataudio_chat">t.me/flataudio_chat</a></div>
+                    <div><a class="link--default" href="https://t.me/flataudio_chat" target="_blank" rel="noopener">t.me/flataudio_chat</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Android App</div>
-                    <div><a class="link--default" href="https://play.google.com/store/apps/details?id=com.flatdigital.flatfm">play.google.com/store/apps/details?id=com.flatdigital.flatfm</a></div>
+                    <div><a class="link--default" href="https://play.google.com/store/apps/details?id=com.flatdigital.flatfm" target="_blank" rel="noopener">play.google.com/store/apps/details?id=com.flatdigital.flatfm</a></div>
                 </div>
             </div>
 
