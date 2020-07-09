@@ -250,6 +250,53 @@
             <hr class="hr--divider hr--divider-large">
 
 
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://minter-service.online/en" target="_blank" rel="noopener">Minter Notifications</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/392">
+                <img class="projects__cover" src="/img/projects/minternotifications@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/minternotifications@640w.png 640w,
+                        /img/projects/minternotifications@686w.png 750w,
+                        /img/projects/minternotifications@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">The Minter Notification service guarantees to notify you only about what you really need, without endless API queries sent to the node.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://minter-service.online/en">minter-service.online/en</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">FAQ</div>
+                    <div><a class="link--default" href="https://minter-service.online/en/faq">minter-service.online/en/faq</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/webcounters_public">t.me/webcounters_public</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>You can receive messages when transferring coins to or from a wallet, delegating funds, unbonding from a node, creating a coin, getting rewards from a node to a wallet, sending or exchanging a coin, all transactions of a certain type, and so on.</p>
+            <p>You can even mix and retrieve, for example, a send transaction from a specific wallet to the desired wallet in a certain coin.</p>
+            <p>All this will allow you to instantly see the payment, change in the wallet balance, change in the coin price, authorization and confirmation of something about the transaction, modification of the profile of the node and wallet, if the validator failed to sign a block for security systems, and much more.</p>
+            <p>If your server or processing service is “stuck,” it does not matter. The system will wait until you‘re back and deliver the data you need without loss.</p>
+            <ul class="list-simple">
+                <li>One notification, instead of tens of thousands per day</li>
+                <li>Ability to receive notifications over the HTTP Protocol</li>
+                <li>User-friendly interface for adding and editing</li>
+                <li>Instant delivery of confirmation notifications</li>
+                <li>Receiving notifications on devices with microcontrollers</li>
+                <li>Open source standard for this ideology, available on Github</li>
+            </ul>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
             <!-- GAMES -->
             <h1 class="u-h1 u-h1--large u-mb-10">Games</h1>
             <h2 class="projects__title u-h2 u-mb-15">
@@ -641,6 +688,157 @@
             <hr class="hr--divider hr--divider-large">
 
 
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://wallet.reef.mn" target="_blank" rel="noopener">REEF Wallet</a>
+            </h2>
+
+             <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/402">
+                <img class="projects__cover" src="/img/projects/reef@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/reef@640w.png 640w,
+                        /img/projects/reef@686w.png 750w,
+                        /img/projects/reef@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">Reef Wallet is a third-party web wallet with multi-accounts, address book, list of validators, and data from external services.</p>
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://wallet.reef.mn/">wallet.reef.mn/</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/reefmn_chat_en">t.me/reefmn_chat_en</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">iOS App</div>
+                    <div><a class="link--default" href="https://t.me/reefmn_en">t.me/reefmn_en</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Main features</h3>
+            <ul class="list-simple">
+                <li>Basic operations: send, delegate/unbond, convert</li>
+                <li>Scan QR codes</li>
+                <li>Make quick search across validator and coin lists</li>
+                <li><strong>Address Book:</strong> star addresses as your favorites and send them coins in a few clicks</li>
+                <li><strong> Wallets:</strong> see all of your addresses on a single page and manage them easily</li>
+                <li><strong>Observers:</strong> add an address without a seed phrase to track its balance and transactions</li>
+            </ul>
+
+            <p class="u-mt-20">In addition to the features you will find in most wallets, the team behind the service has also implemented:</p>
+            <ul class="list-simple">
+                <li>The ability to make repeat transactions</li>
+                <li>The ability to estimate the date and time the coins will return to the address after unbonding</li>
+                <li>The ability to track the activity of a particular address by adding a special “observer wallet”</li>
+            </ul>
+
+            <blockquote class="u-mt-20">Besides this, our UI is intuitive and rapid. We are following the high security standards of the official Minter wallets: <strong>your seed phrases are always stored locally and never leave your device.</strong></blockquote>
+
+
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://en.monke.io" target="_blank" rel="noopener">Monke</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/421">
+                <img class="projects__cover" src="/img/projects/monke@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/monke@640w.png 640w,
+                        /img/projects/monke@686w.png 750w,
+                        /img/projects/monke@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+            <p class="u-mb-20">Monke is a keyboard with a built-in wallet. After installing it, you can make transfers in any application that allows you to chat — for example, WhatsApp, Viber, WeChat, or Skype.</p>
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://en.monke.io">en.monke.io</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/MonkeApp">t.me/MonkeApp</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">iOS App</div>
+                    <div><a class="link--default" href="https://apps.apple.com/ru/app/monke-the-money-keyboard/id1470869897?l=en">apps.apple.com/ru/app/monke-the-money-keyboard/id1470869897</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Android App</div>
+                    <div><a class="link--default" href="https://play.google.com/store/apps/details?id=io.monke.app">play.google.com/store/apps/details?id=io.monke.app</a></div>
+                </div>
+            </div>
+            <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
+            <p>With Monke, your money is now in any app, always at your fingertips, and in the most easy-to-use and understand form — keyboard.</p>
+            <ul class="list-simple">
+                <li>Transfer coins in any application: install the Monke keyboard and use your wallet wherever you type</li>
+                <li>The address of your wallet is always at hand: send it to the chat using one single button, without switching between applications</li>
+                <li>Copy the address with no extra symbols: Monke will auto-recognize your wallet when pasting from the clipboard</li>
+                <li>Send money within the chat: make transfers without being distracted from communication</li>
+                <li>Dark and light themes available</li>
+            </ul>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Monke.me</h3>
+            <p>With <a class="link--default" href="https://en.monke.me" target="_blank" rel="noopener">Monke.me</a>, you can send money to anyone without having to type in their wallet address. All you need to do is top up your balance and send the link to the recipient. If the amount is large, set a password that you can also share with the receiver to ensure only they have access.</p>
+
+            <figure class="u-aspect-ratio u-mt-20 u-mb-20" style="--aspect-ratio:640/460;">
+                <img class="projects__collage-item projects__cover" src="/img/projects/monkeme-2.png" srcset="/img/projects/monkeme-2@2x.png 2x" alt="" role="presentation" style="--collage-width:75%">
+                <img class="projects__collage-item projects__cover" src="/img/projects/monkeme-3.png" srcset="/img/projects/monkeme-3@2x.png 2x" alt="" role="presentation" style="--collage-width:75%">
+            </figure>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://apps.apple.com/ru/app/rundax-wallet/id1519026967" target="_blank" rel="noopener">Rundax Wallet</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/392">
+                <img class="projects__cover" src="/img/projects/rundaxwallet@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/rundaxwallet@640w.png 640w,
+                        /img/projects/rundaxwallet@686w.png 750w,
+                        /img/projects/rundaxwallet@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">Rundax Wallet is a third-party wallet with advanced security to interact with BIP in Minter blockchain from a verified App Store developer.</p>
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/RundaxCom">t.me/RundaxCom</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/RundaxComGroup">t.me/RundaxComGroupp</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">iOS App</div>
+                    <div><a class="link--default" href="https://apps.apple.com/ru/app/rundax-wallet/id1519026967">apps.apple.com/ru/app/rundax-wallet/id1519026967</a></div>
+                </div>
+            </div>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">Key features:</h3>
+            <ul class="list-simple">
+                <li>Two-factor authentication (Google Authenticator)</li>
+                <li>Support for any number of Minter addresses: you can use addresses with enabled and disabled 2FA simultaneously</li>
+                <li>Quick and convenient amount auto-fill buttons for sending coins</li>
+                <li>Push links created directly in the Minter Push wallet using the <a class="link--default" href="https://push.gifts" target="_blank" rel="noopener">push.gifts</a> service</li>
+                <li>History of all sent pushes with a deposit option</li>
+            </ul>
+            <figure class="u-aspect-ratio u-mt-10" style="--aspect-ratio:640/360;">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/Lw6Tfhj3g8Q?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </figure>
+            <blockquote class="u-mt-20">We rethought the whole pushing process, starting with the basics. We threw away everything that affects the speed and clutters the UX. No more extra features or buttons. Then we did something that radically speeds up and facilitates sending - we transferred the entire stage of creating a push right inside the usual Minter's wallet. Now the user only needs to click the GIFT button in the wallet and share the link with a friend. A couple of taps, a few seconds.</blockquote>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
             <!-- Bots -->
             <h1 class="u-h1 u-h1--large u-mb-10">Bots</h1>
             <h2 class="projects__title u-h2 u-mb-15">
@@ -689,7 +887,7 @@
             <p>A minimalistic bot that rewards chat members in the LIKE coin. All you need to do is invite the bot to your group. After that, any user with a positive coin balance in the bot can like other people’s messages, thus sending LIKE coins.</p>
             <p class="u-mb-20">The chat owner gets 10% of all rewards.</p>
 
-             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
                     <div><a class="link--default" href="hhttps://t.me/MinterLikeBot" target="_blank" rel="noopener">t.me/MinterLikeBot</a></div>
@@ -719,7 +917,7 @@
 
             <p class="u-mb-20">The scope of this bot’s features lies with transferring Minter network coins to the members or airdropping them to the most active participants.</p>
 
-             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
                     <div><a class="link--default" href="https://t.me/paytominter_bot" target="_blank" rel="noopener">t.me/paytominter_bot</a></div>
@@ -937,6 +1135,65 @@
             </ul>
             <p>The daily volume chart allows you to assess the current trading situation in the market.</p>
             <p>BipChange does also have an average BIP price <a class="link--default" href="https://bipchange.org/widget?lang=en" target="_blank" rel="noopener">widget</a> that you can integrate into your own website.</p>
+
+
+            <hr class="hr--divider hr--divider-large">
+
+
+            <h2 class="projects__title u-h2 u-mb-15">
+                <a class="link--hover link--main" href="https://flat.audio" target="_blank" rel="noopener">FLAT.AUDIO</a>
+            </h2>
+            <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/392">
+                <img class="projects__cover" src="/img/projects/flataudio@640w.png" alt="" role="presentation"
+                     srcset="/img/projects/flataudio@640w.png 640w,
+                        /img/projects/flataudio@686w.png 750w,
+                        /img/projects/flataudio@1280w.png 1280w"
+                     sizes="(min-width: 640px) 640w, 100vw"
+                >
+            </figure>
+
+            <p class="u-mb-20">FLAT.AUDIO is an electronic music streaming service that brings together artists and listeners from all over the world and issued its own cryptocurrency on the Minter network under the name FLATCOIN.</p>
+
+            <div class="u-grid u-grid--small u-grid--vertical-margin--small">
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Site</div>
+                    <div><a class="link--default" href="https://flat.audio">flat.audio/</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Coin</div>
+                    <div><a class="link--default" href="https://chainik.io/coin/FLATCOIN">chainik.io/coin/FLATCOIN</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
+                    <div><a class="link--default" href="https://t.me/flataudio">t.me/flataudio</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
+                    <div><a class="link--default" href="https://t.me/flataudio_chat">t.me/flataudio_chat</a></div>
+                </div>
+                <div class="u-cell u-cell--medium--1-2">
+                    <div class="u-h u-h--uppercase u-mb-025">Android App</div>
+                    <div><a class="link--default" href="https://play.google.com/store/apps/details?id=com.flatdigital.flatfm">play.google.com/store/apps/details?id=com.flatdigital.flatfm</a></div>
+                </div>
+            </div>
+
+            <p class="u-mt-20"> Aside from accepting FLATCOIN for payments and offering a 50-percent discount on the subscription plans, the platform also aims to start paying all authors a certain fee each time someone listens to one of their mixes. In addition, FLAT.FM plans to utilize the coin to enable organizers of parties and other thematic events to sell tickets worldwide, and guests, to return them with no limitations.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">For listeners</h3>
+            <p>A vast number of mixes of the highest quality in various genres, from soft deep house to experimental electronics. Three levels of selection. We collect the best music for easy listening.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">For artists</h3>
+            <p>Store your works for free and let others listen to them in quality 320 kbps. The audience of music lovers, promotion tools, and attention to the details will make our platform home for your music forever.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">For podcasts</h3>
+            <p>Ideal hosting for your podcasts—without disc space limitations, free, with a possibility to indicate the author and recording place, and also to store editions in quality 320 kbps.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">For radioshow</h3>
+            <p>The best place to publish your radio show editions: without disc space limitations, free, with a possibility to indicate your guest and store editions in quality 320 kbps.</p>
+
+            <h3 class="u-h3 u-mb-05 u-mt-20">For videopodcasts</h3>
+            <p>Store audio version of each episode in 320 kbps with a download option and attach the link to a video version to the mix. We support videos from YouTube—the number of views will grow, and the listeners will be delighted by the audio mix quality!</p>
+
 
         </div>
     </div>
