@@ -50,19 +50,19 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://minterscan.net">minterscan.net</a></div>
+                    <div><a class="link--default" href="https://minterscan.net" target="_blank" rel="noopener">minterscan.net</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Coin</div>
-                    <div><a class="link--default" href="https://chainik.io/coin/MSCAN">chainik.io/coin/MSCAN</a></div>
+                    <div><a class="link--default" href="https://chainik.io/coin/MSCAN" target="_blank" rel="noopener">chainik.io/coin/MSCAN</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/minterscan">t.me/minterscan</a></div>
+                    <div><a class="link--default" href="https://t.me/minterscan" target="_blank" rel="noopener">t.me/minterscan</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/minter_zen">t.me/minter_zen</a></div>
+                    <div><a class="link--default" href="https://t.me/minter_zen" target="_blank" rel="noopener">t.me/minter_zen</a></div>
                 </div>
             </div>
 
@@ -108,15 +108,15 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://chainik.io">chainik.io</a></div>
+                    <div><a class="link--default" href="https://chainik.io" target="_blank" rel="noopener">chainik.io</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/chainik_io">t.me/chainik_io</a></div>
+                    <div><a class="link--default" href="https://t.me/chainik_io" target="_blank" rel="noopener">t.me/chainik_io</a></div>
                 </div>
                 <div class="u-cell">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/joinchat/C8wVAE2zAtfJOQBqgbfWBA">t.me/joinchat/C8wVAE2zAtfJOQBqgbfWBA</a></div>
+                    <div><a class="link--default" href="https://t.me/joinchat/C8wVAE2zAtfJOQBqgbfWBA" target="_blank" rel="noopener">t.me/joinchat/C8wVAE2zAtfJOQBqgbfWBA</a></div>
                 </div>
             </div>
 
@@ -165,19 +165,19 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://funfasy.dev">funfasy.dev</a></div>
+                    <div><a class="link--default" href="https://funfasy.dev" target="_blank" rel="noopener">funfasy.dev</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Documentation</div>
-                    <div><a class="link--default" href="https://funfasy.dev/info/docs/">funfasy.dev/info/docs</a></div>
+                    <div><a class="link--default" href="https://funfasy.dev/info/docs/" target="_blank" rel="noopener">funfasy.dev/info/docs</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/funfasy">t.me/funfasy</a></div>
+                    <div><a class="link--default" href="https://t.me/funfasy" target="_blank" rel="noopener">t.me/funfasy</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/funfasy_dev">t.me/funfasy_dev</a></div>
+                    <div><a class="link--default" href="https://t.me/funfasy_dev" target="_blank" rel="noopener">t.me/funfasy_dev</a></div>
                 </div>
             </div>
 
@@ -210,19 +210,19 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://paymnt.io">paymnt.io</a></div>
+                    <div><a class="link--default" href="https://paymnt.io" target="_blank" rel="noopener">paymnt.io</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">GitHub</div>
-                    <div><a class="link--default" href="https://github.com/ValidatorCenter">github.com/ValidatorCenter</a></div>
+                    <div><a class="link--default" href="https://github.com/ValidatorCenter" target="_blank" rel="noopener">github.com/ValidatorCenter</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/minterscan">t.me/paymnt</a></div>
+                    <div><a class="link--default" href="https://t.me/minterscan" target="_blank" rel="noopener">t.me/paymnt</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/minter_zen">t.me/ValidatorCenterChat</a></div>
+                    <div><a class="link--default" href="https://t.me/minter_zen" target="_blank" rel="noopener">t.me/ValidatorCenterChat</a></div>
                 </div>
             </div>
 
@@ -269,23 +269,23 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://timeloop.games">timeloop.games</a></div>
+                    <div><a class="link--default" href="https://timeloop.games" target="_blank" rel="noopener">timeloop.games</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Coin</div>
-                    <div><a class="link--default" href="https://chainik.io/coin/TIME">chainik.io/coin/TIME</a></div>
+                    <div><a class="link--default" href="https://chainik.io/coin/TIME" target="_blank" rel="noopener">chainik.io/coin/TIME</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/timeloopnews">t.me/timeloopnews</a></div>
+                    <div><a class="link--default" href="https://t.me/timeloopnews" target="_blank" rel="noopener">t.me/timeloopnews</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/joinchat/AAI0FlFIj7OECibAuLhHpA">t.me/joinchat/AAI0FlFIj7OECibAuLhHpA</a></div>
+                    <div><a class="link--default" href="https://t.me/joinchat/AAI0FlFIj7OECibAuLhHpA" target="_blank" rel="noopener">t.me/joinchat/AAI0FlFIj7OECibAuLhHpA</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="https://t.me/timeloopminterbot">t.me/timeloopminterbot</a></div>
+                    <div><a class="link--default" href="https://t.me/timeloopminterbot" target="_blank" rel="noopener">t.me/timeloopminterbot</a></div>
                 </div>
             </div>
 
@@ -315,19 +315,19 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://bipgame.io">bipgame.io</a></div>
+                    <div><a class="link--default" href="https://bipgame.io" target="_blank" rel="noopener">bipgame.io</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Guides</div>
-                    <div><a class="link--default" href="https://bipgame.io/faq/index/01galaxy-planets-minerals">bipgame.io/faq/index/01galaxy-planets-minerals</a></div>
+                    <div><a class="link--default" href="https://bipgame.io/faq/index/01galaxy-planets-minerals" target="_blank" rel="noopener">bipgame.io/faq/index/01galaxy-planets-minerals</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/bipgame_news">t.me/bipgame_news</a></div>
+                    <div><a class="link--default" href="https://t.me/bipgame_news" target="_blank" rel="noopener">t.me/bipgame_news</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/bipgame_io">t.me/bipgame_io</a></div>
+                    <div><a class="link--default" href="https://t.me/bipgame_io" target="_blank" rel="noopener">t.me/bipgame_io</a></div>
                 </div>
             </div>
 
@@ -350,7 +350,8 @@
             <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/496">
                 <img class="projects__cover" src="/img/projects/cube@640w.jpg" alt="" role="presentation"
                      srcset="/img/projects/cube@640w.jpg 640w,
-                        /img/projects/cube@686w.jpg 750w"
+                        /img/projects/cube@686w.jpg 750w,
+                        /img/projects/cube@1280w.jpg 1280w"
                      sizes="(min-width: 640px) 640w, 100vw"
                 >
             </figure>
@@ -359,23 +360,23 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://cubegame.pro">cubegame.pro</a></div>
+                    <div><a class="link--default" href="https://cubegame.pro" target="_blank" rel="noopener">cubegame.pro</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Coin</div>
-                    <div><a class="link--default" href="https://chainik.io/coin/CUBE">chainik.io/coin/CUBE</a></div>
+                    <div><a class="link--default" href="https://chainik.io/coin/CUBE" target="_blank" rel="noopener">chainik.io/coin/CUBE</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/cubenews_ru">t.me/cubenews_ru</a></div>
+                    <div><a class="link--default" href="https://t.me/cubenews_ru" target="_blank" rel="noopener">t.me/cubenews_ru</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/cubechat_ru">t.me/cubechat_ru</a></div>
+                    <div><a class="link--default" href="https://t.me/cubechat_ru" target="_blank" rel="noopener">t.me/cubechat_ru</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="https://t.me/CubeMinterBot">t.me/CubeMinterBot</a></div>
+                    <div><a class="link--default" href="https://t.me/CubeMinterBot" target="_blank" rel="noopener">t.me/CubeMinterBot</a></div>
                 </div>
             </div>
 
@@ -420,19 +421,19 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://minterpush.com">minterpush.com</a></div>
+                    <div><a class="link--default" href="https://minterpush.com" target="_blank" rel="noopener">minterpush.com</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">GitHub</div>
-                    <div><a class="link--default" href="https://github.com/smoli/minterpush">github.com/smoli/minterpush</a></div>
+                    <div><a class="link--default" href="https://github.com/smoli/minterpush" target="_blank" rel="noopener">github.com/smoli/minterpush</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/mintboxio">t.me/mintboxio</a></div>
+                    <div><a class="link--default" href="https://t.me/mintboxio" target="_blank" rel="noopener">t.me/mintboxio</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Catalog</div>
-                    <div><a class="link--default" href="https://minterpush.com/catalog">minterpush.com/catalog</a></div>
+                    <div><a class="link--default" href="https://minterpush.com/catalog" target="_blank" rel="noopener">minterpush.com/catalog</a></div>
                 </div>
             </div>
 
@@ -462,19 +463,19 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://yyy.cash">yyy.cash</a></div>
+                    <div><a class="link--default" href="https://yyy.cash" target="_blank" rel="noopener">yyy.cash</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">GitHub</div>
-                    <div><a class="link--default" href="https://github.com/eternalflow/push-money">github.com/eternalflow/push-money</a></div>
+                    <div><a class="link--default" href="https://github.com/eternalflow/push-money" target="_blank" rel="noopener">github.com/eternalflow/push-money</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/yyycash">t.me/yyycash</a></div>
+                    <div><a class="link--default" href="https://t.me/yyycash" target="_blank" rel="noopener">t.me/yyycash</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/yyychat">t.me/yyychat</a></div>
+                    <div><a class="link--default" href="https://t.me/yyychat" target="_blank" rel="noopener">t.me/yyychat</a></div>
                 </div>
             </div>
 
@@ -519,15 +520,15 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://tap.mn">tap.mn</a></div>
+                    <div><a class="link--default" href="https://tap.mn" target="_blank" rel="noopener">tap.mn</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">GitHub</div>
-                    <div><a class="link--default" href="https://github.com/kanitelk/minter-push">github.com/kanitelk/minter-push</a></div>
+                    <div><a class="link--default" href="https://github.com/kanitelk/minter-push" target="_blank" rel="noopener">github.com/kanitelk/minter-push</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/tapmn">t.me/tapmn</a></div>
+                    <div><a class="link--default" href="https://t.me/tapmn" target="_blank" rel="noopener">t.me/tapmn</a></div>
                 </div>
             </div>
 
@@ -561,7 +562,8 @@
             <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/448">
                 <img class="projects__cover" src="/img/projects/5sgift@640w.png" alt="" role="presentation"
                      srcset="/img/projects/5sgift@640w.png 640w,
-                        /img/projects/5sgift@686w.png 750w"
+                        /img/projects/5sgift@686w.png 750w,
+                        /img/projects/5sgift@1280w.png 1280w"
                      sizes="(min-width: 640px) 640w, 100vw"
                 >
             </figure>
@@ -570,11 +572,11 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://5s.gift">5s.gift</a></div>
+                    <div><a class="link--default" href="https://5s.gift" target="_blank" rel="noopener">5s.gift</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">GitHub</div>
-                    <div><a class="link--default" href="https://github.com/MotherMinter/Push">github.com/MotherMinter/Push</a></div>
+                    <div><a class="link--default" href="https://github.com/MotherMinter/Push" target="_blank" rel="noopener">github.com/MotherMinter/Push</a></div>
                 </div>
             </div>
 
@@ -610,7 +612,8 @@
             <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/504">
                 <img class="projects__cover" src="/img/projects/bipplus@640w.png" alt="" role="presentation"
                      srcset="/img/projects/bipplus@640w.png 640w,
-                        /img/projects/bipplus@686w.png 750w"
+                        /img/projects/bipplus@686w.png 750w,
+                        /img/projects/bipplus@1280w.png 1280w"
                      sizes="(min-width: 640px) 640w, 100vw"
                 >
             </figure>
@@ -619,11 +622,11 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://bip.plus">bip.plus</a></div>
+                    <div><a class="link--default" href="https://bip.plus" target="_blank" rel="noopener">bip.plus</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">GitHub</div>
-                    <div><a class="link--default" href="https://github.com/BTCSecure/bip-plus-wallet">github.com/BTCSecure/bip-plus-wallet</a></div>
+                    <div><a class="link--default" href="https://github.com/BTCSecure/bip-plus-wallet" target="_blank" rel="noopener">github.com/BTCSecure/bip-plus-wallet</a></div>
                 </div>
             </div>
 
@@ -653,7 +656,7 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="https://t.me/MinterWalletBot">t.me/MinterWalletBot</a></div>
+                    <div><a class="link--default" href="https://t.me/MinterWalletBot" target="_blank" rel="noopener">t.me/MinterWalletBot</a></div>
                 </div>
             </div>
 
@@ -670,6 +673,11 @@
             </ul>
             <p>The games are all about users winning when some random conditions coincide, for example, if the number on the die is even. There are also all kinds of multipliers.</p>
 
+            <figure class="u-aspect-ratio u-mt-20 u-mb-20" style="--aspect-ratio:640/469;">
+                <img class="projects__collage-item projects__cover" src="/img/projects/minterwalletbot-2.png" srcset="/img/projects/minterwalletbot-2@2x.png 2x" alt="" role="presentation" style="--collage-width:75%; top: 25%">
+                <img class="projects__collage-item projects__cover" src="/img/projects/minterwalletbot-3.png" srcset="/img/projects/minterwalletbot-3@2x.png 2x" alt="" role="presentation" style="--collage-width:37.5%">
+            </figure>
+
 
             <hr class="hr--divider hr--divider-large">
 
@@ -684,11 +692,11 @@
              <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="hhttps://t.me/MinterLikeBot">t.me/MinterLikeBot</a></div>
+                    <div><a class="link--default" href="hhttps://t.me/MinterLikeBot" target="_blank" rel="noopener">t.me/MinterLikeBot</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Coin</div>
-                    <div><a class="link--default" href="https://chainik.io/coin/LIKE">chainik.io/coin/LIKE</a></div>
+                    <div><a class="link--default" href="https://chainik.io/coin/LIKE" target="_blank" rel="noopener">chainik.io/coin/LIKE</a></div>
                 </div>
             </div>
 
@@ -714,11 +722,11 @@
              <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="https://t.me/paytominter_bot">t.me/paytominter_bot</a></div>
+                    <div><a class="link--default" href="https://t.me/paytominter_bot" target="_blank" rel="noopener">t.me/paytominter_bot</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Documentation</div>
-                    <div><a class="link--default" href="https://telegra.ph/paytointer-BOT-v092-06-15-2">telegra.ph/paytointer-BOT-v092-06-15-2</a></div>
+                    <div><a class="link--default" href="https://telegra.ph/paytointer-BOT-v092-06-15-2" target="_blank" rel="noopener">telegra.ph/paytointer-BOT-v092-06-15-2</a></div>
                 </div>
             </div>
 
@@ -755,15 +763,15 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="https://t.me/MinterToolsBot">t.me/MinterToolsBot</a></div>
+                    <div><a class="link--default" href="https://t.me/MinterToolsBot" target="_blank" rel="noopener">t.me/MinterToolsBot</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/MinterTools">t.me/MinterTools</a></div>
+                    <div><a class="link--default" href="https://t.me/MinterTools" target="_blank" rel="noopener">t.me/MinterTools</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/MinterToolsChat">t.me/MinterToolsChat</a></div>
+                    <div><a class="link--default" href="https://t.me/MinterToolsChat" target="_blank" rel="noopener">t.me/MinterToolsChat</a></div>
                 </div>
             </div>
              <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
@@ -786,11 +794,11 @@
              <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="https://t.me/MinterInfoBot">t.me/MinterInfoBot</a></div>
+                    <div><a class="link--default" href="https://t.me/MinterInfoBot" target="_blank" rel="noopener">t.me/MinterInfoBot</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                    <div><a class="link--default" href="https://t.me/MIB_Chat">t.me/MIB_Chat</a></div>
+                    <div><a class="link--default" href="https://t.me/MIB_Chat" target="_blank" rel="noopener">t.me/MIB_Chat</a></div>
                 </div>
             </div>
 
@@ -818,7 +826,7 @@
              <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="https://t.me/MinterNotifyBot">t.me/MinterNotifyBot</a></div>
+                    <div><a class="link--default" href="https://t.me/MinterNotifyBot" target="_blank" rel="noopener">t.me/MinterNotifyBot</a></div>
                 </div>
             </div>
 
@@ -848,11 +856,11 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://minteralerts.com">minteralerts.com</a></div>
+                    <div><a class="link--default" href="https://minteralerts.com" target="_blank" rel="noopener">minteralerts.com</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/MinterAlerts">t.me/MinterAlerts</a></div>
+                    <div><a class="link--default" href="https://t.me/MinterAlerts" target="_blank" rel="noopener">t.me/MinterAlerts</a></div>
                 </div>
             </div>
 
@@ -864,6 +872,11 @@
                 <li>Integration with Twitch API</li>
                 <li>Minter blockchain under the hood</li>
             </ul>
+
+            <figure class="u-aspect-ratio u-mt-20 u-mb-20" style="--aspect-ratio:640/360;">
+                <img class="projects__collage-item projects__cover" src="/img/projects/minteralerts-2.jpg" srcset="/img/projects/minteralerts-2@2x.jpg 2x" alt="" role="presentation" style="--collage-width:75%; right: 0; left: auto;">
+                <img class="projects__collage-item projects__cover" src="/img/projects/minteralerts-3.png" srcset="/img/projects/minteralerts-3@2x.png 2x" alt="" role="presentation" style="--collage-width:75%; left: 0; right: auto;">
+            </figure>
 
             <h3 class="u-h3 u-mb-05 u-mt-20">Advantages</h3>
             <ul class="list-simple">
@@ -894,23 +907,23 @@
             <div class="u-grid u-grid--small u-grid--vertical-margin--small">
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                    <div><a class="link--default" href="https://bipchange.org/?lang=en">bipchange.org</a></div>
+                    <div><a class="link--default" href="https://bipchange.org/?lang=en" target="_blank" rel="noopener">bipchange.org</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                    <div><a class="link--default" href="https://t.me/Bip_Change">t.me/Bip_Change</a></div>
+                    <div><a class="link--default" href="https://t.me/Bip_Change" target="_blank" rel="noopener">t.me/Bip_Change</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                    <div><a class="link--default" href="https://t.me/bipchange_org_bot">t.me/bipchange_org_bot</a></div>
+                    <div><a class="link--default" href="https://t.me/bipchange_org_bot" target="_blank" rel="noopener">t.me/bipchange_org_bot</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">Support</div>
-                    <div><a class="link--default" href="https://t.me/in_mint_bot">t.me/in_mint_bot</a></div>
+                    <div><a class="link--default" href="https://t.me/in_mint_bot" target="_blank" rel="noopener">t.me/in_mint_bot</a></div>
                 </div>
                 <div class="u-cell u-cell--medium--1-2">
                     <div class="u-h u-h--uppercase u-mb-025">API</div>
-                    <div><a class="link--default" href="https://bipchange.org/howtoapi?lang=en">bipchange.org/howtoapi</a></div>
+                    <div><a class="link--default" href="https://bipchange.org/howtoapi?lang=en" target="_blank" rel="noopener">bipchange.org/howtoapi</a></div>
                 </div>
             </div>
 
@@ -924,8 +937,6 @@
             </ul>
             <p>The daily volume chart allows you to assess the current trading situation in the market.</p>
             <p>BipChange does also have an average BIP price <a class="link--default" href="https://bipchange.org/widget?lang=en" target="_blank" rel="noopener">widget</a> that you can integrate into your own website.</p>
-
-
 
         </div>
     </div>

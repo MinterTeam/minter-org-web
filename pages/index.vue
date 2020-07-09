@@ -298,6 +298,26 @@
                     <p>This exchange rate monitoring service  is designed to enable you to quickly locate the best BIP buy/sale offers on the market.</p>
                 </ResourceProjectItem>
             </div>
+            <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
+                <ResourceProjectItem
+                        link="https://apps.apple.com/ru/app/rundax-wallet/id1519026967"
+                        src="/img/resources/project-runduxwallet.jpg"
+                        title="Rundax Wallet"
+                        tag="app"
+                >
+                    <p>A third-party wallet with advanced security to interact with BIP in Minter blockchain from a verified App Store developer.</p>
+                </ResourceProjectItem>
+            </div>
+            <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
+                <ResourceProjectItem
+                        link="https://flat.audio"
+                        src="/img/resources/project-flataudio.jpg"
+                        title="Flat.Audio"
+                        tag="web"
+                >
+                    <p>An electronic music streaming service that brings together artists and listeners from all over the world and issued its own cryptocurrency on the Minter network under the name FLATCOIN.</p>
+                </ResourceProjectItem>
+            </div>
         </div>
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
             <div class="u-cell u-cell--large--1-3"><!--placeholder--></div>
