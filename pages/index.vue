@@ -585,8 +585,10 @@
         </div>
 
         <h2 class="u-h--uppercase u-mb-10">Disclaimer</h2>
-        <p>Minter.org contains webpages that may provide links to websites and the content of third parties. We do not monitor, review or update, and do not have any control over any third party content or third party websites. We do not guarantee the accuracy of the exchange rates provided by third parties. Before you perform transactions related to currency conversion, check the current exchange rate.</p>
-        <p>This information is for informational purposes only, you should not construe any such information or other material as financial, investment or other advice.</p>
-
+        <div class="index__disclaimer">
+            <p>Minter.org may provide third parties content and links to third parties websites. We do not monitor or have any control over third parties content. It represents the views and opinions of its creators, which may not be endorsed by us.</p>
+            <p>Any information presented is not to be construed as legal, financial, investment or other advice. We do not warrant the accuracy, completeness, suitability or usefulness of the information provided. To the extent possible, we disclaim any and all liability to any party for any direct, indirect, implied, punitive, special, incidental or other consequential damages arising directly or indirectly from any use of the information at this website.</p>
+            <p>Operations with virtual assets pose intrinsic risks, including the risk of monetary loss. We strongly suggest you seek professional advice before engaging in any operations with virtual assets. We do not guarantee the accuracy of the exchange rates provided by third parties. Before you perform transactions related to currency conversion, check the current exchange rate.</p>
+        </div>
     </div>
 </template>
