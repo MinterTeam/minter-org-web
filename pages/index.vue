@@ -52,7 +52,7 @@
 
 <template>
     <div class="u-section u-container">
-        <h1 class="u-h1 u-h1--large u-mb-25">Minter is building the&nbsp;simplest solution to receive, send, and store any type of digital money. Or&nbsp;even create your own.</h1>
+        <h1 class="u-h1 u-h1--large u-mb-25">Minter offers the&nbsp;simplest solutions to receive, send, and store digital money. And&nbsp;even create your&nbsp;own.</h1>
         <div class="intro">
             <img class="intro__image" src="/img/index-intro.png" srcset="/img/index-intro@2x.png 2x" alt="" role="presentation">
             <div class="intro__content">

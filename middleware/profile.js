@@ -6,13 +6,7 @@ export default function({app, store, route, redirect, error}) {
         return Promise.resolve();
     }
 
-    const urlShouldNotCheckUser = [
-        /^\/vision/,
-        /^\/foundation/,
-    ].some((pathRegex) => {
-        return pathRegex.test(route.path);
-    });
-    const urlShouldCheckUser = !urlShouldNotCheckUser;
+    const urlShouldCheckUser = getUrlShouldCheckUser(route);
 
     // const urlRequiresAuth = getUrlRequiresAuth(route.path);
 
@@ -35,4 +29,13 @@ export default function({app, store, route, redirect, error}) {
     }
 
     return Promise.resolve();
+}
+
+export function getUrlShouldCheckUser(route) {
+    const urlShouldNotCheckUser = [
+        /^\/foundation/,
+    ].some((pathRegex) => {
+        return pathRegex.test(route.path);
+    });
+    return !urlShouldNotCheckUser;
 }

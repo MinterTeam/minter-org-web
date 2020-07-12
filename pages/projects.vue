@@ -917,7 +917,7 @@
         <div class="u-grid u-grid--small u-grid--vertical-margin--small">
             <div class="u-cell u-cell--medium--1-2">
                 <div class="u-h u-h--uppercase u-mb-025">Telegram bot</div>
-                <div><a class="link--default" href="hhttps://t.me/MinterLikeBot" target="_blank" rel="noopener">t.me/MinterLikeBot</a></div>
+                <div><a class="link--default" href="https://t.me/MinterLikeBot" target="_blank" rel="noopener">t.me/MinterLikeBot</a></div>
             </div>
             <div class="u-cell u-cell--medium--1-2">
                 <div class="u-h u-h--uppercase u-mb-025">Coin</div>

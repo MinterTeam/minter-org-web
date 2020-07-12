@@ -1,4 +1,4 @@
-import profileMiddleware from '~/middleware/profile.js';
+import profileMiddleware, {getUrlShouldCheckUser} from '~/middleware/profile.js';
 
 let isInit = false;
 export default function (context) {
@@ -6,7 +6,10 @@ export default function (context) {
         return;
     }
     isInit = true;
-    if (context.route.name === 'index') {
+    const staticRoutes = context.app.router.options.routes.filter((item) => item.path.indexOf('/:') === -1);
+    const isStaticRoute = staticRoutes.find((item) => item.name === context.route.name);
+    const urlShouldCheckUser = getUrlShouldCheckUser(context.route);
+    if (urlShouldCheckUser && isStaticRoute) {
         profileMiddleware(context);
     }
 }
