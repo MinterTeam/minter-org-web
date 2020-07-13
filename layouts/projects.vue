@@ -16,6 +16,7 @@
                 sectionList: [],
                 hash: this.$route.hash,
                 isScrollTriggeredManually: false,
+                isMenuActive: false,
             };
         },
         computed: {
@@ -81,7 +82,6 @@
             window.addEventListener('scroll', this.handleScroll, support.passiveListener ? {passive: true} : false);
             window.addEventListener('resize', this.handleResize, support.passiveListener ? {passive: true} : false);
             window.addEventListener('orientationchange', this.handleResize, support.passiveListener ? {passive: true} : false);
-
         },
         destroyed() {
             window.removeEventListener('hashchange', this.handleHashChange);
@@ -135,6 +135,9 @@
                 const windowCenter = scrollTop + window.innerHeight * 0.33;
                 const activeIndex = findActiveByBottom(windowCenter, nodes);
                 this.handleNavUpdate(nodes[activeIndex].id, true);
+            },
+            toggleMenu() {
+                this.isMenuActive = !this.isMenuActive;
             },
         },
     };
@@ -217,8 +220,14 @@
     <div class="main-wrap main-wrap--docs">
         <Header title="Projects"/>
 
+        <button class="docs-aside-button u-semantic-button u-hidden-medium-up" :class="{'is-active': isMenuActive}" @click="toggleMenu">
+                        <span class="header__offcanvas-icon-wrap">
+                            <span class="header__offcanvas-icon">Menu</span>
+                        </span>
+        </button>
+
         <div class="main-content u-grid u-grid--no-margin">
-            <aside class="docs-aside u-cell u-cell--medium--1-4" >
+            <aside class="docs-aside u-cell u-cell--medium--1-4">
                 <div class="docs-aside__sticky">
                     <div class="docs-aside__page" v-for="section in sectionList">
                         <div class="docs-aside__page-link">
