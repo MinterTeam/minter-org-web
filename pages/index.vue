@@ -52,7 +52,7 @@
 
 <template>
     <div class="u-section u-container">
-        <h1 class="u-h1 u-h1--large u-mb-25">Minter offers the&nbsp;simplest solutions to receive, send, and store digital money. And&nbsp;even create your&nbsp;own.</h1>
+        <h1 class="u-h1 u-h1--large u-mb-25">Minter offers the&nbsp;simplest solutions to receive, send, and store digital money. <span class="u-display-ib">And even create your&nbsp;own.</span></h1>
         <div class="intro">
             <img class="intro__image" src="/img/index-intro.png" srcset="/img/index-intro@2x.png 2x" alt="" role="presentation">
             <div class="intro__content">
@@ -78,7 +78,7 @@
             </div>
         </div>
 
-        <h2 class="u-h1 u-h1--large u-mb-05">Wallets</h2>
+        <h2 class="u-h1 u-h1--large u-mb-05" id="wallets">Wallets</h2>
         <p class="u-mb-20 index__description">Use our wallets to manage BIP and other coins.</p>
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
@@ -146,7 +146,7 @@
 
         <hr class="hr--divider hr--divider-large">
 
-        <h2 class="u-h1 u-h1--large u-mb-05">Developers’ essentials</h2>
+        <h2 class="u-h1 u-h1--large u-mb-05" id="developers">Developers’ essentials</h2>
         <p class="u-mb-20 index__description">Find all the developer resources you need.</p>
         <div class="resource-columns">
             <ResourceItem
@@ -225,7 +225,7 @@
 
         <hr class="hr--divider hr--divider-large">
 
-        <h2 class="u-h1 u-h1--large u-mb-05">Community projects</h2>
+        <h2 class="u-h1 u-h1--large u-mb-05" id="projects">Community projects</h2>
         <p class="u-mb-20 index__description">Discover projects and services based on or using the Minter blockchain, developed by our community.</p>
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium u-mb-20">
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
@@ -331,7 +331,7 @@
         <hr class="hr--divider hr--divider-large">
 
 
-        <h2 class="u-h1 u-h1--large u-mb-05">Send and spend</h2>
+        <h2 class="u-h1 u-h1--large u-mb-05" id="send-and-spend">Send and spend</h2>
         <p class="u-mb-20 index__description">In just a few clicks, you can send Minter-based coins to anyone who can then spend them on numerous goods and services around the world. No need to install a wallet.</p>
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
@@ -390,7 +390,7 @@
         <hr class="hr--divider hr--divider-large">
 
 
-        <h2 class="u-h1 u-h1--large u-mb-05">Be engaged</h2>
+        <h2 class="u-h1 u-h1--large u-mb-05" id="be-engaged">Be engaged</h2>
         <p class="u-mb-20 index__description index__contests-description">Take part in our initiatives and programs, get rewards, and join hands with us in contributing to the network’s development.</p>
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
             <div class="u-cell u-cell--medium--1-2">
@@ -420,7 +420,7 @@
         <hr class="hr--divider hr--divider-large">
 
 
-        <h2 class="u-h1 u-h1--large u-mb-05 u-relative">
+        <h2 class="u-h1 u-h1--large u-mb-05 u-relative" id="follow">
             Join the conversation
             <img class="index__conversation-image" src="/img/index-conversation.png" srcset="/img/index-conversation@2x.png 2x" alt="" role="presentation">
         </h2>
@@ -465,7 +465,7 @@
         </div>
 
         <div class="u-section--margin u-section--margin-large index__rank-panel">
-            <h2 class="u-h1 u-h1--large u-mb-05">Rankings and exchanges</h2>
+            <h2 class="u-h1 u-h1--large u-mb-05" id="rankings-and-exchanges">Rankings and exchanges</h2>
             <p class="u-mb-20 index__description">Trade BIP on exchanges or track Minter’s performance in various rankings.</p>
             <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
                 <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
@@ -548,7 +548,7 @@
                 </div>
             </div>
 
-            <h2 class="u-h1 u-h1--large u-mb-05 u-section--top-margin u-section--top-margin-large">Track BIP</h2>
+            <h2 class="u-h1 u-h1--large u-mb-05 u-section--top-margin u-section--top-margin-large" id="track">Track BIP</h2>
             <p class="u-mb-20 index__description">Track BIP’s market price and trading activity in the best portfolio applications.</p>
             <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
                 <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
