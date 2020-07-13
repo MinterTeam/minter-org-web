@@ -15,6 +15,7 @@
             return {
                 sectionList: [],
                 hash: this.$route.hash,
+                isScrollTriggeredManually: false,
             };
         },
         computed: {
@@ -69,7 +70,9 @@
             },
         },
         created() {
-            this.$nuxt.$on('update-project-nav', this.updateNav);
+            this.$nuxt.$on('update-project-nav', (sectionList) => {
+                this.sectionList = sectionList;
+            });
         },
         mounted() {
             checkHeaderHeight();
@@ -88,22 +91,36 @@
         },
         methods: {
             handleNavUpdate(id, disableScroll) {
-                window.history.replaceState(window.history.state, null, '#' + id);
-                // onhashchange doesn't triggers here, change manually
-                this.hash = id;
                 if (!disableScroll) {
                     // scroll to anchor
+                    this.isScrollTriggeredManually = true;
                     window.scrollTo(0, getOffsetTop(document.getElementById(id)));
                 }
+                if (this.hash === id) {
+                    return;
+                }
+                this.setHash(id);
+                this.$nextTick(() => {
+                    const activeLink = document.querySelector(`.docs-aside__page-nav-link[href="#${id}"]`);
+                    activeLink?.scrollIntoView({block: 'nearest'});
+                })
             },
-            updateNav(sectionList) {
-                this.sectionList = sectionList;
+            setHash(id) {
+                replaceHistoryWithHash(this.sectionList[0].id === id ? '' : id);
+                // onhashchange doesn't triggers here, change manually
+                this.hash = id;
             },
             handleHashChange() {
+                // only handles manual typing to url
                 this.hash = window.location.hash.replace('#', '');
             },
             handleScroll() {
                 setHeaderTopProperty();
+                // don't override url hash after manual link click
+                if (this.isScrollTriggeredManually) {
+                    this.isScrollTriggeredManually = false;
+                    return;
+                }
                 this.checkActiveLink();
             },
             handleResize() {
@@ -114,11 +131,11 @@
             },
             checkActiveLink() {
                 const nodes = this.flatAll.map((item) => item.el);
-                const scrollTop = window.pageYOffset;
-                const windowCenter = scrollTop + window.innerHeight * 0.4;
+                const scrollTop = Math.max(0, window.pageYOffset);
+                const windowCenter = scrollTop + window.innerHeight * 0.33;
                 const activeIndex = findActiveByBottom(windowCenter, nodes);
                 this.handleNavUpdate(nodes[activeIndex].id, true);
-            }
+            },
         },
     };
 
@@ -189,6 +206,11 @@
         const rect = el.getBoundingClientRect();
         return rect.top + window.pageYOffset;
     }
+
+    const replaceHistoryWithHash = debounce((hash) => {
+        hash = hash ? '#' + hash : window.location.pathname;
+        window.history.replaceState(window.history.state, null, hash);
+    }, 1000)
 </script>
 
 <template>
