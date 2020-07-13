@@ -327,7 +327,26 @@
 
 
 .main-wrap--docs {max-width: 1280px;margin: 0 auto;box-shadow: 0 0 14px rgba(0,0,0,0.1);background: #fffcfb; overflow: visible;}
-.docs-aside {box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: absolute; z-index: 2; /* higher than input buttons */ top: 0; height: 100%; overflow: auto; background: #fffcfb; display: none;}
+.docs-aside-button {
+    position: fixed; width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 5px 20px rgba(0,0,0,0.2); font-size: 0; right: 16px; bottom: 16px; z-index: 11; background: #fff; display: flex; align-items: center; justify-content: center; transition: 0.1s;
+    &:hover {box-shadow: 0 0px 20px rgba(0,0,0,0.35);}
+}
+.docs-aside-button__icon {position: relative; width: 15px; height: 32px;}
+.docs-aside-button__icon-top, .docs-aside-button__icon-bottom {position: absolute; fill: currentColor; transition: 0.1s;}
+.docs-aside-button__icon-top {
+    transform: rotate(180deg);
+    .docs-aside-button:hover & {transform: translateY(2px) rotate(180deg);}
+    .docs-aside-button.is-active & {transform: translateY(11.3px) rotate(180deg);}
+}
+.docs-aside-button__icon-bottom {
+    bottom: 0;
+    .docs-aside-button:hover & {transform: translateY(-2px);}
+    .docs-aside-button.is-active & {transform: translateY(-11.3px);}
+}
+.docs-aside {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: fixed; z-index: 10; /* higher than footer */ top: 0; height: 100%; overflow: auto; background: #fffcfb; display: none; overscroll-behavior: contain;
+    &.is-active {display: block;}
+}
 .docs-aside__nav {
     .nav__link {
         display: block;
@@ -366,7 +385,7 @@
 }
 .docs-content {overflow-wrap: break-word; overflow-x: auto;}
 @media (min-width: @breakpoint-medium-up) {
-    .docs-aside {overflow: visible; position: relative; height: auto; display: block !important;/* override ssr v-show */}
+    .docs-aside {overflow: visible; position: relative; height: auto; display: block;/* override ssr v-show */}
     .docs-aside__sticky {position: sticky; top: 0; max-height: 100vh; max-height: calc(100vh - var(--header-visible-height)); overflow-y: auto;}
 }
 

@@ -91,6 +91,7 @@
         },
         methods: {
             handleNavUpdate(id, disableScroll) {
+                this.isMenuActive = false;
                 if (!disableScroll) {
                     // scroll to anchor
                     this.isScrollTriggeredManually = true;
@@ -99,14 +100,20 @@
                 if (this.hash === id) {
                     return;
                 }
-                this.setHash(id);
+                const isInstant = !disableScroll;
+                this.setHash(id, isInstant);
                 this.$nextTick(() => {
                     const activeLink = document.querySelector(`.docs-aside__page-nav-link[href="#${id}"]`);
                     activeLink?.scrollIntoView({block: 'nearest'});
                 })
             },
-            setHash(id) {
-                replaceHistoryWithHash(this.sectionList[0].id === id ? '' : id);
+            setHash(id, isInstant) {
+                const idCleaned = this.sectionList[0].id === id ? '' : id
+                if (isInstant) {
+                    replaceHistoryWithHashInstant(idCleaned);
+                } else {
+                    replaceHistoryWithHashDebounced(idCleaned);
+                }
                 // onhashchange doesn't triggers here, change manually
                 this.hash = id;
             },
@@ -210,10 +217,15 @@
         return rect.top + window.pageYOffset;
     }
 
-    const replaceHistoryWithHash = debounce((hash) => {
+    function replaceHistoryWithHash(hash) {
         hash = hash ? '#' + hash : window.location.pathname;
         window.history.replaceState(window.history.state, null, hash);
-    }, 1000)
+    }
+    const replaceHistoryWithHashDebounced = debounce(replaceHistoryWithHash, 1000)
+    function replaceHistoryWithHashInstant(hash) {
+        replaceHistoryWithHashDebounced.cancel();
+        replaceHistoryWithHash(hash);
+    }
 </script>
 
 <template>
@@ -221,13 +233,15 @@
         <Header title="Projects"/>
 
         <button class="docs-aside-button u-semantic-button u-hidden-medium-up" :class="{'is-active': isMenuActive}" @click="toggleMenu">
-                        <span class="header__offcanvas-icon-wrap">
-                            <span class="header__offcanvas-icon">Menu</span>
-                        </span>
+            Menu
+            <span class="docs-aside-button__icon">
+                <svg class="docs-aside-button__icon-top" viewBox="0 0 926.2 573.7" width="15" height="15"><path d="M231 343L0 111l56-55 56-56 176 175 175 174 175-174L814 0l57 56 55 55-231 232-232 231-232-231z"></path></svg>
+                <svg class="docs-aside-button__icon-bottom" viewBox="0 0 926.2 573.7" width="15" height="15"><path d="M231 343L0 111l56-55 56-56 176 175 175 174 175-174L814 0l57 56 55 55-231 232-232 231-232-231z"></path></svg>
+            </span>
         </button>
 
         <div class="main-content u-grid u-grid--no-margin">
-            <aside class="docs-aside u-cell u-cell--medium--1-4">
+            <aside class="docs-aside u-cell u-cell--medium--1-4" :class="{'is-active': isMenuActive}">
                 <div class="docs-aside__sticky">
                     <div class="docs-aside__page" v-for="section in sectionList">
                         <div class="docs-aside__page-link">
