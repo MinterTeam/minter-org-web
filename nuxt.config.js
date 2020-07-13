@@ -52,6 +52,7 @@ module.exports = {
     },
     plugins: [
         { src: '~/plugins/click-blur.js', ssr: false },
+        { src: '~/plugins/scrollbar-visible.js', ssr: false },
         // { src: '~/plugins/persistedState.js', ssr: false },
         { src: '~/plugins/seo-gtm.js', ssr: false },
         { src: '~/plugins/init-client-middleware.js', ssr: false },

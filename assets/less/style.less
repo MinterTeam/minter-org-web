@@ -335,7 +335,12 @@
     }
     .nav__link + .nav__link {margin-top: 20px;}
 }
-.docs-aside__sticky {padding: @container-padding @container-padding 0;}
+.docs-aside__sticky {
+    padding: @container-padding @container-padding 0; overscroll-behavior: contain;
+    .is-scrollbar-visible & {scrollbar-width: thin;}
+    .is-scrollbar-visible &::-webkit-scrollbar {width: 8px;}
+    .is-scrollbar-visible &::-webkit-scrollbar-thumb {background-color: darkgrey; border-radius: 4px; border: 1px solid #fffcfb;}
+}
 .docs-aside__page {
     font-size: 16px; line-height: 20px; font-weight: 600;
     &+& {margin-top: 20px;}
