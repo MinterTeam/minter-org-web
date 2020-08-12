@@ -10,7 +10,7 @@
     export default {
         ID_HOST,
         asyncData(ctx) {
-            return ctx.$content('news').sortBy('createdAt', 'desc').fetch()
+            return ctx.$content('news').sortBy('createdAt', 'desc').limit(4).fetch()
             .then((news) => {
                 return {news};
             })
