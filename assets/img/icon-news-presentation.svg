@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-news-presentation</title>
+    <defs>
+        <polygon id="path-1" points="0 0 24 0 24 24 0 24"></polygon>
+    </defs>
+    <g id="icon-news-presentation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="BG" fill-opacity="0" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <path d="M6,6 L6,7 L19,7 L19,6 L6,6 Z M6,8 L6,17 L12,17 L12,19 L13,19 L13,17 L19,17 L19,8 L6,8 Z M7,9 L18,9 L18,16 L7,16 L7,9 Z M10,10 C8.902344,10 8,10.902344 8,12 C8,13.097656 8.902344,14 10,14 C11.097656,14 12,13.097656 12,12 C12,10.902344 11.097656,10 10,10 Z M10,11 L10,12 L11,12 C11,12.558594 10.558594,13 10,13 C9.441406,13 9,12.558594 9,12 C9,11.441406 9.441406,11 10,11 Z M13,11 L13,12 L17,12 L17,11 L13,11 Z M13,13 L13,14 L16,14 L16,13 L13,13 Z" id="Shape" fill="#D15C22" mask="url(#mask-2)"></path>
+    </g>
+</svg>

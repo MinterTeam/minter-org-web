@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-news-analysis</title>
+    <defs>
+        <polygon id="path-1" points="0 0 24 0 24 24 0 24"></polygon>
+    </defs>
+    <g id="icon-news-analysis" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="BG" fill-opacity="0" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <path d="M12,6 L12,7 L7.5,7 C6.675781,7 6,7.675781 6,8.5 L6,14.5 C6,15.324219 6.675781,16 7.5,16 L12,16 L12,17.101563 L8.015625,18.011719 L8.234375,18.988281 L12.5,18.015625 L16.765625,18.988281 L16.984375,18.011719 L13,17.101563 L13,16 L17.5,16 C18.324219,16 19,15.324219 19,14.5 L19,8.5 C19,7.675781 18.324219,7 17.5,7 L13,7 L13,6 L12,6 Z M7.5,8 L17.5,8 C17.78125,8 18,8.21875 18,8.5 L18,14.5 C18,14.78125 17.78125,15 17.5,15 L7.5,15 C7.21875,15 7,14.78125 7,14.5 L7,8.5 C7,8.21875 7.21875,8 7.5,8 Z M15.003906,9.226563 L12.476563,11.65625 L10.484375,10.011719 L8.039063,12.257813 L8.710938,12.992188 L10.515625,11.335938 L12.523438,12.992188 L15.046875,10.570313 L16.300781,11.632813 L16.949219,10.867188 L15.003906,9.226563 Z" id="Shape" fill="#D15C22" mask="url(#mask-2)"></path>
+    </g>
+</svg>

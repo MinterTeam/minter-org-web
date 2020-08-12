@@ -60,6 +60,7 @@ module.exports = {
     ],
     env: Object.assign({}, processEnv, dotEnv),
     modules: [
+        '@nuxt/content'
     ],
     /*
     ** Build configuration

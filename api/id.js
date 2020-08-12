@@ -85,10 +85,7 @@ export function getUser() {
  */
 export function updateUser(user, originalUser) {
     let userData = originalUser ? toOriginalMinterIdUser(user, originalUser) : user;
-    userData = Object.keys(userData).reduce((accamulator, key) => {
-        accamulator[camelToSnake(key)] = userData[key];
-        return accamulator;
-    }, {});
+    userData = camelToSnakeObject(userData);
     return instance.put(`user`, userData, {withCredentials: true})
         .then((response) => prettifyMinterIdUser(response.data.data));
 }
@@ -249,4 +246,11 @@ function snakeToCamel(val) {
 
 function camelToSnake(val) {
     return val.replace(/([A-Z])/g, '_$1').toLowerCase();
+}
+
+function camelToSnakeObject(obj) {
+    return Object.keys(obj).reduce((accamulator, key) => {
+        accamulator[camelToSnake(key)] = obj[key];
+        return accamulator;
+    }, {})
 }

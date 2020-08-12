@@ -1,5 +1,6 @@
 <script>
     import prettyNum, {PRECISION_SETTING} from 'pretty-num';
+    import format from 'date-fns/format/index.js'
     import {ID_HOST} from '~/assets/variables.js';
     import {getBipPrice} from '~/api/explorer.js';
     import AuthButtonGoogle from '~/components/AuthButtonGoogle.vue';
@@ -8,10 +9,14 @@
 
     export default {
         ID_HOST,
+        asyncData(ctx) {
+            return ctx.$content('news').sortBy('createdAt', 'desc').fetch()
+            .then((news) => {
+                return {news};
+            })
+        },
         fetchOnServer: false,
         fetch() {
-            // additional check to workaround generate mode not supporting client middlewares
-            // check authToken, because profile middleware doesn'nt work on generate
             return getBipPrice()
                 .then((bipPrice) => {
                     this.bipPrice = bipPrice;
@@ -42,10 +47,14 @@
                 serverError: '',
                 // isAuthLoading: false,
                 bipPrice: 0,
+                news: [],
             };
         },
         methods: {
             coinPrice: (value) => prettyNum(value, {precision: 4, precisionSetting: PRECISION_SETTING.FIXED}),
+            dateFormat(value) {
+                return format(new Date(value), 'MMMM d, y');
+            }
         },
     }
 </script>
@@ -68,16 +77,33 @@
                 </div>
                 <p>No apps to download. No blockchain jargon to learn. <br> No special skills to apply.</p>
 
-                <div class="u-section u-section--large">
-                    <blockquote class="intro__quote">
-                        <h2 class="u-h2 u-mb-05">Tell me more, please</h2>
-                        <p>Minter lets any brand, blogger, or community to create their own coin and implement it in reward and loyalty systems. Coins can be transferred between users, exchanged for one another, or instantly spent on goods and services. Everyone is welcome to come up with their own terms of using the coins while Minter will take care of the rest.</p>
-                    </blockquote>
-                </div>
-                <h2 class="u-h2 intro__list">One glance at our list of tools and&nbsp;projects is worth a thousand words</h2>
+                <blockquote class="intro__quote u-section--top-margin u-section--top-margin--large">
+                    <h2 class="u-h2 u-mb-05">Tell me more, please</h2>
+                    <p>Minter lets any brand, blogger, or community to create their own coin and implement it in reward and loyalty systems. Coins can be transferred between users, exchanged for one another, or instantly spent on goods and services. Everyone is welcome to come up with their own terms of using the coins while Minter will take care of the rest.</p>
+                </blockquote>
+                <hr class="hr--divider hr--divider-large">
             </div>
         </div>
 
+        <h2 class="u-h2 u-mb-20">Latest news</h2>
+        <div class="u-grid u-grid--vertical-margin u-mb-25">
+            <div class="u-cell u-cell--medium--1-2" v-for="item in news">
+                <div class="index__news-item" :class="`index__news-item--${item.category}`">
+                    <h3 class="u-h3 u-mb-05"><a class="link--main link--hover" :href="item.url" target="_blank" rel="noopener">{{ item.title }}</a></h3>
+                    <p class="u-mb-05">{{ item.description }}</p>
+                    <div class="u-text-muted">{{ dateFormat(item.createdAt) }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="u-text-center">
+            <a class="button button--ghost-main button--medium" href="https://medium.com/@MinterTeam" target="_blank" rel="noopener">More news</a>
+        </div>
+
+
+        <hr class="hr--divider hr--divider-large">
+
+
+        <h2 class="u-h2 intro__list">One glance at our list of tools and&nbsp;projects is worth a&nbsp;thousand&nbsp;words</h2>
         <h2 class="u-h1 u-h1--large u-mb-05" id="wallets">Wallets</h2>
         <p class="u-mb-20 index__description">Use our wallets to manage BIP and other coins.</p>
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
