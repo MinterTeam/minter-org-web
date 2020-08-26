@@ -19,9 +19,9 @@
                 }
             },
             message() {
-                // if (this.statusCode === 404) {
-                //     return `Oops, there are no ${this.$store.getters.COIN_NAME}s here. Please try again!`;
-                // }
+                if (this.statusCode === 404 && (!this.error.message || this.error.message.indexOf('Request') === -1)) {
+                    return "We couldn't find the page you're looking for.";
+                }
                 // if (this.statusCode === 405) {
                 //     return 'Unfortunately, this resource is not available to US persons';
                 // }
@@ -41,13 +41,12 @@
     <div class="main-content--error">
         <div class="error__container u-container u-container--small u-section">
             <div class="error__inner">
-                <h1 class="error__title u-h1">Error {{ error.statusCode }}</h1>
+                <h1 class="error__title u-h1">Error {{ statusCode }}</h1>
                 <!--<p class="error__description" v-if="error.statusCode === 404">We couldn't find the page you're looking for.</p>-->
-                <p class="error__description" v-if="error.statusCode === 502">Service is unavailable: {{ error.message }}</p>
-                <p class="error__description" v-else-if="error.statusCode === 504">Request failed with status code 504. <br> Gateway time-out.</p>
-                <p class="error__description" v-else-if="error.statusCode === 503">The webpage is currently unavailable. <br> It may be overloaded or down for maintenance.</p>
-                <p class="error__description" v-else-if="error.message === 'Network Error'">Network Error</p>
-                <p class="error__description" v-else>{{ error.message }}</p>
+                <p class="error__description" v-if="statusCode === 502">Service is unavailable: {{ error.message }}</p>
+                <p class="error__description" v-else-if="statusCode === 504">Request failed with status code 504. <br> Gateway time-out.</p>
+                <p class="error__description" v-else-if="statusCode === 503">The webpage is currently unavailable. <br> It may be overloaded or down for maintenance.</p>
+                <p class="error__description" v-else>{{ message  }}</p>
                 <p><a class="error__link link--default" href="/">Return to main page</a></p>
 
                 <img class="error__image" src="/img/error-404.png" srcset="/img/error-404@2x.png 2x" alt="" role="presentation">
