@@ -61,7 +61,7 @@
 
 <template>
     <div class="u-section u-container">
-        <h1 class="u-h1 u-h1--large u-mb-25">Minter offers the&nbsp;simplest solutions to receive, send, and store digital money. <span class="u-display-ib">And even create your&nbsp;own.</span></h1>
+        <h1 class="u-h1 u-h1--large u-mb-25">Minter offers the&nbsp;simplest solutions to receive, send, and store loyalty points and rewards. <span class="u-display-ib">And even create your&nbsp;own.</span></h1>
         <div class="intro">
             <img class="intro__image" src="/img/index-intro.png" srcset="/img/index-intro@2x.png 2x" alt="" role="presentation">
             <div class="intro__content">
@@ -477,13 +477,13 @@
                 </a>
             </div>
             <div class="u-cell u-cell--medium--1-3 u-cell--small--1-2">
-                <a class="index__social-link link--main link--hover" href="https://t.me/MinterTeam" target="_blank" rel="noopener">
+                <a class="index__social-link link--main link--hover" href="https://t.me/MinterNetworkGroup" target="_blank" rel="noopener">
                     <img class="index__social-icon" src="/img/icon-social-tg.svg" alt="" role="presentation" width="36" height="36">
                     <span class="index__social-caption">Telegram group</span>
                 </a>
             </div>
             <div class="u-cell u-cell--medium--1-3 u-cell--small--1-2">
-                <a class="index__social-link link--main link--hover" href="https://t.me/MinterNetworkGroup" target="_blank" rel="noopener">
+                <a class="index__social-link link--main link--hover" href="https://t.me/MinterTeam" target="_blank" rel="noopener">
                     <img class="index__social-icon" src="/img/icon-social-tg.svg" alt="" role="presentation" width="36" height="36">
                     <span class="index__social-caption">Telegram channel</span>
                 </a>

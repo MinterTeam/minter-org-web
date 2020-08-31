@@ -62,6 +62,7 @@ module.exports = {
     modules: [
         '@nuxt/content'
     ],
+    modern: 'client',
     /*
     ** Build configuration
     */
