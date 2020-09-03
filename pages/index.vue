@@ -488,6 +488,12 @@
                     <span class="index__social-caption">Telegram channel</span>
                 </a>
             </div>
+            <div class="u-cell u-cell--medium--1-3 u-cell--small--1-2">
+                <a class="index__social-link link--main link--hover" href="https://github.com/MinterTeam" target="_blank" rel="noopener">
+                    <img class="index__social-icon" src="/img/icon-social-gh.svg" alt="" role="presentation" width="36" height="36">
+                    <span class="index__social-caption">GitHub</span>
+                </a>
+            </div>
         </div>
 
         <div class="u-section--margin u-section--margin-large index__rank-panel">
