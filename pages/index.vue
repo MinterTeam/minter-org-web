@@ -79,7 +79,7 @@
 
                 <blockquote class="intro__quote u-section--top-margin u-section--top-margin--large">
                     <h2 class="u-h2 u-mb-05">Tell me more, please</h2>
-                    <p>Minter lets any brand, blogger, or community to create their own coin and implement it in reward and loyalty systems. Coins can be transferred between users, exchanged for one another, or instantly spent on goods and services. Everyone is welcome to come up with their own terms of using the coins while Minter will take care of the rest.</p>
+                    <p>Minter is a global rewards and loyalty points network powered by a fast blockchain. Any brand, community, or blogger can create their own coins and launch their reward or loyalty system in minutes. By “coins,” we mean loyalty points, rewards, cashbacks, discounts, credits, and so on. They can be transferred between users, exchanged for one another, or spent on goods and services</p>
                 </blockquote>
                 <hr class="hr--divider hr--divider-large">
             </div>
