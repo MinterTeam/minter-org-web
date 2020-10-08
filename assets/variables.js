@@ -3,6 +3,7 @@ export const BASE_TITLE = 'Minter';
 export const BASE_DESCRIPTION = 'Minter is building the simplest solution to receive, send, and store any type of digital money. Reward the community with your own branded coins.';
 export const ID_API_URL = process.env.APP_ID_API_URL;
 export const ID_HOST = process.env.APP_ID_HOST;
+export const WALLET_HOST = process.env.APP_WALLET_HOST;
 export const IMAGE_API_URL = process.env.APP_IMAGE_API_URL;
 export const EXPLORER_API_URL = process.env.APP_EXPLORER_API_URL;
 export const GOOGLE_SIGNIN_CLIENT_ID = process.env.APP_GOOGLE_SIGNIN_CLIENT_ID;

@@ -1,14 +1,16 @@
 <script>
     import prettyNum, {PRECISION_SETTING} from 'pretty-num';
     import format from 'date-fns/format/index.js'
-    import {ID_HOST} from '~/assets/variables.js';
+    import {ID_HOST, WALLET_HOST} from '~/assets/variables.js';
     import {getBipPrice} from '~/api/explorer.js';
+    import AuthIndexForm from '~/components/AuthIndexForm.vue';
     import AuthButtonGoogle from '~/components/AuthButtonGoogle.vue';
     import ResourceItem from '~/components/ResourceItem.vue';
     import ResourceProjectItem from '~/components/ResourceProjectItem.vue';
 
     export default {
         ID_HOST,
+        WALLET_HOST,
         asyncData(ctx) {
             return ctx.$content('news').sortBy('createdAt', 'desc').limit(4).fetch()
             .then((news) => {
@@ -23,6 +25,7 @@
                 })
         },
         components: {
+            AuthIndexForm,
             AuthButtonGoogle,
             ResourceItem,
             ResourceProjectItem,
@@ -46,6 +49,7 @@
             return {
                 serverError: '',
                 // isAuthLoading: false,
+                isEmailSent: false,
                 bipPrice: 0,
                 news: [],
             };
@@ -61,25 +65,36 @@
 
 <template>
     <div class="u-section u-container">
-        <h1 class="u-h1 u-h1--large u-mb-25">Minter offers the&nbsp;simplest solutions to receive, send, and store loyalty points and rewards. <span class="u-display-ib">And even create your&nbsp;own.</span></h1>
+        <h1 class="u-h1 u-h1--large u-mb-25">Launch your wallet in one click to start spending rewards and loyalty points</h1>
         <div class="intro">
-            <img class="intro__image" src="/img/index-intro.png" srcset="/img/index-intro@2x.png 2x" alt="" role="presentation">
+            <img class="intro__image" src="/img/index-intro-wallet.png" srcset="/img/index-intro-wallet@2x.png 2x" alt="" role="presentation">
             <div class="intro__content">
+<!--
                 <div class="u-h u-h3 u-mb-10">
                     <template v-if="$store.state.user">Thank you for registering.</template>
                     <template v-else>Sign in to be among the first users.</template>
                 </div>
+-->
                 <div class="u-mb-10" v-if="$store.state.user">
-                    <a class="intro__button button button--main" href="https://id.minter.org/share">View profile</a>
+                    <!--<a class="intro__button button button&#45;&#45;main" href="https://id.minter.org/share">View profile</a>-->
+                    <a class="intro__button button button--main" :href="$options.WALLET_HOST">Launch wallet</a>
                 </div>
                 <div class="u-mb-10" v-else>
-                    <AuthButtonGoogle class="intro__button" invitation="future" :idHost="$options.ID_HOST"/>
+                    <AuthIndexForm @success="isEmailSent = true"/>
+                    <div class="u-mt-15" v-if="!isEmailSent">
+                        Or
+                        <AuthButtonGoogle class="link--default u-fw-700" invitation="future"
+                                          :idHost="$options.ID_HOST"
+                                          :minterRedirect="$options.WALLET_HOST"
+                        >
+                            Sign in with Google
+                        </AuthButtonGoogle>
+                    </div>
                 </div>
-                <p>No apps to download. No blockchain jargon to learn. <br> No special skills to apply.</p>
 
                 <blockquote class="intro__quote u-section--top-margin u-section--top-margin--large">
                     <h2 class="u-h2 u-mb-05">Tell me more, please</h2>
-                    <p>Minter is a global rewards and loyalty points network powered by a fast blockchain. Any brand, community, or blogger can create their own coins and launch their reward or loyalty system in minutes. By “coins,” we mean loyalty points, rewards, cashbacks, discounts, credits, and so on. They can be transferred between users, exchanged for one another, or spent on goods and services</p>
+                    <p>Minter is a global rewards and loyalty points network powered by a&nbsp;fast blockchain. Any brand, community, or blogger can create their own coins and launch their reward or loyalty system in minutes. By&nbsp;“coins,” we mean loyalty points, rewards, cashbacks, discounts, credits, and so on. They can be transferred between users, exchanged for one another, or spent on goods and services</p>
                 </blockquote>
                 <hr class="hr--divider hr--divider-large">
             </div>

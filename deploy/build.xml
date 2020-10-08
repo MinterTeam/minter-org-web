@@ -13,7 +13,6 @@
     </target>
     <target name="validate.variables" description="Проверяем все ли переменные определены">
         <fail unless="env.app_env" message="app_env environment variable is not set"/>
-        <fail unless="env.app_api_url" message="app_api_url environment variable is not set"/>
         <fail unless="env.app_id_api_url" message="app_id_api_url environment variable is not set"/>
         <fail unless="env.app_id_host" message="app_id_host environment variable is not set"/>
         <fail unless="env.app_image_api_url" message="app_image_api_url environment variable is not set"/>

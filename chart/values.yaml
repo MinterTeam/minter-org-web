@@ -21,10 +21,8 @@ service:
   port: 80
 
 ingress:
-  domain: minter-org.kubernetes.icu
-  tls:
-    secret: "wildcard"
-  servicename: static
+  domain: minter.org
+  tlsname: minter.org
 
 resources: {}
 

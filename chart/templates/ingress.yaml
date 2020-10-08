@@ -13,5 +13,5 @@ spec:
             path: /
   tls:
     - hosts:
-        - "{{ .Values.ingress.domain }}"
-      secretName: "{{ .Values.ingress.tls.secret }}"
+        - {{ .Values.ingress.domain }}
+      secretName: {{ .Values.ingress.tlsname }}

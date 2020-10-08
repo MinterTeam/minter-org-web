@@ -41,31 +41,24 @@ export function hasAuthToken() {
     return !!Cookies.get(ID_COOKIE_KEY);
     // return 'Authorization' in instance.defaults.headers.common;
 }
+
+
+
+
 /**
- * Check invitation code
  * @param {string} invitation
- * @return {Promise<InvitationData>}
+ * @param {string} email
+ * @param {Object} fp
+ * @param {string} recaptcha
+ * @return {Promise}
  */
-export function authCheckInvitation(invitation) {
-    return instance.get(`invitation/check/${invitation}`)
-        .then((response) => {
-            return response.data.data;
-        });
-}
-
-
-/**
- * @param {string} id_token - google id_token
- * @return {Promise<MinterIdUser>}
- */
-export function authorize(id_token) {
-    return instance.post(`auth/google`, {
-            invitation: 'future',
-            id_token,
-        }, {withCredentials: true})
-        .then((response) => {
-            return prettifyMinterIdUser(response.data.data);
-        })
+export function authEmailSend({invitation, email, fp, recaptcha}) {
+    return instance.post(`auth/email`, {
+        invitation,
+        email,
+        fp,
+        recaptcha,
+    });
 }
 
 

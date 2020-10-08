@@ -230,10 +230,14 @@
 .intro__content--queue {max-width: 400px;}
 .intro__image {max-width: 300px; margin-bottom: 24px; margin-top: -10px; display: block;}
 .intro__list {margin-bottom: 40px;}
+.intro__form {display: flex; align-items: flex-start;}
+.intro__form-field {margin-right: 16px; flex-grow: 2; max-width: 256px;}
+.intro__form-button {flex-shrink: 0; margin-top: 8px;}
+.intro__form-success {padding: 18px 30px; display: inline-block; background: #d8f0de; border-radius: 10px; font-weight: 700; font-size: 16px; line-height: 20px;}
 @media (min-width: @breakpoint-medium-up) {
-    .intro {flex-direction: row; align-items: flex-start; position: relative; min-height: 550px;}
+    .intro {flex-direction: row; align-items: flex-start; position: relative;/* min-height: 550px;*/}
     .intro__content { max-width: 503px;}
-    .intro__image { max-width: none; margin-left: 50px; margin-right: -190px; margin-top: 10px; order: 2;}
+    .intro__image { max-width: none; margin-right: -190px; margin-top: -50px; margin-bottom: 0; order: 2;}
     //.intro__list {margin-right: -50px;}
 }
 
