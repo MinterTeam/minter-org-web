@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: registry.minter.network/minter-org
+  repository: registry.minter.network/minter-org-web
   pullPolicy: Always
 
 imagePullSecrets:
