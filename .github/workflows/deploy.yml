@@ -15,12 +15,6 @@ jobs:
 
       - name: set env PROJECT_NAME
         run: echo "PROJECT_NAME=$(echo "$GITHUB_REPOSITORY" | sed "s:MinterTeam/::")" >> $GITHUB_ENV
-  
-      - name: debug
-        run: echo "$PROJECT_NAME"; echo "$GITHUB_REPOSITORY"; echo "$GITHUB_REPOSITORY" | sed "s:MinterTeam/::"
-        
-      - name: debug 2
-        run: echo ${{ env.PROJECT_NAME }}
       
       - uses: actions/checkout@v2
       - name: build and push to registry

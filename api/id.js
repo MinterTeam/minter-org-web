@@ -157,7 +157,7 @@ function toOriginalMinterIdUser(user, originalUser) {
 export function updateProfileAvatar(data, userId) {
     const path = `minter-id/user/${userId}/avatar`
     const fullPath = IMAGE_API_URL + path;
-    return instance.get(`access?path=${path}`, {withCredentials: true})
+    return instance.get(`access/file-server?path=${path}`, {withCredentials: true})
         .then((response) => {
             const accessToken = response.data.data;
             return imageUpload(data, accessToken);
