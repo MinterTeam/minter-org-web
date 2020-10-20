@@ -55,7 +55,7 @@ module.exports = {
         { src: '~/plugins/anchor-scroll.js', ssr: false },
         { src: '~/plugins/scrollbar-visible.js', ssr: false },
         // { src: '~/plugins/persistedState.js', ssr: false },
-        { src: '~/plugins/seo-gtm.js', ssr: false },
+        { src: '~/plugins/seo-gtm-consent.js', ssr: false },
         { src: '~/plugins/init-client-middleware.js', ssr: false },
     ],
     env: Object.assign({}, processEnv, dotEnv),
