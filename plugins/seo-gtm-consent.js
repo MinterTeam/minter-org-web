@@ -1,6 +1,11 @@
 const GTAG_ID = 'UA-110383571-4';
 const YM_ID = 49878307;
 
+window['dataLayer'] = window['dataLayer'] || [];
+window.ym = window.ym || function() {
+    window.ym.a = window.ym.a || [];
+    window.ym.a.push(arguments);
+};
 
 export default ({ app }) => {
     /*
@@ -39,8 +44,6 @@ export function grantConsent({ym, ga}) {
 }
 
 function gtagLoad(isConsentGranted) {
-    window['dataLayer'] = window['dataLayer'] || [];
-
     // Default consent mode is "denied" for both ads and analytics, but delay for 2 seconds until the Cookie Solution is loaded
     gtag("consent", "default", {
         ad_storage: "denied",
