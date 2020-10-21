@@ -214,6 +214,24 @@
 }
 
 
+.cookies { padding-block: 16px; background: @c-black; color: #fff; font-size: 14px; position: fixed; left: 0; bottom: 0; right: 0; z-index: 10; max-height: 100%; overflow: auto;}
+.cookies__container {/*display: flex; align-items: center;*/}
+.cookies__title {font-size: 20px; line-height: 24px; margin-bottom: 12px; display: flex; align-items: center;}
+.cookies__note {font-size: 12px;}
+.cookies__button--settings {font-size: 16px;}
+.cookies__settings {position: absolute; left: 0; top: 0; right: 0;}
+.cookies__back {margin-right: 24px;}
+.cookies__back-icon {vertical-align: top;}
+@media (min-width: @breakpoint-small-up) {
+    .cookies {padding-block: 32px;}
+    .cookies__button {flex-shrink: 0;}
+}
+@media (min-width: @breakpoint-medium-up) {
+    .cookies__text {margin-right: 32px;}
+    .cookies__button {min-width: 164px;}
+}
+
+
 // error
 .main-content--error {display: flex; flex-direction: column;}
 .error__container {display: flex; flex-direction: column; flex-grow: 2;}
