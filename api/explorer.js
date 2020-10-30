@@ -31,9 +31,9 @@ export function getBalance(address) {
 export function prepareBalance(balanceList) {
     return balanceList.sort((a, b) => {
             // set base coin first
-            if (a.coin === COIN_NAME) {
+            if (a.coin.symbol === COIN_NAME) {
                 return -1;
-            } else if (b.coin === COIN_NAME) {
+            } else if (b.coin.symbol === COIN_NAME) {
                 return 1;
             } else {
                 return 0;
@@ -53,18 +53,24 @@ export function prepareBalance(balanceList) {
  * @typedef {Object} BalanceData
  * @property {string} totalBalanceSum
  * @property {string} totalBalanceSumUsd
- * @property {Array<CoinItem>} balances
+ * @property {Array<BalanceItem>} balances
  */
 
 /**
- * @typedef {Object} CoinItem
+ * @typedef {Object} BalanceItem
  * @property {string|number} amount
- * @property {string} coin
+ * @property {Coin} coin
+ */
+
+/**
+ * @typedef {Object} Coin
+ * @property {number} id
+ * @property {string} symbol
  */
 
 /**
  * @param {string} address
- * @return {Promise}
+ * @return {Promise<{data: Array<StakeItem>, meta: PaginationInfo}>}
  */
 export function getAddressStakeList(address) {
     return instance.get(`addresses/${address}/delegations`)
@@ -80,7 +86,7 @@ export function getAddressStakeList(address) {
  * @property {string} [address]
  * @property {string|number} value
  * @property {string|number} bipValue
- * @property {string} coin
+ * @property {Coin} coin
  */
 
 /**
