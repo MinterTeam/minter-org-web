@@ -1,6 +1,10 @@
 <script>
     export default {
-
+        computed: {
+            currentYear() {
+                return (new Date()).getFullYear();
+            },
+        },
     }
 </script>
 
@@ -29,12 +33,12 @@
             </div>
             <div class="footer__copyright-container u-mt-10">
                 <p class="footer__copyright">
-                    Copyright © 2019 Minter Development Foundation. <br>
+                    Copyright © 2019-{{currentYear}} Minter Development Foundation. <br>
                     All Rights Reserved. <br>
                 </p>
                 <p class="footer__copyright">
                     75 Broadway, Suite 202, San&nbsp;Francisco, CA, 94111 <br>
-                    For correspondence: 548 Market St #32852, San&nbsp;Francisco, CA 94104-5401 <br>
+                    For correspondence: 548 Market St #32852, San&nbsp;Francisco, CA&nbsp;94104-5401 <br>
                     <a class="link--default" href="mailto:hello@minter.org">hello@minter.org</a>
                 </p>
             </div>
