@@ -19,7 +19,7 @@
             <nuxt-link class="header__logo" to="/">
                 <!-- размеры у лого заданы чтобы сразу правильно расчиталось в js -->
                 <img class="header__logo-image" src="/img/minter-logo-circle.svg" alt="Minter" width="36" height="36">
-                <div class="header__logo-text">{{ title }}</div>
+                <div class="header__logo-text u-hidden-small-down">{{ title }}</div>
             </nuxt-link>
 
             <div class="header__controls" v-if="$store.state.user">

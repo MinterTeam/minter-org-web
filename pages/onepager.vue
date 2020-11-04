@@ -27,7 +27,7 @@
 
             <h2 class="u-h2 u-mb-05 u-mt-20">What makes it possible?</h2>
             <p>There are 5 levels in our hierarchy that allow us to achieve the set goals.</p>
-            <div class="u-mt-20 u-mb-20 u-hidden-medium-down u-aspect-ratio" style="--aspect-ratio:475/328; width:475px">
+            <div class="u-mt-20 u-mb-20 u-aspect-ratio" style="--aspect-ratio:475/328; width:475px">
                 <img src="/img/onepager-levels.png" srcset="/img/onepager-levels@2x.png 2x" alt="" width="475" height="328" role="presentation">
             </div>
 
