@@ -18,6 +18,7 @@ import {BASE_TITLE, BASE_DESCRIPTION} from "./assets/variables";
 
 module.exports = {
     ssr: false,
+    target: 'static',
     /*
     ** Headers of the page
     */
@@ -81,29 +82,6 @@ module.exports = {
             './api/',
             `./lang/`,
         ],
-        /*
-        ** Run ESLint on save
-        */
-        extend(config, { isDev, isClient, isServer }) {
-            // if (isDev && isClient) {
-            //     config.module.rules.push({
-            //         enforce: 'pre',
-            //         test: /\.(js|vue)$/,
-            //         loader: 'eslint-loader',
-            //         exclude: /(node_modules)/,
-            //     });
-            // }
-            /*
-            ** process some node_modules through webpack in server build
-            */
-            // if (isServer) {
-            //     config.externals = [
-            //         nodeExternals({
-            //             whitelist: [/^date-fns\/esm/],
-            //         }),
-            //     ];
-            // }
-        },
         transpile: [
             'lodash-es/',
             '@material/',
