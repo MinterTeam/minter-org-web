@@ -15,7 +15,7 @@ export default {
     },
     LOGOUT,
     SET_INVITATION_CACHE: (state, {invitation, name, type}) => {
-        Vue.set(state.invitationCache, invitation, {name, type, code: invitation})
+        Vue.set(state.invitationCache, invitation, {name, type, code: invitation});
     },
     REMOVE_INVITATION_CACHE: (state, invitation) => {
         delete state.invitationCache[invitation];

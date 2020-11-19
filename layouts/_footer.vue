@@ -5,7 +5,7 @@
                 return (new Date()).getFullYear();
             },
         },
-    }
+    };
 </script>
 
 <template>
@@ -33,7 +33,7 @@
             </div>
             <div class="footer__copyright-container u-mt-10">
                 <p class="footer__copyright">
-                    Copyright © 2019-{{currentYear}} Minter Development Foundation. <br>
+                    Copyright © 2019-{{ currentYear }} Minter Development Foundation. <br>
                     All Rights Reserved. <br>
                 </p>
                 <p class="footer__copyright">
@@ -42,7 +42,6 @@
                     <a class="link--default" href="mailto:hello@minter.org">hello@minter.org</a>
                 </p>
             </div>
-
         </div>
     </footer>
 </template>

@@ -9,7 +9,7 @@ const instance = axios.create({
 instance.interceptors.response.use(function(response) {
     return response;
 }, function(error) {
-    error.response.data = {error: {message: error.response.data}}
+    error.response.data = {error: {message: error.response.data}};
     return Promise.reject(error);
 });
 addToCamelInterceptor(instance);

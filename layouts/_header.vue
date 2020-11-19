@@ -10,7 +10,7 @@
                 default: 'Minter',
             },
         },
-    }
+    };
 </script>
 
 <template>
@@ -40,7 +40,6 @@
                     <div class="header__controls-user-avatar" :style="`background-image: url(${$store.state.user.picture}&alias=thumb-x2);`" v-if="$store.state.user.picture"></div>
                 </a>
             </div>
-
         </div>
     </header>
 </template>

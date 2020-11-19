@@ -63,7 +63,7 @@ module.exports = {
     ],
     env: Object.assign({}, processEnv, dotEnv),
     modules: [
-        '@nuxt/content'
+        '@nuxt/content',
     ],
     modern: 'client',
     /*

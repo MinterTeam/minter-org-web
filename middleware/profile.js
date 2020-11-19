@@ -19,9 +19,9 @@ export default function({app, store, route, redirect, error}) {
                 if (resError.response && resError.response.status === 401) {
                     store.commit('LOGOUT');
                     // redirect('/');
-                    if (/*urlRequiresAuth*/ false) {
-                        return error({title: 'Session expired', description: 'Please sign in again'})
-                    }
+                    // if (urlRequiresAuth) {
+                        return error({title: 'Session expired', description: 'Please sign in again'});
+                    // }
                 } else {
                     return error(resError);
                 }

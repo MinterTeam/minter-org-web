@@ -105,10 +105,10 @@
                 this.$nextTick(() => {
                     const activeLink = document.querySelector(`.docs-aside__page-nav-link[href="#${id}"]`);
                     activeLink?.scrollIntoView({block: 'nearest'});
-                })
+                });
             },
             setHash(id, isInstant) {
-                const idCleaned = this.sectionList[0].id === id ? '' : id
+                const idCleaned = this.sectionList[0].id === id ? '' : id;
                 if (isInstant) {
                     replaceHistoryWithHashInstant(idCleaned);
                 } else {
@@ -131,7 +131,7 @@
                 this.checkActiveLink();
             },
             handleResize() {
-                const clientWidth = document.body.clientWidth
+                const clientWidth = document.body.clientWidth;
                 checkHeaderHeight(clientWidth);
                 // checkDesktop.call(this, clientWidth);
                 debouncedSetHeaderTopProperty();
@@ -160,7 +160,7 @@
         }
         clientWidth = clientWidth || document.body.clientWidth;
         if (clientWidth >= 960) {
-            headerHeight = 80
+            headerHeight = 80;
         } else {
             headerHeight = 56;
         }
@@ -206,7 +206,7 @@
             }
 
             return positions[index];
-        }
+        };
     }
 
     function getOffsetTop(el) {
@@ -221,7 +221,7 @@
         hash = hash ? '#' + hash : window.location.pathname;
         window.history.replaceState(window.history.state, null, hash);
     }
-    const replaceHistoryWithHashDebounced = debounce(replaceHistoryWithHash, 1000)
+    const replaceHistoryWithHashDebounced = debounce(replaceHistoryWithHash, 1000);
     function replaceHistoryWithHashInstant(hash) {
         replaceHistoryWithHashDebounced.cancel();
         replaceHistoryWithHash(hash);
@@ -243,7 +243,7 @@
         <div class="main-content u-grid u-grid--no-margin">
             <aside class="docs-aside u-cell u-cell--medium--1-4" :class="{'is-active': isMenuActive}">
                 <div class="docs-aside__sticky">
-                    <div class="docs-aside__page" v-for="section in sectionList">
+                    <div class="docs-aside__page" v-for="section in sectionList" :key="section.id">
                         <div class="docs-aside__page-link">
                             <a :href="'#' + section.id" class="docs-aside__menu-link"
                                :class="{'is-active': section.id === activeSectionId}"
@@ -253,7 +253,7 @@
                             </a>
                         </div>
                         <ul class="sidebar-links docs-aside__page-nav">
-                            <li class="docs-aside__page-nav-item" :class="{'is-active': project.id === activeProjectId}" v-for="project in section.projectList">
+                            <li class="docs-aside__page-nav-item" :class="{'is-active': project.id === activeProjectId}" v-for="project in section.projectList" :key="project.id">
                                 <a :href="'#' + project.id" class="docs-aside__page-nav-link" @click.prevent="handleNavUpdate(project.id)">
                                     {{ project.title }}
                                 </a>

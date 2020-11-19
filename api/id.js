@@ -7,7 +7,7 @@ import {upload as imageUpload} from '~/api/image.js';
 const instance = axios.create({
     baseURL: ID_API_URL,
 });
-addToCamelInterceptor(instance)
+addToCamelInterceptor(instance);
 
 // const TOKEN_KEY = 'auth-token';
 // const initialToken = typeof localStorage !== 'undefined' ? JSON.parse(localStorage.getItem(TOKEN_KEY)) : false;
@@ -98,7 +98,7 @@ function prettifyMinterIdUser(user) {
         } else {
             contacts[snakeToCamel(contactItem.type)] = contactItem.value;
         }
-    })
+    });
     user.contacts = contacts;
     return user;
 }
@@ -125,11 +125,11 @@ function toOriginalMinterIdUser(user, originalUser) {
                         // make old item empty to delete it
                         fixedMinter[index] = {name: '', value: '', id: item.id};
                     }
-                })
+                });
             }
             fixedMinter.forEach((item) => {
                 item.type = 'minter';
-            })
+            });
             contacts = contacts.concat(fixedMinter);
         } else {
             let newOriginalContactItem = {type: camelToSnake(type), value: user.contacts[type] || ''};
@@ -143,7 +143,7 @@ function toOriginalMinterIdUser(user, originalUser) {
     let newUser = {
         ...user,
         contacts,
-    }
+    };
     delete newUser.originalContacts;
     return newUser;
 }
@@ -155,7 +155,7 @@ function toOriginalMinterIdUser(user, originalUser) {
  * @return {Promise<string>}
  */
 export function updateProfileAvatar(data, userId) {
-    const path = `minter-id/user/${userId}/avatar`
+    const path = `minter-id/user/${userId}/avatar`;
     const fullPath = IMAGE_API_URL + path;
     return instance.get(`access/file-server?path=${path}`, {withCredentials: true})
         .then((response) => {
@@ -233,7 +233,7 @@ function snakeToCamel(val) {
         if (index > 0) {
             list[index] = item[0].toUpperCase() + item.substr(1);
         }
-    })
+    });
     return list.join('');
 }
 
@@ -245,5 +245,5 @@ function camelToSnakeObject(obj) {
     return Object.keys(obj).reduce((accamulator, key) => {
         accamulator[camelToSnake(key)] = obj[key];
         return accamulator;
-    }, {})
+    }, {});
 }

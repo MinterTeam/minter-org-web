@@ -46,7 +46,7 @@
                 <p class="error__description" v-if="statusCode === 502">Service is unavailable: {{ error.message }}</p>
                 <p class="error__description" v-else-if="statusCode === 504">Request failed with status code 504. <br> Gateway time-out.</p>
                 <p class="error__description" v-else-if="statusCode === 503">The webpage is currently unavailable. <br> It may be overloaded or down for maintenance.</p>
-                <p class="error__description" v-else>{{ message  }}</p>
+                <p class="error__description" v-else>{{ message }}</p>
                 <p><a class="error__link link--default" href="/">Return to main page</a></p>
 
                 <img class="error__image" src="/img/error-404.png" srcset="/img/error-404@2x.png 2x" alt="" role="presentation">

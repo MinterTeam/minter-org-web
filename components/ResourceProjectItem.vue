@@ -24,13 +24,13 @@
             },
             src2x() {
                 return this.src.replace(/(.*)\.(\w{3,4}$)/, '$1@2x.$2');
-            }
+            },
         },
         methods: {
             capital(val) {
                 return val[0].toUpperCase() + val.toLowerCase().substr(1);
             },
-        }
+        },
     };
 </script>
 
@@ -43,7 +43,7 @@
 
             <div class="resource-project__meta u-mb-05">
                 <div class="resource__title">{{ title }}</div>
-                <div class="resource__tag" v-for="tagItem in tagList">{{ capital(tagItem) }}</div>
+                <div class="resource__tag" v-for="tagItem in tagList" :key="tagItem">{{ capital(tagItem) }}</div>
             </div>
         </a>
         <slot/>

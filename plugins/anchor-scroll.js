@@ -33,6 +33,6 @@ function waitConditionThenCallback(condition, callback) {
     }
 
     setTimeout(() => {
-        waitConditionThenCallback(condition, callback)
+        waitConditionThenCallback(condition, callback);
     }, 100);
 }

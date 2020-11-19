@@ -15,7 +15,7 @@
                 ],
             };
         },
-    }
+    };
 </script>
 
 <template>
@@ -76,8 +76,6 @@
                     <div><a class="link--default" href="https://t.me/MinterNetworkGroup" target="_blank" rel="noopener">t.me/MinterNetworkGroup</a></div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </template>

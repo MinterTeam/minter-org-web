@@ -1,7 +1,7 @@
 import profileMiddleware, {getUrlShouldCheckUser} from '~/middleware/profile.js';
 
 let isInit = false;
-export default function (context) {
+export default function(context) {
     if (isInit) {
         return;
     }

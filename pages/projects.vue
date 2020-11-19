@@ -6,7 +6,7 @@
         fetch() {
             this.$store.commit('SET_SECTION_NAME', 'Projects');
         },
-        beforeRouteLeave (to, from, next) {
+        beforeRouteLeave(to, from, next) {
             this.$store.commit('SET_SECTION_NAME', '');
             next();
         },
@@ -44,12 +44,12 @@
                         title: heading.innerText,
                         id: heading.id,
                         section: currentSection.id,
-                    })
+                    });
                 }
             }
             this.$nuxt.$emit('update-project-nav', sectionList);
         },
-    }
+    };
 </script>
 
 <template>
@@ -106,7 +106,7 @@
         <hr class="hr--divider hr--divider-large">
 
 
-<!--
+        <!--
         <h2 class="projects__title u-h2 u-mb-15" id="yyycash">
             <a class="link&#45;&#45;hover link&#45;&#45;main" href="https://yyy.cash" target="_blank" rel="noopener">YYY.cash</a>
         </h2>
@@ -150,7 +150,7 @@
             <img class="projects__collage-item projects__cover" src="/img/projects/yyy-3.png" srcset="/img/projects/yyy-3@2x.png 2x" alt="" role="presentation" style="&#45;&#45;collage-width:62.5%">
         </figure>
 
-        <p>YYY is critically acclaimed for its speed ​​and user-friendliness:</p>
+        <p>YYY is critically acclaimed for its speed and user-friendliness:</p>
         <figure class="u-aspect-ratio u-mt-10" style="&#45;&#45;aspect-ratio:640/360;">
             <iframe width="640" height="360" src="https://www.youtube.com/embed/unWc4-D82wQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </figure>
@@ -262,7 +262,7 @@
         <hr class="hr--divider hr--divider-large">
 
 
-<!--
+        <!--
         <h2 class="projects__title u-h2 u-mb-15" id="bipplus">
             <a class="link&#45;&#45;hover link&#45;&#45;main" href="https://bip.plus" target="_blank" rel="noopener">BIP+</a>
         </h2>
@@ -542,7 +542,7 @@
         <hr class="hr--divider hr--divider-large">
 
 
-<!--
+        <!--
         <h2 class="projects__title u-h2 u-mb-15" id="cube">
             <a class="link&#45;&#45;hover link&#45;&#45;main" href="https://cubegame.pro" target="_blank" rel="noopener">Cube</a>
         </h2>
@@ -769,7 +769,7 @@
         <hr class="hr--divider hr--divider-large">
 
 
-<!--
+        <!--
         <h2 class="projects__title u-h2 u-mb-15" id="paymnt">
             <a class="link&#45;&#45;hover link&#45;&#45;main" href="https://paymnt.io" target="_blank" rel="noopener">PayMnt</a>
         </h2>
@@ -1228,7 +1228,5 @@
 
         <h3 class="u-h3 u-mb-05 u-mt-20">For videopodcasts</h3>
         <p>Store audio version of each episode in 320 kbps with a download option and attach the link to a video version to the mix. We support videos from YouTube—the number of views will grow, and the listeners will be delighted by the audio mix quality!</p>
-
-
     </article>
 </template>

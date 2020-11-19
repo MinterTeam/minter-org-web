@@ -1,5 +1,5 @@
 <script>
-    import {GOOGLE_SIGNIN_CLIENT_ID} from '~/assets/variables.js'
+    import {GOOGLE_SIGNIN_CLIENT_ID} from '~/assets/variables.js';
 
     export default {
         props: {
@@ -36,7 +36,7 @@
                 return encodeURI(path + params.join('&'));
             },
         },
-    }
+    };
 </script>
 
 <template>

@@ -15,7 +15,7 @@
                 ],
             };
         },
-    }
+    };
 </script>
 
 <template>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <p>The financial system attempts to fulfill the needs of 200 countries by leveraging technologies and methods that have remained unchanged for decades. That is why a bank-to-bank money transfer even within the same state may take days to complete while sending an SMS to anyone in the world is lightning-fast.</p>
-<!--
+                <!--
                 <p class="u-mb-10">Let us explore how money transfers work today and what Minter has done to facilitate them.</p>
                 <p class="u-mb-10">Any transfer is carried out in three fundamental steps:</p>
                 <div class="u-mb-10 u-grid u-grid--vertical-margin--small">

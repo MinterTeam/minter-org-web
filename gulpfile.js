@@ -45,7 +45,7 @@ let paths = {
 
 
 
-gulp.task('countries', function (cb) {
+gulp.task('countries', function(cb) {
     let countryList = countryData.map((item) => {
         const lang = Object.keys(item.languages)[0];
         return {
@@ -53,7 +53,7 @@ gulp.task('countries', function (cb) {
             name: item.name.common || item.name.official,
             lang: iso6391[lang] || '', // ISO 639-3 to ISO 639-1
         };
-    })
+    });
 
 
     countryList.sort((a, b) => {
@@ -65,7 +65,7 @@ gulp.task('countries', function (cb) {
     fs.writeFile('tmp/country-list.json', JSON.stringify(countryList), cb);
 });
 
-gulp.task('country-languages', function (cb) {
+gulp.task('country-languages', function(cb) {
     let countryLanguageList = {};
 
     countryData.forEach((item) => {
@@ -74,7 +74,7 @@ gulp.task('country-languages', function (cb) {
             if (!countryLanguageList[langCode]) {
                 countryLanguageList[langCode] = item.languages[langCode];
             }
-        })
+        });
     });
 
     // Object to Array
@@ -185,7 +185,7 @@ gulp.task('default', gulp.series(
         setTimeout(function() {
             log('Watching...');
         });
-    }
+    },
 ));
 
 

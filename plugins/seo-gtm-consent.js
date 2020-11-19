@@ -74,15 +74,14 @@ function gtag() {
 function updateGaConsent(ad_storage, analytics_storage) {
     gtag("consent", "update", {
         ad_storage: ad_storage ? "granted" : "denied",
-        analytics_storage: analytics_storage ? "granted" : "denied"
+        analytics_storage: analytics_storage ? "granted" : "denied",
     });
 }
 
 
 function ymLoad() {
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    (function(m, e, t, r, i, k, a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments);};
+        m[i].l=1*new Date(); k=e.createElement(t), a=e.getElementsByTagName(t)[0], k.async=1, k.src=r, a.parentNode.insertBefore(k, a);})(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
 }
 
 let isYmInit = false;
@@ -94,7 +93,7 @@ function ymInit() {
     window.ym(YM_ID, "init", {
         clickmap:true,
         trackLinks:true,
-        accurateTrackBounce:true
+        accurateTrackBounce:true,
     });
 }
 

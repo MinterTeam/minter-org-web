@@ -18,19 +18,6 @@
         directives: {
             checkEmpty,
         },
-        head() {
-            if (!this.user) {
-                return {}
-            }
-            const title = getTitle(this.user.name);
-            return {
-                title: title,
-                meta: [
-                    { hid: 'og-title', name: 'og:title', content: title },
-                ],
-
-            };
-        },
         fetch() {
             return getUserByUsername(this.$route.params.username.toLowerCase())
                 .then((user) => {
@@ -47,14 +34,27 @@
                         ...errorData,
                         message: errorData.status === 404 ? 'User not found' : errorData.message,
                     });
-                })
+                });
+        },
+        head() {
+            if (!this.user) {
+                return {};
+            }
+            const title = getTitle(this.user.name);
+            return {
+                title: title,
+                meta: [
+                    { hid: 'og-title', name: 'og:title', content: title },
+                ],
+
+            };
         },
         data() {
             return {
                 user: null,
                 balanceList: {},
                 stakeList: {},
-            }
+            };
         },
         computed: {
             userPicture() {
@@ -74,7 +74,7 @@
                     return '';
                 }
 
-                return this.user.contacts.phone.replace(/(\d+)(\d\d\d)(\d\d\d)(\d\d\d\d)$/, '+$1 $2-$3-$4')
+                return this.user.contacts.phone.replace(/(\d+)(\d\d\d)(\d\d\d)(\d\d\d\d)$/, '+$1 $2-$3-$4');
             },
             prettyWebsite() {
                 if (!this.user?.website) {
@@ -88,7 +88,7 @@
                     return [];
                 }
 
-                return this.user.contacts.minter.filter((item) => item.value)
+                return this.user.contacts.minter.filter((item) => item.value);
             },
             country() {
                 const countryItem = countryList.find((item) => item.code === this.user.country);
@@ -100,7 +100,7 @@
             },
             idLink() {
                 // check if current user is signed in
-                return this.$store.state.user ? `${ID_HOST}/share` : `${ID_HOST}/invite/${this.user.invitation}`
+                return this.$store.state.user ? `${ID_HOST}/share` : `${ID_HOST}/invite/${this.user.invitation}`;
             },
             editProfileLink() {
                 // check if current user is signed in
@@ -121,11 +121,11 @@
                     }
                     getBalance(item.value)
                         .then((balanceData) => {
-                            Vue.set(this.balanceList, item.value, balanceData.totalBalanceSum)
+                            Vue.set(this.balanceList, item.value, balanceData.totalBalanceSum);
                         });
                     getAddressStakeList(item.value)
                         .then((stakeData) => {
-                            Vue.set(this.stakeList, item.value, stakeData.meta.additional.totalDelegatedBipValue)
+                            Vue.set(this.stakeList, item.value, stakeData.meta.additional.totalDelegatedBipValue);
                         });
                 });
             },
@@ -149,7 +149,7 @@
                 }
             },
         },
-    }
+    };
 </script>
 
 <template>
@@ -215,7 +215,7 @@
 
                     <div class="card__address-wrap-outer">
                         <div class="card__address-wrap-inner">
-                            <div class="card__address" v-for="minterItem in minterContacts">
+                            <div class="card__address" v-for="minterItem in minterContacts" :key="minterItem.value">
                                 <div class="card__address-icon">{{ getBalanceEmoji(minterItem.value) }}</div>
                                 <div class="card__address-content">
                                     <div class="card__address-name ">{{ minterItem.name }}</div>
