@@ -19,6 +19,7 @@ import {BASE_TITLE, BASE_DESCRIPTION} from "./assets/variables";
 module.exports = {
     ssr: false,
     target: 'static',
+    telemetry: false,
     /*
     ** Headers of the page
     */

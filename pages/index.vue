@@ -47,7 +47,6 @@
         // },
         data() {
             return {
-                serverError: '',
                 // isAuthLoading: false,
                 isEmailSent: false,
                 bipPrice: 0,
@@ -77,7 +76,7 @@
 -->
                 <div class="u-mb-10" v-if="$store.state.user">
                     <!--<a class="intro__button button button&#45;&#45;main" href="https://id.minter.org/share">View profile</a>-->
-                    <a class="intro__button button button--main" :href="$options.WALLET_HOST">Launch wallet</a>
+                    <a class="intro__button button button--main button--full-mobile" :href="$options.WALLET_HOST">Launch wallet</a>
                 </div>
                 <div class="u-mb-10" v-else>
                     <AuthIndexForm @success="isEmailSent = true"/>
@@ -279,7 +278,8 @@
                     <p>The Time Loop arcade is one of the most popular Minter-powered games. You control a spaceship equipped with guns, and the task is to score as many points as possible in one flight. The player who scored the most points becomes a contender for the winner of the game. If none of their rivals score better in the next three flights, the challenger becomes the winner of the game and gets a stash full of TIME coins.</p>
                 </ResourceProjectItem>
             </div>
-            <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
+<!--
+            <div class="u-cell u-cell&#45;&#45;large&#45;&#45;1-3 u-cell&#45;&#45;medium&#45;&#45;1-2">
                 <ResourceProjectItem
                         link="https://paymnt.io"
                         src="/img/resources/project-paymnt.png"
@@ -289,6 +289,7 @@
                     <p>Want to start accepting payments on your website with coins of the Minter network? Use ready-made PayMnt modules that do not require further development. You can accept payments from both natural and legal persons.</p>
                 </ResourceProjectItem>
             </div>
+-->
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
                 <ResourceProjectItem
                         link="https://t.me/paytominter_bot"
@@ -299,7 +300,8 @@
                     <p>Want to encourage activity within your own Telegram community? No problem. Add this bot to your chat, hold airdrops, and like messages of the active community members. Rewards can be distributed in any coin issued on the Minter network, which the receiver can swap for a good or service via one of the Minter Push services right away.</p>
                 </ResourceProjectItem>
             </div>
-            <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
+<!--
+            <div class="u-cell u-cell&#45;&#45;large&#45;&#45;1-3 u-cell&#45;&#45;medium&#45;&#45;1-2">
                 <ResourceProjectItem
                         link="https://spacegame.store"
                         src="/img/resources/project-cube.jpg"
@@ -309,6 +311,7 @@
                     <p>Cube is a real-time multi-player strategy. Use your skills to capture enemy territory and earn CUBE coins.</p>
                 </ResourceProjectItem>
             </div>
+-->
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
                 <ResourceProjectItem
                         link="https://bipgame.io"
@@ -385,7 +388,8 @@
                     <p>One of the most easy-to-use push services. Send Minter coins to anyone in a couple of clicks, and the receiver will be able to transfer, exchange, or spend coins on a wide selection of goods and services available in the catalog.</p>
                 </ResourceItem>
             </div>
-            <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
+<!--
+            <div class="u-cell u-cell&#45;&#45;large&#45;&#45;1-3 u-cell&#45;&#45;medium&#45;&#45;1-2">
                 <ResourceItem
                         link="https://yyy.cash"
                         icon="send-yyy"
@@ -395,6 +399,7 @@
                     <p>This eye-catching and multi-functional service will allow you to not only transfer coins through one-time wallets but also customize them. Insert your logos, animations, and background. The service’s distinguishing feature is the ability to Push e-mail newsletters.</p>
                 </ResourceItem>
             </div>
+-->
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
                 <ResourceItem
                         link="https://5s.gift"

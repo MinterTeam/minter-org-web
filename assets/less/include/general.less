@@ -150,6 +150,10 @@ blockquote {
 .button--full {display: block; width: 100%;}
 /*.button__content {transition: 0.1s;}*/
 //.button--small {padding-left: 14px; padding-right: 14px;}
+@media (max-width: @breakpoint-small-down) {
+    .button--medium-mobile {min-width: auto; width: 100%;}
+    .button--full-mobile {display: flex; width: 100%;}
+}
 @media (min-width: @breakpoint-small-up) {
     //.button--small {padding-left: 26px; padding-right: 26px;}
     .button--medium {min-width: 240px; width: auto;}

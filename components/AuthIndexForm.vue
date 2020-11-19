@@ -87,7 +87,7 @@
                 <span class="form-field__error" v-if="$v.form.email.$dirty && !$v.form.email.server">{{ sve.email.message }}</span>
             </div>
 
-            <button class="intro__form-button button button--green" :class="{'is-loading': isFormSending, 'is-disabled': false && $v.$invalid}">
+            <button class="intro__form-button button button--green" :class="{'is-loading': isFormSending}">
                 <span class="button__content">Launch</span>
                 <svg class="loader loader--button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
                     <circle class="loader__path" cx="20" cy="20" r="11"></circle>
