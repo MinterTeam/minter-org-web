@@ -238,14 +238,6 @@
                 <p>Source code of Minter team repositories on the GitHub platform. Node, wallets, multiple SDKs and APIs.</p>
             </ResourceItem>
             <ResourceItem
-                link="https://minterscan.net"
-                icon="dev-minterscan"
-                title="Minterscan"
-                tag="web"
-            >
-                <p>A modern Minter network explorer, which offers a wider range of convenient and relevant tools compared to the official explorer: profile icons, validator rankings, purpose-specific tools, and more.</p>
-            </ResourceItem>
-            <ResourceItem
                 link="https://funfasy.dev"
                 icon="dev-funfasy"
                 title="FunFaSy"

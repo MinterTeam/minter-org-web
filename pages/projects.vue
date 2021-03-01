@@ -406,62 +406,6 @@
 
         <!-- ESSENTIALS -->
         <h1 class="u-h1 u-h1--large u-mb-10" id="essentials">Essentials</h1>
-        <h2 class="projects__title u-h2 u-mb-15" id="minterscan">
-            <a class="link--hover link--main" href="https://minterscan.net" target="_blank" rel="noopener">Minterscan</a>
-        </h2>
-        <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/404">
-            <img class="projects__cover" src="/img/projects/minterscan@640w.png" alt="" role="presentation"
-                 srcset="/img/projects/minterscan@640w.png 640w,
-                        /img/projects/minterscan@686w.png 750w,
-                        /img/projects/minterscan@1280w.png 1280w"
-                 sizes="(min-width: 640px) 640w, 100vw"
-            >
-        </figure>
-
-        <p class="u-mb-20">A modern Minter network explorer, which offers a wider range of intuitive and relevant tools compared to the official explorer: profile icons, validator rankings, purpose-specific tools, and more.</p>
-
-        <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-            <div class="u-cell u-cell--medium--1-2">
-                <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                <div><a class="link--default" href="https://minterscan.net" target="_blank" rel="noopener">minterscan.net</a></div>
-            </div>
-            <div class="u-cell u-cell--medium--1-2">
-                <div class="u-h u-h--uppercase u-mb-025">Coin</div>
-                <div><a class="link--default" href="https://chainik.io/coin/MSCAN" target="_blank" rel="noopener">chainik.io/coin/MSCAN</a></div>
-            </div>
-            <div class="u-cell u-cell--medium--1-2">
-                <div class="u-h u-h--uppercase u-mb-025">Telegram channel</div>
-                <div><a class="link--default" href="https://t.me/minterscan" target="_blank" rel="noopener">t.me/minterscan</a></div>
-            </div>
-            <div class="u-cell u-cell--medium--1-2">
-                <div class="u-h u-h--uppercase u-mb-025">Telegram group</div>
-                <div><a class="link--default" href="https://t.me/minter_zen" target="_blank" rel="noopener">t.me/minter_zen</a></div>
-            </div>
-        </div>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">Explorer</h3>
-        <p>The blockchain explorer allows you to view all information about any block, transaction, or address on the Minter network. Aside from standard functionality, Minterscan offers a number of additional useful services.</p>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">Profiles</h3>
-        <p>Address <a class="link--default" href="https://minterscan.net/profiles" target="_blank" rel="noopener">profiles</a> allow any person or project to set their avatar, name, and description, as well as undergo the verification process to prove ownership over a certain address.</p>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">Validator ranking</h3>
-        <p>Validator <a class="link--default" href="https://minterscan.net/validators" target="_blank" rel="noopener">ranking</a> shows the list of active validators that can be ordered by various filters—for example, stake size or voting power.</p>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">Proposal voting</h3>
-        <p><a class="link--default" href="https://minterscan.net/proposals" target="_blank" rel="noopener">Proposals</a> are ideas put forward by the community or core dev team, aimed to improve the blockchain or its individual components. This tool is mostly used for voting on major Minter network upgrades. Validators send a transaction expressing their support for either of two options, namely ACCEPT or REJECT, in the payload. For an upgrade to be accepted and proceeded with, a two-thirds majority is required.</p>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">Exchanging</h3>
-        <p>Exchange <a class="link--default" href="https://minterscan.net/exchanges/" target="_blank" rel="noopener">monitoring</a> aggregates the best offers to buy or sell BIP across numerous platforms.</p>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">Other services</h3>
-        <ul class="list-simple">
-            <li><a class="link--default" href="https://minterscan.net/calc" target="_blank" rel="noopener">Calculators</a>: estimate the price of a coin or potential delegation rewards</li>
-            <li><a class="link--default" href="https://minterscan.net/faq/multisend" target="_blank" rel="noopener">Multi-sends</a>: make multi-send transactions using a utility or an on-line version</li>
-        </ul>
-
-
-        <hr class="hr--divider hr--divider-large">
 
 
         <h2 class="projects__title u-h2 u-mb-15" id="chainik">
