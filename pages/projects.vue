@@ -106,60 +106,6 @@
         <hr class="hr--divider hr--divider-large">
 
 
-        <!--
-        <h2 class="projects__title u-h2 u-mb-15" id="yyycash">
-            <a class="link&#45;&#45;hover link&#45;&#45;main" href="https://yyy.cash" target="_blank" rel="noopener">YYY.cash</a>
-        </h2>
-        <figure class="u-aspect-ratio u-mb-15" style="&#45;&#45;aspect-ratio:400/403; width: 400px;">
-            <img class="projects__cover" src="/img/projects/yyy.png" srcset="/img/projects/yyy@2x.png 2x" alt="" role="presentation" width="400" height="403">
-        </figure>
-        <p class="u-mb-20">This eye-catching and multi-functional service allows you to not only transfer coins through one-time wallets but also customize them. Insert your logos, animations, and background. The service’s distinguishing feature is the ability to push e-mail newsletters.</p>
-
-        <div class="u-grid u-grid&#45;&#45;small u-grid&#45;&#45;vertical-margin&#45;&#45;small">
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Site</div>
-                <div><a class="link&#45;&#45;default" href="https://yyy.cash" target="_blank" rel="noopener">yyy.cash</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">GitHub</div>
-                <div><a class="link&#45;&#45;default" href="https://github.com/eternalflow/push-money" target="_blank" rel="noopener">github.com/eternalflow/push-money</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Telegram channel</div>
-                <div><a class="link&#45;&#45;default" href="https://t.me/yyycash" target="_blank" rel="noopener">t.me/yyycash</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Telegram group</div>
-                <div><a class="link&#45;&#45;default" href="https://t.me/yyychat" target="_blank" rel="noopener">t.me/yyychat</a></div>
-            </div>
-        </div>
-
-        <p class="u-mt-20">A fast, one-off push wallet with great usability. It takes only 13 clicks and 30 seconds (including all confirmations and choice of the recipient) from the moment of creating a push to actually sharing it.</p>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">Opportunities</h3>
-        <ul class="list-simple">
-            <li>Single-use push wallet (one recipient)</li>
-            <li>Multi-push (multiple recipients, via a Google spreadsheet)</li>
-            <li>Deep link deposits</li>
-            <li>Extensive customization options</li>
-        </ul>
-        <p>You can make a branded push by adjusting parameters for a particular recipient. Once receieved, the recepient will be able to spend the coins on goods and services of their choice or use them to make in-game deposits to Time Loop, Galaxy Online, and others.</p>
-
-        <figure class="u-aspect-ratio u-mt-20 u-mb-20" style="&#45;&#45;aspect-ratio:640/470;">
-            <img class="projects__collage-item projects__cover" src="/img/projects/yyy-2.png" srcset="/img/projects/yyy-2@2x.png 2x" alt="" role="presentation" style="&#45;&#45;collage-width:62.5%">
-            <img class="projects__collage-item projects__cover" src="/img/projects/yyy-3.png" srcset="/img/projects/yyy-3@2x.png 2x" alt="" role="presentation" style="&#45;&#45;collage-width:62.5%">
-        </figure>
-
-        <p>YYY is critically acclaimed for its speed and user-friendliness:</p>
-        <figure class="u-aspect-ratio u-mt-10" style="&#45;&#45;aspect-ratio:640/360;">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/unWc4-D82wQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </figure>
-
-
-        <hr class="hr&#45;&#45;divider hr&#45;&#45;divider-large">
--->
-
-
         <h2 class="projects__title u-h2 u-mb-15" id="tapmn">
             <a class="link--hover link--main" href="https://tap.mn" target="_blank" rel="noopener">TAP.mn</a>
         </h2>
@@ -210,93 +156,6 @@
 
 
         <hr class="hr--divider hr--divider-large">
-
-
-        <h2 class="projects__title u-h2 u-mb-15" id="fivesgift">
-            <a class="link--hover link--main" href="https://5s.gift" target="_blank" rel="noopener">5s.gift</a>
-        </h2>
-        <figure class="u-aspect-ratio u-mb-15" style="--aspect-ratio:640/448">
-            <img class="projects__cover" src="/img/projects/5sgift@640w.png" alt="" role="presentation"
-                 srcset="/img/projects/5sgift@640w.png 640w,
-                        /img/projects/5sgift@686w.png 750w,
-                        /img/projects/5sgift@1280w.png 1280w"
-                 sizes="(min-width: 640px) 640w, 100vw"
-            >
-        </figure>
-        <p class="u-mb-20">Is it your friend’s birthday, or do you simply want to thank someone? Use ready-made templates to impress the receiving party. The service also allows you to provide your audience with incentives for filling out forms or performing actions.</p>
-
-        <div class="u-grid u-grid--small u-grid--vertical-margin--small">
-            <div class="u-cell u-cell--medium--1-2">
-                <div class="u-h u-h--uppercase u-mb-025">Site</div>
-                <div><a class="link--default" href="https://5s.gift" target="_blank" rel="noopener">5s.gift</a></div>
-            </div>
-            <div class="u-cell u-cell--medium--1-2">
-                <div class="u-h u-h--uppercase u-mb-025">GitHub</div>
-                <div><a class="link--default" href="https://github.com/MotherMinter/Push" target="_blank" rel="noopener">github.com/MotherMinter/Push</a></div>
-            </div>
-        </div>
-
-        <p class="u-mt-20">All things considered, you may also want to make your URL branded. And 5s.gift allows you to do just that. </p>
-        <p>Wallet types:</p>
-        <ul class="list-simple">
-            <li><strong>Simple</strong> allows you to create a wallet easily accessible via a unique link</li>
-            <li><strong>Feedback</strong> allows you to create a wallet that your readers will be able to access after filling out the feedback form (e.g., you did some terrific writing and need feedback to locate and eliminate errors, peer review, etc.)</li>
-            <li><strong>Action</strong> allows you to create a wallet that can be accessed after the receiver completes a specific task</li>
-        </ul>
-        <p>You can make your pushes stand out by choosing one of the available styling templates, for example, a “Happy Birthday!” one.</p>
-
-        <figure class="u-aspect-ratio u-mb-20 u-mt-20" style="--aspect-ratio:640/206">
-            <img class="projects__cover" src="/img/projects/5sgift-2@640w.png" alt="" role="presentation"
-                 srcset="/img/projects/5sgift-2@640w.png 640w,
-                        /img/projects/5sgift-2@686w.png 750w,
-                        /img/projects/5sgift-2@1280w.png 1280w"
-                 sizes="(min-width: 640px) 640w, 100vw"
-            >
-        </figure>
-
-        <figure class="u-aspect-ratio u-mt-10" style="--aspect-ratio:640/360;">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/FuXPiJUmyBE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </figure>
-
-
-        <hr class="hr--divider hr--divider-large">
-
-
-        <!--
-        <h2 class="projects__title u-h2 u-mb-15" id="bipplus">
-            <a class="link&#45;&#45;hover link&#45;&#45;main" href="https://bip.plus" target="_blank" rel="noopener">BIP+</a>
-        </h2>
-        <figure class="u-aspect-ratio u-mb-15" style="&#45;&#45;aspect-ratio:640/504">
-            <img class="projects__cover" src="/img/projects/bipplus@640w.png" alt="" role="presentation"
-                 srcset="/img/projects/bipplus@640w.png 640w,
-                        /img/projects/bipplus@686w.png 750w,
-                        /img/projects/bipplus@1280w.png 1280w"
-                 sizes="(min-width: 640px) 640w, 100vw"
-            >
-        </figure>
-        <p class="u-mb-20">Another great Push service enabling you to top up your mobile phone, pay for the Internet, transportation, travels, games, on-line shopping, and much more.</p>
-
-        <div class="u-grid u-grid&#45;&#45;small u-grid&#45;&#45;vertical-margin&#45;&#45;small">
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Site</div>
-                <div><a class="link&#45;&#45;default" href="https://bip.plus" target="_blank" rel="noopener">bip.plus</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">GitHub</div>
-                <div><a class="link&#45;&#45;default" href="https://github.com/BTCSecure/bip-plus-wallet" target="_blank" rel="noopener">github.com/BTCSecure/bip-plus-wallet</a></div>
-            </div>
-        </div>
-
-        <p class="u-mt-20">People use services from the BIP+ catalog at different frequencies. Taxi and public transportation, for example, would be daily. Mobile and Internet communications, television, games, and entertainment would be couple times a month. Airline tickets or insurance, pretty rare.</p>
-        <p>With instant user experience in mind, BIP+ has focused on direct payments and balance replenishments rather than gift certificates.</p>
-
-        <figure class="u-aspect-ratio u-mt-10" style="&#45;&#45;aspect-ratio:640/360;">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/6b4LMQVvdX4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </figure>
-
-
-        <hr class="hr&#45;&#45;divider hr&#45;&#45;divider-large">
--->
 
 
         <h2 class="projects__title u-h2 u-mb-15" id="reef">
@@ -542,67 +401,6 @@
         <hr class="hr--divider hr--divider-large">
 
 
-        <!--
-        <h2 class="projects__title u-h2 u-mb-15" id="cube">
-            <a class="link&#45;&#45;hover link&#45;&#45;main" href="https://cubegame.pro" target="_blank" rel="noopener">Cube</a>
-        </h2>
-        <figure class="u-aspect-ratio u-mb-15" style="&#45;&#45;aspect-ratio:640/496">
-            <img class="projects__cover" src="/img/projects/cube@640w.jpg" alt="" role="presentation"
-                 srcset="/img/projects/cube@640w.jpg 640w,
-                        /img/projects/cube@686w.jpg 750w,
-                        /img/projects/cube@1280w.jpg 1280w"
-                 sizes="(min-width: 640px) 640w, 100vw"
-            >
-        </figure>
-        <p class="u-mb-20">Cube is a real-time multi-player strategy. Use your skills to claim enemy-controlled territories and earn CUBE coins.</p>
-
-        <div class="u-grid u-grid&#45;&#45;small u-grid&#45;&#45;vertical-margin&#45;&#45;small">
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Site</div>
-                <div><a class="link&#45;&#45;default" href="https://cubegame.pro" target="_blank" rel="noopener">cubegame.pro</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Coin</div>
-                <div><a class="link&#45;&#45;default" href="https://chainik.io/coin/CUBE" target="_blank" rel="noopener">chainik.io/coin/CUBE</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Telegram channel</div>
-                <div><a class="link&#45;&#45;default" href="https://t.me/cubenews_ru" target="_blank" rel="noopener">t.me/cubenews_ru</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Telegram group</div>
-                <div><a class="link&#45;&#45;default" href="https://t.me/cubechat_ru" target="_blank" rel="noopener">t.me/cubechat_ru</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Telegram bot</div>
-                <div><a class="link&#45;&#45;default" href="https://t.me/CubeMinterBot" target="_blank" rel="noopener">t.me/CubeMinterBot</a></div>
-            </div>
-        </div>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">About</h3>
-        <p>The game can be played by 2–8 people simultaneously. Each player has a main building called <strong>Base</strong>, the very first cube which powers everything with the energy. It is the most important cube; if you lose it, you lose the game.</p>
-        <p>There are also <strong>generators</strong> scattered on the map. To capture, move your cube close to&nbsp;them.</p>
-        <p>Each cube has its value, or <strong>energy</strong>. The energy of an ordinary cube is re-filled every 25&nbsp;seconds. The energy of bases and generators, every second.</p>
-        <p>Energy is spent on opening new cubes and entering into the battles over bases and&nbsp;generators.</p>
-
-        <figure class="u-aspect-ratio u-mt-10 u-mb-10" style="&#45;&#45;aspect-ratio:640/360;">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/FU0MapyxVf8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </figure>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">Gaming process</h3>
-        <ul class="list-simple">
-            <li>WASD keys and arrows are the controls. You can move in any direction, except diagonally. You can also click anywhere on the map (energy does not move when you do so)</li>
-            <li>To capture a new cube, you need 1 unit of energy; to re-capture a cube, the same 1 unit + energy of that cube</li>
-            <li>Move energy around the map with your cursor</li>
-            <li>The mission is to claim the bases of all players on the map</li>
-            <li>The whole map is covered by the fog of war; each cube has the visibility of 1, meaning it lifts the fog 1 cell in each direction</li>
-        </ul>
-
-
-        <hr class="hr&#45;&#45;divider hr&#45;&#45;divider-large">
--->
-
-
 
 
 
@@ -769,62 +567,7 @@
         <hr class="hr--divider hr--divider-large">
 
 
-        <!--
-        <h2 class="projects__title u-h2 u-mb-15" id="paymnt">
-            <a class="link&#45;&#45;hover link&#45;&#45;main" href="https://paymnt.io" target="_blank" rel="noopener">PayMnt</a>
-        </h2>
-        <figure class="u-aspect-ratio u-mb-15" style="&#45;&#45;aspect-ratio:640/372">
-            <img class="projects__cover" src="/img/projects/paymnt@640w.jpg" alt="" role="presentation"
-                 srcset="/img/projects/paymnt@640w.jpg 640w,
-                        /img/projects/paymnt@686w.jpg 750w,
-                        /img/projects/paymnt@1280w.jpg 1280w"
-                 sizes="(min-width: 640px) 640w, 100vw"
-            >
-        </figure>
-        <p class="u-mb-20">Want to start accepting payments on your website with coins of the Minter network? Use ready-made PayMnt modules that do not require further development. You can accept payments from both natural and legal persons.</p>
 
-        <div class="u-grid u-grid&#45;&#45;small u-grid&#45;&#45;vertical-margin&#45;&#45;small">
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Site</div>
-                <div><a class="link&#45;&#45;default" href="https://paymnt.io" target="_blank" rel="noopener">paymnt.io</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">GitHub</div>
-                <div><a class="link&#45;&#45;default" href="https://github.com/ValidatorCenter" target="_blank" rel="noopener">github.com/ValidatorCenter</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Telegram channel</div>
-                <div><a class="link&#45;&#45;default" href="https://t.me/paymnt" target="_blank" rel="noopener">t.me/paymnt</a></div>
-            </div>
-            <div class="u-cell u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <div class="u-h u-h&#45;&#45;uppercase u-mb-025">Telegram group</div>
-                <div><a class="link&#45;&#45;default" href="https://t.me/ValidatorCenterChat" target="_blank" rel="noopener">t.me/ValidatorCenterChat</a></div>
-            </div>
-        </div>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">B2B</h3>
-        <p>Enables you to accept payments from legal entities on your website. The customer confirms payment in one click, while you get an instant notification.</p>
-        <p>The payment from an organization is no different from that of a regular individual: it is processed on the blockchain, uninterrupted. Once completed, you are notified that you can ship now. The customer spends less time and gets what they ordered straight away, meaning higher conversion rates in sight. As for you, costs associated with warehousing and payment processing will reduce.</p>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">Self-Employed</h3>
-        <p>PayMnt’s solution for natural persons. Make invoices for the work performed or goods supplied, receive payments to a single blockchain address, and keep track of them.</p>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">Ready-Made Modules</h3>
-        <p>You don’t need to develop anything from scratch, simply install the module and fill in a couple of fields. The service’s modules are available for most of the popular CMSes, SaaSes, CRMs, and frameworks. In case there is no module for your platform, reach out to the support team.</p>
-        <ul class="list-simple">
-            <li><a class="link&#45;&#45;default" href="https://paymnt.io/mdl/joomla-joomshopping.zip" target="_blank" rel="noopener">Joomla - JoomShopping</a></li>
-            <li><a class="link&#45;&#45;default" href="https://paymnt.io/mdl/opencart.zip" target="_blank" rel="noopener">OpenCart</a></li>
-            <li><a class="link&#45;&#45;default" href="https://paymnt.io/mdl/prestashop.zip" target="_blank" rel="noopener">PrestaShop</a></li>
-            <li><a class="link&#45;&#45;default" href="https://paymnt.io/mdl/wordpress-woocommerce.zip" target="_blank" rel="noopener">Wordpress - WooCommerce</a></li>
-            <li><a class="link&#45;&#45;default" href="https://paymnt.io/mdl/drupal-commerce.zip" target="_blank" rel="noopener">Drupal - Commerce</a></li>
-        </ul>
-
-        <h3 class="u-h3 u-mb-05 u-mt-20">API</h3>
-        <p>The service provides an easy-to-understand and logical REST API, there are SDKs for the most widely used programming languages, libraries with easily deployed payment forms for websites & mobile apps, and thorough documentation.</p>
-
-
-        <hr class="hr&#45;&#45;divider hr&#45;&#45;divider-large">
--->
 
 
         <h2 class="projects__title u-h2 u-mb-15" id="minter-notifications">

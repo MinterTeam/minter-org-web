@@ -278,18 +278,6 @@
                     <p>The Time Loop arcade is one of the most popular Minter-powered games. You control a spaceship equipped with guns, and the task is to score as many points as possible in one flight. The player who scored the most points becomes a contender for the winner of the game. If none of their rivals score better in the next three flights, the challenger becomes the winner of the game and gets a stash full of TIME coins.</p>
                 </ResourceProjectItem>
             </div>
-            <!--
-            <div class="u-cell u-cell&#45;&#45;large&#45;&#45;1-3 u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <ResourceProjectItem
-                        link="https://paymnt.io"
-                        src="/img/resources/project-paymnt.png"
-                        title="PayMnt"
-                        tag="web"
-                >
-                    <p>Want to start accepting payments on your website with coins of the Minter network? Use ready-made PayMnt modules that do not require further development. You can accept payments from both natural and legal persons.</p>
-                </ResourceProjectItem>
-            </div>
--->
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
                 <ResourceProjectItem
                     link="https://t.me/paytominter_bot"
@@ -300,18 +288,6 @@
                     <p>Want to encourage activity within your own Telegram community? No problem. Add this bot to your chat, hold airdrops, and like messages of the active community members. Rewards can be distributed in any coin issued on the Minter network, which the receiver can swap for a good or service via one of the Minter Push services right away.</p>
                 </ResourceProjectItem>
             </div>
-            <!--
-            <div class="u-cell u-cell&#45;&#45;large&#45;&#45;1-3 u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <ResourceProjectItem
-                        link="https://spacegame.store"
-                        src="/img/resources/project-cube.jpg"
-                        title="CUBE"
-                        tag="web, telegram bot"
-                >
-                    <p>Cube is a real-time multi-player strategy. Use your skills to capture enemy territory and earn CUBE coins.</p>
-                </ResourceProjectItem>
-            </div>
--->
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
                 <ResourceProjectItem
                     link="https://bipgame.io"
@@ -386,38 +362,6 @@
                     tag="web"
                 >
                     <p>One of the most easy-to-use push services. Send Minter coins to anyone in a couple of clicks, and the receiver will be able to transfer, exchange, or spend coins on a wide selection of goods and services available in the catalog.</p>
-                </ResourceItem>
-            </div>
-            <!--
-            <div class="u-cell u-cell&#45;&#45;large&#45;&#45;1-3 u-cell&#45;&#45;medium&#45;&#45;1-2">
-                <ResourceItem
-                        link="https://yyy.cash"
-                        icon="send-yyy"
-                        title="YYY.cash"
-                        tag="web"
-                >
-                    <p>This eye-catching and multi-functional service will allow you to not only transfer coins through one-time wallets but also customize them. Insert your logos, animations, and background. The service’s distinguishing feature is the ability to Push e-mail newsletters.</p>
-                </ResourceItem>
-            </div>
--->
-            <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
-                <ResourceItem
-                    link="https://5s.gift"
-                    icon="send-5s"
-                    title="5s.gift"
-                    tag="web"
-                >
-                    <p>Does your friend have a birthday, or do you simply want to thank someone? Use ready-made templates to impress the receiving party. The service also allows you to provide your audience with incentives for filling out forms or performing actions.</p>
-                </ResourceItem>
-            </div>
-            <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
-                <ResourceItem
-                    link="https://dev.bip.plus"
-                    icon="send-bipplus"
-                    title="BIP+"
-                    tag="web"
-                >
-                    <p>Another great push service enabling you to top up your mobile phone, pay for the Internet, transportation, travels, games, on-line shopping, and much more. </p>
                 </ResourceItem>
             </div>
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
@@ -576,16 +520,6 @@
                         tag="web"
                     >
                         <p>Atomars is a fast and easy-to-use crypto trading platform that was launched last year. Web and mobile applications, decentralized private wallets, user portfolio, market barometer. No trading fees charged to new users for 60 days, 0.2% for market orders and 0.1% for limit orders after. Fee for withdrawing BIP = 1&nbsp;BIP.</p>
-                    </ResourceItem>
-                </div>
-                <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
-                    <ResourceItem
-                        link="https://trade.citex.co.kr/trade/BIP_USDT"
-                        icon="rank-citex"
-                        title="Citex"
-                        tag="web"
-                    >
-                        <p>Citex is a South Korea-based digital asset trading platform founded in 2018. It supports spot trading, over-the-counter trading, PoS staking, masternode hosting, grid trading, ETF trading, and options trading. Fee = 0.2%, for withdrawing BIP = 6&nbsp;BIP.</p>
                     </ResourceItem>
                 </div>
                 <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
