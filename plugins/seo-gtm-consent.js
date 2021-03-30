@@ -7,6 +7,12 @@ window.ym = window.ym || function() {
     window.ym.a.push(arguments);
 };
 
+// show consent window for new version
+if (!window.localStorage.getItem('consent-version')) {
+    window.localStorage.removeItem('minter-cookies-accepted');
+    window.localStorage.setItem('consent-version', '1');
+}
+
 export default ({ app }) => {
     /*
     ** Only run on client-side and only in production mode
@@ -20,10 +26,14 @@ export default ({ app }) => {
     if (getConsentStatus('ym')) {
         ymInit();
     }
+    if (getConsentStatus('fb')) {
+        fbInit();
+    }
 
     app.router.afterEach((to, from) => {
         // We tell Google Analytics to add a `pageview`
         window['dataLayer'].push({ event: 'nuxtRoute', pageType: 'PageView', pageUrl: to.fullPath, routeName: to.name });
+        window.fbq && window.fbq('track', 'PageView');
     });
 };
 
@@ -32,14 +42,19 @@ export default ({ app }) => {
  * @param {Object} options
  * @param {boolean} options.ym
  * @param {boolean} options.ga
+ * @param {boolean} options.fb
  */
-export function grantConsent({ym, ga}) {
+export function grantConsent({ym, ga, fb}) {
     saveConsentStatus('ga', ga);
     saveConsentStatus('ym', ym);
+    saveConsentStatus('fb', fb);
 
     updateGaConsent(false, ga);
     if (ym) {
         ymInit();
+    }
+    if (fb) {
+        fbInit();
     }
 }
 
@@ -95,6 +110,13 @@ function ymInit() {
         trackLinks:true,
         accurateTrackBounce:true,
     });
+}
+
+function fbInit() {
+    /* eslint-disable-next-line */
+    !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '312072806919501');
+    fbq('track', 'PageView');
 }
 
 /**

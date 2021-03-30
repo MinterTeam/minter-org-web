@@ -101,7 +101,7 @@
 
         <h2 class="u-h2 u-mb-20">Latest news</h2>
         <div class="u-grid u-grid--vertical-margin u-mb-25">
-            <div class="u-cell u-cell--medium--1-2" v-for="item in news" :key="item">
+            <div class="u-cell u-cell--medium--1-2" v-for="item in news" :key="item.title">
                 <div class="index__news-item" :class="`index__news-item--${item.category}`">
                     <h3 class="u-h3 u-mb-05"><a class="link--main link--hover" :href="item.url" target="_blank" rel="noopener">{{ item.title }}</a></h3>
                     <p class="u-mb-05">{{ item.description }}</p>

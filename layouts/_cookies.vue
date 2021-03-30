@@ -7,6 +7,7 @@ export default {
             settings: {
                 ga: true,
                 ym: true,
+                fb: true,
             },
             showCookies: !window.localStorage.getItem('minter-cookies-accepted'),
             showSettings: false,
@@ -53,6 +54,10 @@ export default {
                     <label class="form-check u-fw-700">
                         <input type="checkbox" class="form-check__input" v-model="settings.ym" :true-value="false" :false-value="true">
                         <span class="form-check__label form-check__label--checkbox">Turn off Yandex.Metrica</span>
+                    </label>
+                    <label class="form-check u-fw-700">
+                        <input type="checkbox" class="form-check__input" v-model="settings.fb" :true-value="false" :false-value="true">
+                        <span class="form-check__label form-check__label--checkbox">Turn off Facebook Pixel</span>
                     </label>
                 </div>
             </div>
