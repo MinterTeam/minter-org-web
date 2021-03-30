@@ -281,7 +281,10 @@ blockquote {
 .form-check {
     position: relative; display: inline-block; user-select: none; cursor: pointer; font-weight: 600; margin: 0; line-height: 0;
     &.is-disabled {opacity: 0.5; cursor: default;}
-    &+& {margin-left: 16px;} /* сейчас используются только в профиле, при больше ширине понадобится отдельный хелпер form-check-inline-group */
+}
+.form-check-group {
+    margin-left: -16px; margin-top: -16px;
+    .form-check {margin-left: 16px; margin-top: 16px;}
 }
 .form-check__input {position: absolute; left: 0; top: 0; opacity: 0; z-index: -1;}
 .form-check__label {padding-left: 30px; display: inline-block; font-size: 14px; line-height: 22px;}
