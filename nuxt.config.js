@@ -7,10 +7,10 @@ const fs = require('fs');
 
 const dotEnvConfig = dotenv.config();
 const dotEnv = dotEnvConfig.error ? {} : dotEnvConfig.parsed;
-const dotEnvExample = dotenv.parse(fs.readFileSync(path.resolve(process.cwd(), '.env.example')));
+const dotEnvMaster = dotenv.parse(fs.readFileSync(path.resolve(process.cwd(), '.env.master')));
 const processEnv = {};
-// copy process.env values by .env.example keys
-Object.keys(dotEnvExample).forEach((key) => {
+// copy process.env values by .env.master keys
+Object.keys(dotEnvMaster).forEach((key) => {
     processEnv[key] = process.env[key];
 });
 

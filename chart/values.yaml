@@ -3,6 +3,7 @@ replicaCount: 1
 image:
   repository: registry.minter.network/minter-org-web
   pullPolicy: Always
+  tag: latest
 
 imagePullSecrets:
   - name: registry.minter.network
@@ -20,9 +21,14 @@ securityContext: {}
 service:
   port: 80
 
+deployment:
+  healthCheckPath: /
+
 ingress:
-  domain: minter.org
-  tlsname: minter.org
+  domain: ""
+  tlsname: ""
+  #issuer: letsencrypt-http
+  clusterissuer: letsencrypt-prod
 
 resources: {}
 
