@@ -92,9 +92,7 @@
                 </div>-->
 
                 <blockquote class="intro__quote u-section--top-margin--large">
-                    <p>The Minter Development Foundation (MDF) is a non-profit organization dedicated to supporting Minter and related technologies.</p>
-                    <p>The MDF is not a company, or even a traditional non-profit. We do not control Minter, nor are we the only organization that funds critical development of Minter-related technologies. We are part of a large ecosystem of organizations, individuals, and companies that support Minter.</p>
-                    <p>Our mission is to do what is best for Minter’s long-term success. Our role is to allocate resources to critical projects, to be a valued voice within the Minter ecosystem, and to advocate for Minter to the outside world.</p>
+                    <p>The Minter Development Foundation is a U.S.-based non-profit organization that supports the development and adoption of the Minter blockchain and its ecosystem. The MDF neither owns nor controls the network; it merely represents the interests of the stakeholders to the best of its ability.</p>
                 </blockquote>
             </div>
         </div>
