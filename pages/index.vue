@@ -64,9 +64,9 @@
 
 <template>
     <div class="u-section u-container">
-        <h1 class="u-h1 u-h1--large u-mb-25">Launch your wallet in one click to start spending rewards and loyalty points</h1>
+        <h1 class="u-h1 u-h1-main u-h1--large u-mb-25">Minter Development Foundation</h1>
         <div class="intro">
-            <img class="intro__image" src="/img/index-intro-wallet.png" srcset="/img/index-intro-wallet@2x.png 2x" alt="" role="presentation">
+            <img class="intro__image" src="/img/index-intro-wallet-2.png" srcset="/img/index-intro-wallet-2@2x.png 2x" alt="Minter" role="presentation">
             <div class="intro__content">
                 <!--
                 <div class="u-h u-h3 u-mb-10">
@@ -74,8 +74,8 @@
                     <template v-else>Sign in to be among the first users.</template>
                 </div>
 -->
-                <div class="u-mb-10" v-if="$store.state.user">
-                    <!--<a class="intro__button button button&#45;&#45;main" href="https://id.minter.org/share">View profile</a>-->
+                <!--<div class="u-mb-10" v-if="$store.state.user">
+                    <a class="intro__button button button&#45;&#45;main" href="https://id.minter.org/share">View profile</a>
                     <a class="intro__button button button--main button--full-mobile" :href="$options.WALLET_HOST">Launch wallet</a>
                 </div>
                 <div class="u-mb-10" v-else>
@@ -89,15 +89,28 @@
                             Sign in with Google
                         </AuthButtonGoogle>
                     </div>
-                </div>
+                </div>-->
 
-                <blockquote class="intro__quote u-section--top-margin u-section--top-margin--large">
-                    <h2 class="u-h2 u-mb-05">Tell me more, please</h2>
-                    <p>Minter is a global rewards and loyalty points network powered by a&nbsp;fast blockchain. Any brand, community, or blogger can create their own coins and launch their reward or loyalty system in minutes. By&nbsp;“coins,” we mean loyalty points, rewards, cashbacks, discounts, credits, and so on. They can be transferred between users, exchanged for one another, or spent on goods and services</p>
+                <blockquote class="intro__quote u-section--top-margin--large">
+                    <p>The Minter Development Foundation (MDF) is a non-profit organization dedicated to supporting Minter and related technologies.</p>
+                    <p>The MDF is not a company, or even a traditional non-profit. We do not control Minter, nor are we the only organization that funds critical development of Minter-related technologies. We are part of a large ecosystem of organizations, individuals, and companies that support Minter.</p>
+                    <p>Our mission is to do what is best for Minter’s long-term success. Our role is to allocate resources to critical projects, to be a valued voice within the Minter ecosystem, and to advocate for Minter to the outside world.</p>
                 </blockquote>
-                <hr class="hr--divider hr--divider-large">
             </div>
         </div>
+
+        <h2 class="u-h2 u-mb-20 u-mt-20" id="projects">More about Us</h2>
+        <p class="u-mb-10">Ten percent of the BIP mining goes to the DAO (Decentralized Autonomous Organization) address, which is managed by the Minter Development Foundation. These funds are used to sponsor promotion, development, liquidity enhancement, legal assistance, and many other types of activity aimed to increase the network’s value in general.</p>
+        <p class="u-mb-10">The Foundation’s mission is to popularize the blockchain itself and show what it can do. Unlike many other networks who do not have grant budgets, the MDF offers a unique opportunity to the most out-of-the-box ideas and experiments that would otherwise not receive funding from conventional commercial structures.</p>
+        <p class="u-mb-10">To date, the Minter Development Foundation has led several major campaigns:
+            <ul class="u-mt-10">
+                <li>distributed the initial supply of HUB—the native digital token of the Minter Hub cross-chain bridge—among the prominent community members according to the significance of their contribution;</li>
+                <li>backed the rewards accrual to those who had locked their BIP to be further converted into its mirrored version on Ethereum and Binance Smart Chain;</li>
+                <li>burned 385 million BIP, or 9.3% of supply at the time, as the first in a series of tokenomics strengthening measures.</li>
+            </ul>
+        </p>
+
+        <hr class="hr--divider hr--divider-large">
 
         <h2 class="u-h2 u-mb-20">Latest news</h2>
         <div class="u-grid u-grid--vertical-margin u-mb-25">
@@ -153,13 +166,20 @@
                 >
                     <p>BIP Wallet’s basic web version. Includes all essential functionality for managing your coins: receive, send, and delegate.</p>
                 </ResourceItem>
-                <ResourceItem
+                <!--<ResourceItem
                     link="https://wallet.reef.mn"
                     icon="wallet-reef"
                     title="Reef wallet"
                     tag="web"
                 >
-                    <p>Third-party user wallet with multi-accounts, address book, list of validators, and data from external services.</p>
+                    <p>Third-party user wallet with multi-accounts, address book, list of validators, and data from external services.</p>-->
+                    <ResourceItem
+                    link="https://minterpush.com"
+                    icon="send-minterpush"
+                    title="Minterpush"
+                    tag="web"
+                >
+                    <p>One of the most easy-to-use push services. Send Minter coins to anyone in a couple of clicks, and the receiver will be able to transfer, exchange, or spend coins on a wide selection of goods and services available in the catalog.</p>
                 </ResourceItem>
             </div>
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
@@ -257,7 +277,7 @@
 
         <hr class="hr--divider hr--divider-large">
 
-        <h2 class="u-h1 u-h1--large u-mb-05" id="projects">Community projects</h2>
+        <!--<h2 class="u-h1 u-h1--large u-mb-05" id="projects">Community projects</h2>
         <p class="u-mb-20 index__description">Discover projects and services based on or using the Minter blockchain, developed by our community.</p>
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium u-mb-20">
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
@@ -332,18 +352,18 @@
             </div>
         </div>
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
-            <div class="u-cell u-cell--large--1-3"><!--placeholder--></div>
+            <div class="u-cell u-cell--large--1-3"></div>
             <div class="u-cell u-cell--large--1-3">
                 <nuxt-link class="button button--ghost-main button--full" to="/projects">More projects</nuxt-link>
             </div>
-            <div class="u-cell u-cell--large--1-3"><!--placeholder--></div>
+            <div class="u-cell u-cell--large--1-3"></div>
         </div>
 
 
-        <hr class="hr--divider hr--divider-large">
+        <hr class="hr--divider hr--divider-large">-->
 
 
-        <h2 class="u-h1 u-h1--large u-mb-05" id="send-and-spend">Send and spend</h2>
+        <!--<h2 class="u-h1 u-h1--large u-mb-05" id="send-and-spend">Send and spend</h2>
         <p class="u-mb-20 index__description">In just a few clicks, you can send Minter-based coins to anyone who can then spend them on numerous goods and services around the world. No need to install a wallet.</p>
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
@@ -369,10 +389,10 @@
         </div>
 
 
-        <hr class="hr--divider hr--divider-large">
+        <hr class="hr--divider hr--divider-large">-->
 
 
-        <h2 class="u-h1 u-h1--large u-mb-05" id="be-engaged">Be engaged</h2>
+        <!--<h2 class="u-h1 u-h1--large u-mb-05" id="be-engaged">Be engaged</h2>
         <p class="u-mb-20 index__description index__contests-description">Take part in our initiatives and programs, get rewards, and join hands with us in contributing to the network’s development.</p>
         <div class="u-grid u-grid--small u-grid--vertical-margin--medium">
             <div class="u-cell u-cell--medium--1-2">
@@ -399,7 +419,7 @@
         </div>
 
 
-        <hr class="hr--divider hr--divider-large">
+        <hr class="hr--divider hr--divider-large">-->
 
 
         <h2 class="u-h1 u-h1--large u-mb-05 u-relative" id="follow">
@@ -504,7 +524,7 @@
                         <p>Hotbit is a Chinese cryptocurrency exchange operating since 2018. Trading fees = 0.2% for takers and -0.05% for makers (the platform pays for placing orders), BIP withdrawal fee = 250&nbsp;BIP.</p>
                     </ResourceItem>
                 </div>
-                <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
+                <!--<div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
                     <ResourceItem
                         link="https://atomars.com/trading/BIPUSDT"
                         icon="rank-atomars"
@@ -513,8 +533,8 @@
                     >
                         <p>Atomars is a fast and easy-to-use crypto trading platform that was launched last year. Web and mobile applications, decentralized private wallets, user portfolio, market barometer. No trading fees charged to new users for 60 days, 0.2% for market orders and 0.1% for limit orders after. Fee for withdrawing BIP = 1&nbsp;BIP.</p>
                     </ResourceItem>
-                </div>
-                <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
+                </div>-->
+                <!--<div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
                     <ResourceItem
                         link="https://my.minter.global"
                         icon="rank-global"
@@ -523,7 +543,7 @@
                     >
                         <p>Minter Global OÜ is an Estonian company that is licensed to sell and purchase virtual assets, such as BIP tokens. It offers fully compliant exchange services to the corporate customers and natural persons with the access to SEPA payment accounts.</p>
                     </ResourceItem>
-                </div>
+                </div>-->
             </div>
 
             <h2 class="u-h1 u-h1--large u-mb-05 u-section--top-margin u-section--top-margin-large" id="track">Track BIP</h2>
