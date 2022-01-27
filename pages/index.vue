@@ -189,6 +189,14 @@
                 >
                     <p>Third-party multi-functional Telegram bot wallet that allows you to not only receive and send coins without leaving Telegram but also manage checks, save frequently used addresses, receive notifications, and play built-in mini-games that run on the Minter blockchain.</p>
                 </ResourceItem>
+                <ResourceItem
+                    link="https://wallet.minter.org/"
+                    icon="wallet-minter"
+                    title="Minter Wallet"
+                    tag="Web"
+                >
+                    <p>For businesses offering loyalty programs and customers who use them.</p>
+                </ResourceItem>
             </div>
             <div class="u-cell u-cell--large--1-3 u-cell--medium--1-2">
                 <ResourceItem
@@ -198,6 +206,14 @@
                     tag="app"
                 >
                     <p>With this third-party app, all your Minter coins are available in any application of your choice, always at your fingertips, and can be accessed in the most easy-to-understand way—from your keyboard. Available both for iOS and Android.</p>
+                </ResourceItem>
+                <ResourceItem
+                    link="https://honee.app/"
+                    icon="wallet-honee"
+                    title="Honee"
+                    tag="Web"
+                >
+                    <p>The simplest crypto wallet that helps you earn.</p>
                 </ResourceItem>
             </div>
         </div>
