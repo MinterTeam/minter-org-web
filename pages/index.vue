@@ -460,12 +460,12 @@
                     <span class="index__social-caption">Reddit</span>
                 </a>
             </div>
-            <div class="u-cell u-cell--medium--1-3 u-cell--small--1-2">
+            <!--<div class="u-cell u-cell--medium--1-3 u-cell--small--1-2">
                 <a class="index__social-link link--main link--hover" href="https://www.facebook.com/MinterNetwork" target="_blank" rel="noopener">
                     <img class="index__social-icon" src="/img/icon-social-fb.svg" alt="" role="presentation" width="36" height="36">
                     <span class="index__social-caption">Facebook</span>
                 </a>
-            </div>
+            </div>-->
             <div class="u-cell u-cell--medium--1-3 u-cell--small--1-2">
                 <a class="index__social-link link--main link--hover" href="https://t.me/MinterNetworkGroup" target="_blank" rel="noopener">
                     <img class="index__social-icon" src="/img/icon-social-tg.svg" alt="" role="presentation" width="36" height="36">
