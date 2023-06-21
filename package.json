@@ -32,7 +32,7 @@
     "iso-639-3": "^2.2.0",
     "js-cookie": "^2.2.1",
     "lodash-es": "^4.17.15",
-    "nuxt": "^2.14.7",
+    "nuxt": "^3.4.3",
     "postcss-preset-env": "^6.7.0",
     "pretty-num": "^0.4.0",
     "vue-imask": "^6.0.5",
